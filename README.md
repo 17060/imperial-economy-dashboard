@@ -20,13 +20,15 @@ directly or serve the directory with any static server.
 ## Control-Theory Companion
 
 `control-theory-explainer.html` is a static, dependency-free one-page annex
-that reframes the dashboard's four core axes — energy chokepoints, debt
-leverage, fragmented governance, and AI surveillance readiness — as
-geopolitical control-theory mechanisms, with inline citations to 2024-era
-sources (U.S. EIA, World Bank International Debt Report 2024, Freedom House's
-*Freedom in the World 2024* and *Freedom on the Net 2024*, and Stanford HAI's
-*2024 AI Index Report*). The main dashboard links to it from the top nav and
-footer.
+that reframes the dashboard's five core axes — energy chokepoints, debt
+leverage, fragmented governance, AI surveillance readiness, and crypto
+settlement / regulatory perimeter — as geopolitical control-theory mechanisms,
+with inline citations to a 2025 / early-2026 source base (U.S. EIA *World Oil
+Transit Chokepoints* (March 2026), IMF *Fiscal Monitor* April 2026, Freedom
+House's *Freedom in the World 2026* and *Freedom on the Net 2025*, Stanford
+HAI's *2026 AI Index Report*, the SEC's FY2025 enforcement results, and the
+Chainalysis *2026 Crypto Crime Report*). The main dashboard links to it from
+the top nav and footer.
 
 ## Weekly updates
 

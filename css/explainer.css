@@ -48,10 +48,11 @@
   text-transform: uppercase;
 }
 .ex-chip:hover { background: #1a1f2c; }
-.ex-chip-red   { border-color: var(--red);   color: var(--red); }
-.ex-chip-amber { border-color: var(--amber); color: var(--amber); }
-.ex-chip-cyan  { border-color: var(--cyan);  color: var(--cyan); }
-.ex-chip-green { border-color: var(--green); color: var(--green); }
+.ex-chip-red    { border-color: var(--red);   color: var(--red); }
+.ex-chip-amber  { border-color: var(--amber); color: var(--amber); }
+.ex-chip-cyan   { border-color: var(--cyan);  color: var(--cyan); }
+.ex-chip-green  { border-color: var(--green); color: var(--green); }
+.ex-chip-violet { border-color: #b58cf2;      color: #b58cf2; }
 
 .ex-disclaimer {
   margin-top: 14px;
@@ -79,10 +80,11 @@
   text-transform: uppercase;
   color: var(--muted);
 }
-.ex-pill-red   { border-color: var(--red);   color: var(--red); }
-.ex-pill-amber { border-color: var(--amber); color: var(--amber); }
-.ex-pill-cyan  { border-color: var(--cyan);  color: var(--cyan); }
-.ex-pill-green { border-color: var(--green); color: var(--green); }
+.ex-pill-red    { border-color: var(--red);   color: var(--red); }
+.ex-pill-amber  { border-color: var(--amber); color: var(--amber); }
+.ex-pill-cyan   { border-color: var(--cyan);  color: var(--cyan); }
+.ex-pill-green  { border-color: var(--green); color: var(--green); }
+.ex-pill-violet { border-color: #b58cf2;      color: #b58cf2; }
 
 .ex-reframe {
   color: var(--text);
@@ -108,6 +110,7 @@
 .ex-panel-amber { box-shadow: inset 3px 0 0 var(--amber); }
 .ex-panel-cyan  { box-shadow: inset 3px 0 0 var(--cyan); }
 .ex-panel-green { box-shadow: inset 3px 0 0 var(--green); }
+.ex-panel-violet { box-shadow: inset 3px 0 0 #b58cf2; }
 .ex-panel-loop  { box-shadow: inset 3px 0 0 #8d96a8; }
 .ex-panel-wide  { margin-top: 16px; }
 
@@ -185,6 +188,8 @@
   margin: 8px 0 4px;
   font-variant-numeric: tabular-nums;
 }
+.ex-quad-card-violet { box-shadow: inset 3px 0 0 #b58cf2; }
+.ex-quad-num-violet  { color: #b58cf2; }
 
 /* ─── Governance: stacked bar + mini map ─────────────────────────────── */
 .ex-stack {
