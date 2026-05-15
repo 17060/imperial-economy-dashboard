@@ -6,14 +6,27 @@ framework for Earth. Hosted via GitHub Pages from `main`.
 ## Project structure
 
 ```
-index.html        Semantic markup + asset references. No data inlined.
-css/styles.css    All styling (theme, layout, RRI tooltips, responsive rules).
-js/data.js        Editable dashboard data — this is what weekly updates change.
-js/app.js         Rendering and interaction logic. Rarely needs to change.
+index.html                     Semantic markup + asset references. No data inlined.
+control-theory-explainer.html  Analytical companion page (static, no JS).
+css/styles.css                 Shared styling (theme, layout, RRI tooltips, responsive rules).
+css/explainer.css              Companion-page-only styles.
+js/data.js                     Editable dashboard data — this is what weekly updates change.
+js/app.js                      Rendering and interaction logic. Rarely needs to change.
 ```
 
 The site has no build step and no runtime dependencies. Open `index.html`
 directly or serve the directory with any static server.
+
+## Control-Theory Companion
+
+`control-theory-explainer.html` is a static, dependency-free one-page annex
+that reframes the dashboard's four core axes — energy chokepoints, debt
+leverage, fragmented governance, and AI surveillance readiness — as
+geopolitical control-theory mechanisms, with inline citations to 2024-era
+sources (U.S. EIA, World Bank International Debt Report 2024, Freedom House's
+*Freedom in the World 2024* and *Freedom on the Net 2024*, and Stanford HAI's
+*2024 AI Index Report*). The main dashboard links to it from the top nav and
+footer.
 
 ## Weekly updates
 
