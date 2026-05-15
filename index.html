@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Imperial Economy Dashboard</title>
-  <meta name="description" content="Darth Vader's Imperial economic control framework for Earth">
+  <meta name="description" content="Darth Vader's Imperial economic control framework for Earth — five-axis dashboard (energy, debt, governance, AI surveillance, crypto perimeter) anchored to 2025 / early-2026 public sources.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -21,6 +21,7 @@
       <button onclick="go('debt')">Debt</button>
       <button onclick="go('governance')">Governance</button>
       <button onclick="go('ai')">Surveillance</button>
+      <button onclick="go('crypto')">Crypto</button>
       <button onclick="go('rri')">Resistance Index</button>
       <a href="control-theory-explainer.html" style="color:#61b6bd;text-decoration:none;border-left:1px solid #30384a;padding-left:18px">Control-Theory Annex →</a>
     </nav>
@@ -49,7 +50,7 @@
         <div>
           <span class="tag">PRIORITY · OMEGA</span>
           <h1>Subjugation of <span>Sector 001</span> proceeds <b>ahead of schedule.</b></h1>
-          <p class="small">Five concurrent levers: energy, debt, governance, currency, and surveillance. The host planet remains unaware of full-spectrum encirclement.</p>
+          <p class="small">Five concurrent levers — energy chokepoints, debt leverage, fragmented governance, AI surveillance, and the crypto perimeter — read against 2025 / early-2026 public reporting. The host planet remains unaware of full-spectrum encirclement.</p>
           <div class="cards" id="controlCards"></div>
         </div>
         <div class="orb">
@@ -59,7 +60,7 @@
 
       <section id="energy" class="section">
         <h2>Energy Chokepoints</h2>
-        <p class="small">Sever or constrict seven hydrocarbon, mineral, and electricity arteries to induce capitulation within 11 standard days.</p>
+        <p class="small">Constrict the maritime arteries through which roughly three-quarters of seaborne oil moves. Hormuz and Malacca remain inelastic; Bab el-Mandeb and Suez/SUMED ran at about half their 2023 flows in 1H25; tankers continue to reroute via the Cape of Good Hope.</p>
         <div class="grid">
           <div class="panel map">
             <div class="k">Threat Map · Hydrocarbon and Power Arteries</div>
@@ -73,18 +74,21 @@
               <button class="btn" onclick="alert('Imperial order logged: controlled scarcity scenario queued.')">Simulate Scarcity</button>
               <button class="btn" onclick="alert('Fleet logistics model updated.')">Re-route Fleet</button>
             </div>
+            <p class="cite" id="energyCite"></p>
           </div>
         </div>
       </section>
 
       <section id="debt" class="section">
         <h2>Debt Leverage</h2>
-        <p class="small">Credit is obedience written in future tense. Distress is to be converted into tribute.</p>
+        <p class="small">Credit is obedience written in future tense. Global public debt was just under 94% of GDP in 2025 and is projected to reach 100% by 2029 (IMF Fiscal Monitor, April 2026). Developing countries paid a record $1.4T to service foreign debt in 2023 (World Bank IDR 2024).</p>
         <div class="gaugegrid" id="debtGauges"></div>
+        <p class="cite" id="debtCite"></p>
       </section>
 
       <section id="governance" class="section">
         <h2>Fragmented Governance Weak Spots</h2>
+        <p class="small">Freedom House's <em>Freedom in the World 2026</em> marks a 20th consecutive year of global freedom decline through 2025: 54 countries declined, 35 improved; declines affected 40% of world population, improvements 7%. Country tally: 88 Free · 48 Partly Free · 59 Not Free.</p>
         <div class="grid">
           <div class="panel radar">
             <svg viewBox="0 0 320 320" role="img" aria-label="Imperial leverage radar">
@@ -100,7 +104,7 @@
                 <text x="260" y="84">Data</text>
                 <text x="266" y="240">Energy</text>
                 <text x="135" y="312">Credit</text>
-                <text x="8" y="240">Trust</text>
+                <text x="8" y="240">Crypto</text>
                 <text x="5" y="84">Unity</text>
               </g>
             </svg>
@@ -109,12 +113,14 @@
             <div class="k">Weak Spots</div>
             <div class="list" id="weakSpots"></div>
             <p class="dossier" id="governanceDossier"></p>
+            <p class="cite" id="governanceCite"></p>
           </div>
         </div>
       </section>
 
       <section id="ai" class="section">
         <h2>AI Surveillance Readiness</h2>
+        <p class="small">2025 readouts: US private AI investment $285.9B vs China $12.4B, organizational adoption 88%, &gt;90% of frontier models from industry, 5,427 US data centers (Stanford HAI 2026 AI Index). Internet freedom declined for a 15th consecutive year — arrests for online expression in 57 countries; content blocking affecting 69% of users; network shutdowns affecting 52% (Freedom House <em>Freedom on the Net 2025</em>).</p>
         <div class="grid">
           <div class="panel terminal" id="terminal"></div>
           <div class="panel">
@@ -124,6 +130,24 @@
               <button class="btn" onclick="cycle()">Issue Vader Assessment</button>
             </div>
             <p class="dossier" id="quote"></p>
+            <p class="cite" id="aiCite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="crypto" class="section">
+        <h2>Crypto Settlement &amp; Regulatory Perimeter</h2>
+        <p class="small">Dual-use axis. Self-custody, multisig, and peer-to-peer settlement remain resistance vectors; exchange chokepoints, sanctions lists, stablecoin issuers, and on-chain analytics are control vectors. In 2025 the SEC ran 456 enforcement actions ($17.9B relief) while course-correcting away from "regulation by enforcement"; Chainalysis reports a +694% YoY rise in value received by sanctioned entities and that stablecoins accounted for 84% of illicit volume.</p>
+        <div class="grid">
+          <div class="panel">
+            <div class="k">Perimeter Dossier</div>
+            <div class="list" id="cryptoNodes"></div>
+            <p class="dossier" id="cryptoDossier"></p>
+          </div>
+          <div class="panel">
+            <div class="k">Perimeter Gauges</div>
+            <div class="gaugegrid gaugegrid-compact" id="cryptoGauges"></div>
+            <p class="cite" id="cryptoCite"></p>
           </div>
         </div>
       </section>
@@ -142,6 +166,8 @@
 
       <div class="foot">
         IMPERIAL INTELLIGENCE · ECONOMIC SUBJUGATION BUREAU · END OF LINE
+        <br>
+        Source base: EIA <em>World Oil Transit Chokepoints</em> (2026-03-03) · IMF <em>Fiscal Monitor</em> (April 2026) · World Bank <em>IDR 2024</em> · Freedom House <em>Freedom in the World 2026</em> &amp; <em>Freedom on the Net 2025</em> · Stanford HAI <em>2026 AI Index</em> · U.S. SEC FY2025 Enforcement Results (2026-04-07) · Chainalysis <em>2026 Crypto Crime Report</em>.
         <br>
         <a href="control-theory-explainer.html" style="color:#61b6bd">Analytical companion: 2025 / early-2026 source base behind the satire →</a>
       </div>

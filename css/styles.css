@@ -345,6 +345,25 @@ body:before {
 
 .dossier { margin-top: 12px; color: var(--muted); min-height: 42px; }
 
+.cite {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px dashed #283144;
+  color: var(--muted);
+  font: 11px/1.55 ui-monospace, monospace;
+  letter-spacing: .04em;
+}
+.cite a { color: var(--cyan); text-decoration: none; }
+.cite a:hover, .cite a:focus { color: #9fe6ec; text-decoration: underline; }
+
+.row.row-stacked { align-items: start; }
+.row.row-stacked > div .small { margin-top: 4px; }
+
+.gaugegrid-compact { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.gaugegrid-compact .ring { width: 110px; height: 110px; }
+.gaugegrid-compact .ring div { width: 78px; height: 78px; font-size: 22px; }
+.gaugegrid-compact .gauge { padding: 12px; }
+
 .foot {
   margin: 38px 0;
   color: var(--muted);

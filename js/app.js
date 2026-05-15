@@ -69,27 +69,41 @@
     )
     .join('');
 
-  $('nodes').innerHTML = D.energyChokepoints.nodes
-    .map(
-      (n) => `
-        <div class="row">
-          <b>${esc(n.name)}</b>
-          <span class="status">${esc(n.status.toUpperCase())}</span>
-        </div>`
-    )
-    .join('');
+  const nodeRow = (n) => `
+    <div class="row row-stacked">
+      <div>
+        <b>${esc(n.name)}</b>
+        ${n.role ? `<div class="small">${esc(n.role)}</div>` : ''}
+      </div>
+      <span class="status">${esc(n.status.toUpperCase())}</span>
+    </div>`;
+
+  $('nodes').innerHTML = D.energyChokepoints.nodes.map(nodeRow).join('');
+
+  const citeLink = (c) =>
+    c ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.label)}</a>` : '';
+  const citeList = (arr) =>
+    Array.isArray(arr) && arr.length
+      ? 'Source: ' + arr.map(citeLink).join(' · ')
+      : '';
+
+  const energyCite = $('energyCite');
+  if (energyCite && D.energyChokepoints.citation) {
+    energyCite.innerHTML = 'Source: ' + citeLink(D.energyChokepoints.citation);
+  }
 
   /* ── Debt gauges ────────────────────────────────────────────────────── */
-  $('debtGauges').innerHTML = D.debt
-    .map(
-      ({ label, value, sub }) => `
-        <div class="panel gauge">
-          <div class="ring" style="--p:${value}"><div>${value}</div></div>
-          <b>${esc(label)}</b>
-          <p class="small">${esc(sub)}</p>
-        </div>`
-    )
-    .join('');
+  const gaugeCard = ({ label, value, sub }) => `
+    <div class="panel gauge">
+      <div class="ring" style="--p:${Math.min(100, value)}"><div>${value}</div></div>
+      <b>${esc(label)}</b>
+      <p class="small">${esc(sub)}</p>
+    </div>`;
+
+  $('debtGauges').innerHTML = D.debt.map(gaugeCard).join('');
+
+  const debtCite = $('debtCite');
+  if (debtCite) debtCite.innerHTML = citeList(D.debtCitations);
 
   /* ── Governance weak spots ──────────────────────────────────────────── */
   $('weakSpots').innerHTML = D.governance.weakSpots
@@ -102,6 +116,10 @@
     )
     .join('');
   $('governanceDossier').textContent = D.governance.dossier;
+  const governanceCite = $('governanceCite');
+  if (governanceCite && D.governance.citation) {
+    governanceCite.innerHTML = 'Source: ' + citeLink(D.governance.citation);
+  }
 
   /* ── AI surveillance ────────────────────────────────────────────────── */
   $('terminal').innerHTML = D.aiSurveillance.terminal
@@ -125,6 +143,24 @@
     quoteIdx = (quoteIdx + 1) % quotes.length;
     $('quote').textContent = quotes[quoteIdx];
   };
+
+  const aiCite = $('aiCite');
+  if (aiCite) aiCite.innerHTML = citeList(D.aiSurveillance.citations);
+
+  /* ── Crypto perimeter ───────────────────────────────────────────────── */
+  if (D.crypto) {
+    const cryptoNodes = $('cryptoNodes');
+    if (cryptoNodes) cryptoNodes.innerHTML = D.crypto.nodes.map(nodeRow).join('');
+
+    const cryptoGauges = $('cryptoGauges');
+    if (cryptoGauges) cryptoGauges.innerHTML = D.crypto.gauges.map(gaugeCard).join('');
+
+    const cryptoDossier = $('cryptoDossier');
+    if (cryptoDossier) cryptoDossier.textContent = D.crypto.dossier;
+
+    const cryptoCite = $('cryptoCite');
+    if (cryptoCite) cryptoCite.innerHTML = citeList(D.crypto.citations);
+  }
 
   /* ── Rebel Resistance Index ─────────────────────────────────────────── */
   function rriTier(s) {
