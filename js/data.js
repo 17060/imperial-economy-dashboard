@@ -61,8 +61,8 @@ const DASHBOARD_DATA = {
     operation: 'ASHEN HEEL',
     authority: 'Lord Vader',
     clearance: 'SITH-OMEGA',
-    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-05-15',
-    subjugationIndex: 78,
+    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-05-18',
+    subjugationIndex: 79,
     subjugationTier: 'CRITICAL',
   },
 
@@ -76,17 +76,17 @@ const DASHBOARD_DATA = {
   theatreReadiness: [
     { label: 'Fleet Posture',         value: 91 },
     { label: 'Economic Grip',         value: 78 },
-    { label: 'Surveillance Mesh',     value: 67 },
+    { label: 'Surveillance Mesh',     value: 68 },
     { label: 'Compliance Engines',    value: 55 },
-    { label: 'Crypto Perimeter',      value: 61 },
-    { label: 'Insurgent Liquidity',   value: 35 },
+    { label: 'Crypto Perimeter',      value: 62 },
+    { label: 'Insurgent Liquidity',   value: 36 },
   ],
 
   directives: [
-    'Hold the Hormuz blockade as primary leverage.',
+    'Hold the Hormuz blockade as primary leverage (traffic still heavily restricted).',
     'Refinance sovereign debt under Imperial bonds.',
     'Exploit governance fractures.',
-    'Tighten the crypto regulatory perimeter via GENIUS Act rules.',
+    'Tighten the crypto regulatory perimeter via GENIUS Act AML/sanctions compliance rules.',
     'Trace rebel digital reserves through stablecoin issuers.',
     'Saturate civilian biometrics across DHS theatres.',
   ],
@@ -96,7 +96,7 @@ const DASHBOARD_DATA = {
       { name: 'Strait of Hormuz',     role: 'De facto closure since 28 Feb 2026; ~600 tankers trapped in Gulf', status: 'severed'   },
       { name: 'Strait of Malacca',    role: '23.2 mb/d · largest oil flow (1H25); rising geopolitical risk',     status: 'pressured' },
       { name: 'Suez / SUMED',         role: '4.9 mb/d · ~half of 2023 levels; transits still near multi-year lows', status: 'pressured' },
-      { name: 'Bab el-Mandeb',        role: 'Houthi attacks resumed Feb 2026; major carriers fully exited',     status: 'severed'   },
+      { name: 'Bab el-Mandeb',        role: 'U.S. MARAD advisory 2026-006 (2026-03-26): Houthis continue to pose threat; high-risk transit until further notice', status: 'severed'   },
       { name: 'Cape of Good Hope',    role: 'Reroute institutionalized; +~2 weeks transit and elevated bunker burn', status: 'held'  },
     ],
     mapNodes: [
@@ -107,8 +107,8 @@ const DASHBOARD_DATA = {
       { id: 'n5', label: 'Cape of Good Hope · held',    status: 'held',      x: 50, y: 72 },
     ],
     citation: {
-      label: 'EIA · World Oil Transit Chokepoints (2026-03-03) · Wikipedia · 2026 Strait of Hormuz crisis',
-      url: 'https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis',
+      label: 'NYT (2026-05-09) Hormuz effectively blocked · U.S. MARAD advisory 2026-006 (2026-03-26) Red Sea/Bab el-Mandeb risk',
+      url: 'https://www.nytimes.com/2026/05/09/world/middleeast/strait-hormuz-ships-blockade-us-iran.html',
     },
   },
 
@@ -184,7 +184,7 @@ const DASHBOARD_DATA = {
   },
 
   crypto: {
-    dossier: 'Crypto remains dual-use in the control loop. The perimeter tightened sharply through 2025–2026: the GENIUS Act now anchors a comprehensive US stablecoin framework, FinCEN/OFAC issued a joint proposed AML/sanctions rule (8 Apr 2026), and a SEC/CFTC joint interpretive release (17 Mar 2026) clarified that most crypto assets are not securities. FATF’s March 2026 targeted report flags stablecoins as 84% of illicit volume. Self-custody, multisig, P2P rails, and jurisdictional arbitrage continue to provide meaningful resistance capacity.',
+    dossier: 'Crypto remains dual-use in the control loop. The perimeter tightened through 2025–2026: Treasury/FinCEN/OFAC proposed GENIUS Act rules (8 Apr 2026) treating permitted payment stablecoin issuers as financial institutions for BSA/AML and requiring sanctions compliance; the SEC issued an interpretation on how federal securities laws apply to certain crypto assets and transactions (17 Mar 2026). Self-custody, non-custodial settlement, and jurisdictional fragmentation continue to provide meaningful resistance capacity (high-level, non-operational).',
     nodes: [
       { name: 'Stablecoin perimeter',     role: 'GENIUS Act framework · FinCEN/OFAC proposed rule (Apr 2026)', status: 'pressured' },
       { name: 'SEC/CFTC harmonization',   role: 'Joint interpretation (17 Mar 2026) clarifies non-security status', status: 'pressured' },
@@ -196,8 +196,8 @@ const DASHBOARD_DATA = {
     gauges: [
       { label: 'Sanctions Perimeter',      value: 78, sub: '+694% YoY sanctioned-entity receipts (Chainalysis 2026)' },
       { label: 'Stablecoin Concentration', value: 84, sub: '84% of illicit volume rides stablecoins (FATF Mar 2026)' },
-      { label: 'Regulatory Clarity',       value: 66, sub: 'GENIUS Act + SEC/CFTC joint interpretation (Mar 2026)'   },
-      { label: 'Self-Custody Surface',     value: 55, sub: 'Unhosted wallets and P2P still outside KYC perimeter'    },
+      { label: 'Regulatory Clarity',       value: 67, sub: 'GENIUS Act + SEC interpretation (Mar 2026)'                },
+      { label: 'Self-Custody Surface',     value: 56, sub: 'Unhosted wallets and P2P still outside KYC perimeter'    },
     ],
     citations: [
       {
@@ -219,8 +219,8 @@ const DASHBOARD_DATA = {
     {
       id: 'energy',
       name: 'Energy',
-      score: 31,
-      blurb: 'Hormuz de facto closed since 28 Feb 2026; Bab el-Mandeb severed; Suez/SUMED suppressed. Imperial Control 88 · Rebel Resistance 31 — the cycle’s biggest mover.',
+      score: 28,
+      blurb: 'Hormuz remains effectively blocked (NYT 2026-05-09); MARAD advisory 2026-006 keeps Bab el-Mandeb/Red Sea at high risk; Suez/SUMED suppressed. Imperial Control 90 · Rebel Resistance 28 — the cycle’s biggest mover.',
       mech: [
         'Cape of Good Hope reroute institutionalized; pipeline diversions (Yanbu, Fujairah, Ceyhan) reduce but do not replace Gulf flows',
         'Rooftop solar, behind-the-meter storage, and community microgrids still erode single-point dependence at the demand edge',
@@ -276,11 +276,11 @@ const DASHBOARD_DATA = {
   /* Free-text scratchpad for the weekly updater. Not rendered.
      Append a dated entry per cycle with rationale / citations. */
   sources: [
-    '2026-05-15 — Manual metric refresh (current to 2026-05-15):',
-    '  Biggest mover: Energy chokepoints (Imperial 88 / Rebel 31). Driver: Strait of Hormuz de facto closure since 28 Feb 2026 (Wikipedia event log; IMO mariners stranded; Saudi Aramco CEO statement 11 May re: ~600 tankers in Gulf).',
+    '2026-05-18 — Weekly metric refresh (current to 2026-05-18):',
+    '  Biggest mover: Energy chokepoints (Imperial 90 / Rebel 28). Driver: Hormuz still effectively blocked (NYT 2026-05-09) + MARAD advisory 2026-006 keeps Bab el-Mandeb/Red Sea at high risk until further notice (2026-03-26).',
     '  Debt (Imperial 72 / Rebel 42): IMF Fiscal Monitor April 2026 (public debt ~94% in 2025 → 100% by 2029); IMF LIC DSA list 31 Mar 2026 (9 in distress, 23 high risk); Moody’s US Aaa→Aa1 downgrade May 2025.',
     '  Governance (Imperial 65 / Rebel 58): Freedom House FIW 2026 — 20th consecutive year of decline, 54 declined vs 35 improved; coups in Guinea-Bissau and Madagascar; ICG 2026 watchlist.',
-    '  Crypto (Imperial 61 / Rebel 55): Treasury sb0435 (GENIUS Act stablecoin proposed rule, 8 Apr 2026); SEC 2026-30 joint interpretation (17 Mar 2026); FATF targeted stablecoin report via Chainalysis (Mar 2026); Chainalysis 2026 +694% sanctioned-entity receipts and 84% stablecoin illicit-volume share retained.',
+    '  Crypto (Imperial 62 / Rebel 56): Treasury sb0435 (FinCEN/OFAC joint proposed rule implementing GENIUS Act AML + sanctions requirements for permitted payment stablecoin issuers, 8 Apr 2026); SEC 2026-30 interpretation (17 Mar 2026). Resistance: self-custody and jurisdictional fragmentation persist (non-operational framing).',
     '  AI (Imperial 74 / Rebel 38): Stanford HAI 2026 AI Index (88% adoption, FMTI 58→40); Freedom on the Net 2025 (15th consecutive decline; 57 countries with arrests; 69% blocking; 52% shutdowns); DHS surveillance investment narrative from fedscoop reporting on AI funding documents.',
     '  Conservatism notes: Brent $111 spike and IRGC "Persian Gulf Strait Authority" toll figure NOT echoed in dashboard copy (single-source, time-sensitive). No operational evasion mechanisms surfaced for crypto resistance. Ceasefire-collapse / blockade language softened to "de facto closure" + status flag rather than rolling event narration.',
     '',
