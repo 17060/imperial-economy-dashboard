@@ -20,14 +20,43 @@ holds the long-form analytical version.
 ```
 index.html                     Semantic markup + asset references. No data inlined.
 control-theory-explainer.html  Analytical companion page (static, no JS).
+rebel-counter-briefing.html    Rebel Alliance counter-briefing companion page.
 css/styles.css                 Shared styling (theme, layout, RRI tooltips, responsive rules).
 css/explainer.css              Companion-page-only styles.
+css/rebel.css                  Counter-briefing styles (amber/signal palette, resilience cards, radar).
 js/data.js                     Editable dashboard data — this is what weekly updates change.
 js/app.js                      Rendering and interaction logic. Rarely needs to change.
+js/rebel.js                    Counter-briefing data + rendering (resilience cards, radar, mechanism filters, polycentric map).
 ```
 
 The site has no build step and no runtime dependencies. Open `index.html`
 directly or serve the directory with any static server.
+
+## Rebel Counter-Briefing Companion
+
+`rebel-counter-briefing.html` is a static companion page that inverts the
+dashboard's five-axis frame into a Rebel Alliance counter-briefing: same
+energy / debt / governance / crypto / AI–digital lens, read for how
+decentralized, polycentric, and distributed actors retain capacity to resist
+consolidated Imperial control. It shares the dark base aesthetic but shifts
+accents to warm amber / signal red / off-white with tactical blue and green.
+
+Interactive elements include:
+
+- **Decentralization resilience cards** — five domain readings (0–100) with
+  hover/focus tooltips, color-coded tiers, and a comparison readout vs the
+  matching Imperial Control score from the main dashboard.
+- **Radar chart** — Rebel Resilience polygon overlaid on the Imperial Control
+  polygon across the same five axes.
+- **Crypto rails mechanism cards** — analytical, non-operational coverage of
+  self-custody, stablecoin rails, P2P liquidity, cross-border settlement,
+  jurisdictional arbitrage, and on-chain auditability, with category filter
+  toggles.
+- **Polycentric governance schematic** — clickable SVG node map (federalism,
+  judiciaries, free press / civil society, legal pluralism, contested
+  legitimacy) with a dossier panel.
+
+Live: https://17060.github.io/imperial-economy-dashboard/rebel-counter-briefing.html
 
 ## Control-Theory Companion
 

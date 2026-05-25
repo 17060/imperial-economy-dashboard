@@ -1,0 +1,475 @@
+/* Rebel Counter-Briefing — companion page styles.
+   Inherits the dark base from styles.css; overrides accents to amber/red/off-white
+   while preserving the dashboard's layout language. */
+
+:root {
+  --rb-amber: #f3a52a;
+  --rb-amber-soft: #f3a52a33;
+  --rb-signal: #ef3d42;
+  --rb-off: #f4ede0;
+  --rb-tac-blue: #61b6bd;
+  --rb-tac-green: #6fd18b;
+  --rb-line: #3a3220;
+  --rb-line-soft: #2a2515;
+  --rb-panel: #110d07;
+  --rb-panel2: #1a140a;
+}
+
+.rb body,
+body.rb {
+  background:
+    radial-gradient(circle at 18% 12%, #2a1a05 0, #07050a 34%),
+    linear-gradient(90deg, rgba(243,165,42,.035) 1px, transparent 1px),
+    linear-gradient(rgba(243,165,42,.03) 1px, transparent 1px);
+  background-size: auto, 48px 48px, 48px 48px;
+  color: var(--rb-off);
+}
+
+body.rb:before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(rgba(255,220,170,.03) 50%, transparent 50%);
+  background-size: 100% 4px;
+  mix-blend-mode: screen;
+}
+
+body.rb .top {
+  background: rgba(7,5,10,.9);
+  border-bottom: 1px solid var(--rb-line);
+}
+
+body.rb .brand { color: var(--rb-off); }
+
+body.rb .sigil {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--rb-amber);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--rb-amber);
+  background:
+    radial-gradient(circle at 50% 55%, var(--rb-amber) 0 18%, transparent 19%),
+    radial-gradient(circle at 50% 50%, transparent 0 38%, var(--rb-amber) 38% 42%, transparent 43%);
+  box-shadow: 0 0 22px var(--rb-amber-soft);
+}
+
+body.rb .nav button:hover,
+body.rb .live { color: var(--rb-amber); }
+body.rb .nav a { color: var(--rb-tac-blue); }
+
+body.rb .side {
+  background: linear-gradient(180deg, #0c0903, #07050a);
+  border-right: 1px solid var(--rb-line);
+}
+body.rb .side h3 { color: #b29770; }
+
+body.rb .meter {
+  background: conic-gradient(
+    from 270deg,
+    var(--rb-signal) 0 38deg,
+    var(--rb-amber) 38deg 105deg,
+    var(--rb-tac-green) 105deg 175deg,
+    #1e1b14 175deg 180deg,
+    transparent 180deg
+  );
+}
+body.rb .meter:after { color: var(--rb-amber); }
+
+body.rb .track { background: #1e1a10; border: 1px solid #322a18; }
+body.rb .fill {
+  background: linear-gradient(90deg, var(--rb-signal), var(--rb-amber), var(--rb-tac-green));
+  box-shadow: 0 0 12px var(--rb-amber-soft);
+}
+
+body.rb .card, body.rb .panel {
+  border: 1px solid var(--rb-line);
+  background: linear-gradient(180deg, var(--rb-panel2), var(--rb-panel));
+  box-shadow: inset 3px 0 0 var(--rb-amber);
+}
+
+body.rb .k { color: #b29770; }
+body.rb .up { color: var(--rb-tac-green); }
+body.rb .v { color: var(--rb-off); }
+
+body.rb .hero {
+  border: 1px solid var(--rb-line);
+  background:
+    linear-gradient(135deg, #15110add, #0c0905aa),
+    radial-gradient(circle at 70% 30%, var(--rb-amber-soft), transparent 45%);
+  box-shadow: 0 0 40px #0008;
+}
+body.rb .hero h1 span { color: var(--rb-amber); }
+body.rb .hero h1 b { color: var(--rb-signal); }
+
+body.rb .tag {
+  border: 1px solid var(--rb-amber);
+  color: var(--rb-amber);
+  background: #1a13050d;
+}
+
+body.rb .btn {
+  border: 1px solid var(--rb-amber);
+  background: #f3a52a15;
+  color: var(--rb-off);
+}
+body.rb .btn:hover { background: #f3a52a30; }
+body.rb .btn.alt {
+  border-color: var(--rb-tac-blue);
+  color: var(--rb-tac-blue);
+  background: #61b6bd14;
+}
+body.rb .btn.alt:hover { background: #61b6bd2a; }
+
+body.rb .status { color: var(--rb-tac-green); }
+body.rb .status.warn { color: var(--rb-amber); }
+body.rb .status.crit { color: var(--rb-signal); }
+
+body.rb .cite { border-top: 1px dashed #3a3220; color: #b29770; }
+body.rb .cite a { color: var(--rb-amber); }
+body.rb .cite a:hover, body.rb .cite a:focus { color: #ffcf73; }
+
+body.rb .row { border: 1px solid #2c2515; background: #100c06; }
+body.rb .dossier { color: #c3b08a; }
+body.rb .foot { color: #978a6c; }
+
+/* ─── Rebel hero starburst sigil ─────────────────────────────────────── */
+body.rb .planet {
+  border-color: var(--rb-amber-soft);
+  background:
+    radial-gradient(circle at 50% 50%, var(--rb-amber) 0 14%, transparent 15%),
+    radial-gradient(circle at 50% 50%, transparent 0 30%, #f3a52a33 30% 32%, transparent 33%),
+    radial-gradient(circle at 50% 50%, transparent 0 46%, #f3a52a44 46% 48%, transparent 49%),
+    conic-gradient(
+      from 0deg,
+      #f3a52a55 0 6deg, transparent 6deg 60deg,
+      #f3a52a55 60deg 66deg, transparent 66deg 120deg,
+      #f3a52a55 120deg 126deg, transparent 126deg 180deg,
+      #f3a52a55 180deg 186deg, transparent 186deg 240deg,
+      #f3a52a55 240deg 246deg, transparent 246deg 300deg,
+      #f3a52a55 300deg 306deg, transparent 306deg 360deg
+    );
+  box-shadow: 0 0 0 30px #f3a52a08, 0 0 80px #f3a52a22;
+}
+body.rb .planet:before { border-color: #f3a52a55; }
+body.rb .planet:after { border-color: var(--rb-amber-soft); }
+
+/* ─── Decentralization Resilience cards (RRI parallel) ───────────────── */
+.rb-res-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-top: 18px;
+}
+.rb-res-card {
+  position: relative;
+  border: 1px solid var(--rb-line);
+  border-radius: 10px;
+  padding: 16px;
+  background: linear-gradient(180deg, #15100a, #0b0805);
+  box-shadow: inset 3px 0 0 var(--rb-card-accent, var(--rb-amber));
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  outline: none;
+  cursor: help;
+}
+.rb-res-card:hover, .rb-res-card:focus {
+  transform: translateY(-2px);
+  border-color: var(--rb-card-accent, var(--rb-amber));
+  box-shadow:
+    inset 3px 0 0 var(--rb-card-accent, var(--rb-amber)),
+    0 0 24px var(--rb-card-glow, #f3a52a33);
+}
+.rb-res-card .k {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.rb-res-tier {
+  font: 700 10px ui-monospace, monospace;
+  letter-spacing: .16em;
+  color: var(--rb-card-accent, var(--rb-amber));
+  text-transform: uppercase;
+}
+.rb-res-score {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--rb-card-accent, var(--rb-amber));
+  margin: 8px 0 4px;
+  font-variant-numeric: tabular-nums;
+}
+.rb-res-score-unit { font-size: 14px; color: #978a6c; font-weight: 400; }
+.rb-res-bar {
+  height: 6px;
+  background: #1e1a10;
+  border: 1px solid #322a18;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.rb-res-bar-fill {
+  height: 100%;
+  background: var(--rb-card-accent, var(--rb-amber));
+  box-shadow: 0 0 12px var(--rb-card-glow, #f3a52a66);
+  width: var(--rb-res-w, 0%);
+}
+.rb-res-imperial {
+  margin-top: 8px;
+  font: 10px ui-monospace, monospace;
+  color: #978a6c;
+  letter-spacing: .08em;
+}
+.rb-res-imperial b { color: var(--rb-signal); font-weight: 700; }
+
+.rb-res-tip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%) translateY(4px);
+  min-width: 260px;
+  max-width: 320px;
+  background: #0a0805;
+  border: 1px solid var(--rb-card-accent, var(--rb-amber));
+  border-radius: 8px;
+  padding: 12px;
+  color: var(--rb-off);
+  font-size: 12px;
+  line-height: 1.5;
+  box-shadow: 0 8px 28px #000a, 0 0 18px var(--rb-card-glow, #f3a52a33);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease;
+  z-index: 6;
+}
+.rb-res-tip:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--rb-card-accent, var(--rb-amber));
+}
+.rb-res-card:hover .rb-res-tip,
+.rb-res-card:focus .rb-res-tip,
+.rb-res-card:focus-within .rb-res-tip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+.rb-res-tip b {
+  color: var(--rb-card-accent, var(--rb-amber));
+  display: block;
+  margin-bottom: 4px;
+  letter-spacing: .08em;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.rb-res-tip ul { margin: 6px 0 0; padding-left: 18px; color: #c3b08a; }
+.rb-res-tip li { margin: 2px 0; }
+
+.rb-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 14px;
+  font-size: 11px;
+  color: #978a6c;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.rb-legend i {
+  display: inline-block;
+  width: 14px;
+  height: 8px;
+  margin-right: 6px;
+  vertical-align: middle;
+  border: 1px solid #322a18;
+}
+
+/* ─── Filter / toggle bar ────────────────────────────────────────────── */
+.rb-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 6px;
+}
+.rb-filter button {
+  border: 1px solid var(--rb-line);
+  background: transparent;
+  color: #b29770;
+  padding: 7px 12px;
+  font: 700 11px ui-monospace, monospace;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color .15s ease, color .15s ease, background .15s ease;
+}
+.rb-filter button:hover { border-color: var(--rb-amber); color: var(--rb-amber); }
+.rb-filter button.active {
+  border-color: var(--rb-amber);
+  background: var(--rb-amber-soft);
+  color: var(--rb-off);
+}
+
+/* ─── Crypto mechanism cards ─────────────────────────────────────────── */
+.rb-mech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+.rb-mech {
+  border: 1px solid var(--rb-line);
+  border-radius: 10px;
+  padding: 16px;
+  background: linear-gradient(180deg, #15100a, #0a0704);
+  box-shadow: inset 0 -2px 0 var(--rb-amber);
+  position: relative;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.rb-mech:hover, .rb-mech:focus-within {
+  transform: translateY(-2px);
+  box-shadow: inset 0 -2px 0 var(--rb-amber), 0 0 22px var(--rb-amber-soft);
+}
+.rb-mech.hidden { display: none; }
+.rb-mech .symbol {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--rb-amber);
+  border-radius: 6px;
+  color: var(--rb-amber);
+  font: 900 16px ui-monospace, monospace;
+  margin-bottom: 10px;
+  background: #1a1305;
+}
+.rb-mech h4 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  letter-spacing: .04em;
+  color: var(--rb-off);
+}
+.rb-mech p { margin: 0 0 8px; color: #c3b08a; font-size: 12px; line-height: 1.5; }
+.rb-mech .tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.rb-mech .pill {
+  font: 700 10px ui-monospace, monospace;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border: 1px solid var(--rb-line);
+  border-radius: 3px;
+  color: #b29770;
+}
+.rb-mech .pill.warn { color: var(--rb-amber); border-color: var(--rb-amber); }
+.rb-mech .pill.green { color: var(--rb-tac-green); border-color: #2f5436; }
+.rb-mech .pill.blue { color: var(--rb-tac-blue); border-color: #295055; }
+
+/* ─── Governance polycentric map (SVG container) ─────────────────────── */
+.rb-poly {
+  display: grid;
+  grid-template-columns: 1fr .9fr;
+  gap: 18px;
+  margin-top: 16px;
+}
+.rb-poly .panel.svgbox {
+  display: grid;
+  place-items: center;
+  padding: 18px;
+}
+.rb-poly svg { max-width: 100%; height: auto; }
+
+.rb-node-dot {
+  fill: var(--rb-amber);
+  stroke: #ffe2a5;
+  stroke-width: 1.5;
+  cursor: pointer;
+  transition: r .15s ease, fill .15s ease;
+}
+.rb-node-dot:hover, .rb-node-dot.active { fill: var(--rb-tac-green); r: 10; }
+.rb-node-link { stroke: #f3a52a44; stroke-width: 1; }
+.rb-node-link.active { stroke: var(--rb-tac-green); stroke-width: 2; }
+.rb-node-label {
+  fill: var(--rb-off);
+  font: 11px ui-monospace, monospace;
+  pointer-events: none;
+}
+
+.rb-poly-dossier {
+  min-height: 64px;
+  padding: 12px;
+  margin-top: 12px;
+  border: 1px dashed #3a3220;
+  border-radius: 8px;
+  color: #c3b08a;
+  font-size: 13px;
+}
+
+/* ─── Radar chart (Rebel resilience) ─────────────────────────────────── */
+.rb-radar {
+  height: 360px;
+  display: grid;
+  place-items: center;
+}
+.rb-radar svg { max-width: 100%; height: 320px; }
+.rb-radar .axis-line { stroke: #3a3220; fill: none; }
+.rb-radar .axis-grid { stroke: #2a2515; fill: none; }
+.rb-radar .axis-imperial { fill: #ef3d4233; stroke: var(--rb-signal); stroke-width: 2; }
+.rb-radar .axis-rebel    { fill: #f3a52a40; stroke: var(--rb-amber); stroke-width: 2; }
+.rb-radar text { fill: var(--rb-off); font: 12px ui-monospace, monospace; }
+.rb-radar .legend-dot { stroke-width: 0; }
+
+.rb-radar-legend {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 10px;
+  font: 11px ui-monospace, monospace;
+  color: #b29770;
+}
+.rb-radar-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+/* ─── Sources block ──────────────────────────────────────────────────── */
+.rb-sources {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px dashed #3a3220;
+  color: #b29770;
+  font: 11px/1.6 ui-monospace, monospace;
+}
+.rb-sources a { color: var(--rb-amber); }
+.rb-sources a:hover, .rb-sources a:focus { color: #ffcf73; }
+.rb-sources li { margin: 4px 0; }
+
+/* ─── Responsive ─────────────────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .rb-res-grid { grid-template-columns: repeat(3, 1fr); }
+  .rb-poly { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .rb-res-grid { grid-template-columns: repeat(2, 1fr); }
+  .rb-res-tip {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    top: auto;
+    transform: none;
+    max-width: none;
+  }
+  .rb-res-tip:after { display: none; }
+  .rb-res-card:hover .rb-res-tip,
+  .rb-res-card:focus .rb-res-tip,
+  .rb-res-card:focus-within .rb-res-tip { transform: none; }
+}
