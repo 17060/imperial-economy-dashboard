@@ -199,12 +199,31 @@
   };
 
   /* ── Terminal ticker ────────────────────────────────────────────────── */
+  const tickerMessages = [
+    'compliance forecast recalibrated',
+    'levy yield projection updated · q/q +4.3%',
+    'surveillance mesh uplink nominal · 68% coverage',
+    'sector 001 subjugation index holding · 79 / 100',
+    'crypto perimeter sweep complete · 12 anomalies flagged',
+    'theatre readiness pulse received · fleet posture 91%',
+    'debt leverage coefficient recalculated',
+    'biometric intake pipeline nominal · dhs backlog clearing',
+    'resistance cell attrition confirmed · −1.3% this cycle',
+    'stablecoin issuer compliance posture under review',
+    'FMTI transparency index recalibrated · avg 40',
+    'energy chokepoint status refresh · hormuz: severed',
+    'imperial bond refinancing tranche queued',
+    'open-weight model proliferation flagged for review',
+    'palantir bpa utilization at 87% capacity',
+  ];
+  let tickerIdx = 0;
   setInterval(() => {
     const t = $('terminal');
     const p = document.createElement('p');
     p.textContent =
       '[' + new Date().toISOString().slice(11, 19) +
-      '] compliance forecast recalibrated';
+      '] ' + tickerMessages[tickerIdx % tickerMessages.length];
+    tickerIdx++;
     t.appendChild(p);
     while (t.children.length > 7) t.removeChild(t.firstChild);
   }, 3500);
