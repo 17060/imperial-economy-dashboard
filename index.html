@@ -72,8 +72,8 @@
             <div class="k">Node Dossier</div>
             <div class="list" id="nodes"></div>
             <div class="btns">
-              <button class="btn" onclick="alert('Imperial order logged: controlled scarcity scenario queued.')">Simulate Scarcity</button>
-              <button class="btn" onclick="alert('Fleet logistics model updated.')">Re-route Fleet</button>
+              <button class="btn" onclick="simulateScarcity(this)">Simulate Scarcity</button>
+              <button class="btn" onclick="rerouteFleet(this)">Re-route Fleet</button>
             </div>
             <p class="cite" id="energyCite"></p>
           </div>
@@ -92,23 +92,7 @@
         <p class="small">Freedom House's <em>Freedom in the World 2026</em> marks a 20th consecutive year of global freedom decline through 2025: 54 countries declined, 35 improved; declines affected 40% of world population, improvements 7%. Country tally: 88 Free · 48 Partly Free · 59 Not Free.</p>
         <div class="grid">
           <div class="panel radar">
-            <svg viewBox="0 0 320 320" role="img" aria-label="Imperial leverage radar">
-              <g fill="none" stroke="#30384a">
-                <polygon points="160,30 278,91 278,229 160,290 42,229 42,91"/>
-                <polygon points="160,65 248,110 248,210 160,255 72,210 72,110"/>
-                <polygon points="160,100 218,128 218,192 160,220 102,192 102,128"/>
-              </g>
-              <polygon points="160,45 262,104 235,214 160,270 80,220 58,98" fill="#ef3d4240" stroke="#ef3d42" stroke-width="3"/>
-              <polygon points="160,92 214,126 206,185 160,208 112,190 105,125" fill="#61b6bd33" stroke="#61b6bd" stroke-width="2"/>
-              <g fill="#eef1f8" font-size="12" font-family="monospace">
-                <text x="137" y="20">Authority</text>
-                <text x="260" y="84">Data</text>
-                <text x="266" y="240">Energy</text>
-                <text x="135" y="312">Credit</text>
-                <text x="8" y="240">Crypto</text>
-                <text x="5" y="84">Unity</text>
-              </g>
-            </svg>
+            <svg id="imperialRadarSvg" viewBox="0 0 320 320" role="img" aria-label="Imperial leverage radar"></svg>
           </div>
           <div class="panel">
             <div class="k">Weak Spots</div>
@@ -168,7 +152,7 @@
       <div class="foot">
         IMPERIAL INTELLIGENCE · ECONOMIC SUBJUGATION BUREAU · END OF LINE
         <br>
-        Last manual refresh: <strong>15 May 2026</strong>. Source base: EIA <em>World Oil Transit Chokepoints</em> (2026-03-03) · Wikipedia event log for the <em>2026 Strait of Hormuz crisis</em> · IMF <em>Fiscal Monitor</em> (April 2026) &amp; LIC DSA list (31 Mar 2026) · World Bank <em>IDR 2024</em> · Freedom House <em>Freedom in the World 2026</em> &amp; <em>Freedom on the Net 2025</em> · Stanford HAI <em>2026 AI Index</em> · U.S. Treasury FinCEN/OFAC GENIUS Act proposed rule (8 Apr 2026) · SEC/CFTC joint interpretation (17 Mar 2026) · FATF stablecoin report via Chainalysis (Mar 2026) · Chainalysis <em>2026 Crypto Crime Report</em>.
+        Last manual refresh: <strong id="footerDate">15 May 2026</strong>. Source base: EIA <em>World Oil Transit Chokepoints</em> (2026-03-03) · Wikipedia event log for the <em>2026 Strait of Hormuz crisis</em> · IMF <em>Fiscal Monitor</em> (April 2026) &amp; LIC DSA list (31 Mar 2026) · World Bank <em>IDR 2024</em> · Freedom House <em>Freedom in the World 2026</em> &amp; <em>Freedom on the Net 2025</em> · Stanford HAI <em>2026 AI Index</em> · U.S. Treasury FinCEN/OFAC GENIUS Act proposed rule (8 Apr 2026) · SEC/CFTC joint interpretation (17 Mar 2026) · FATF stablecoin report via Chainalysis (Mar 2026) · Chainalysis <em>2026 Crypto Crime Report</em>.
         <br>
         <a href="control-theory-explainer.html" style="color:#61b6bd">Analytical companion: 2025 / early-2026 source base behind the satire →</a>
         <br>

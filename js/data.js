@@ -94,11 +94,11 @@ const DASHBOARD_DATA = {
 
   energyChokepoints: {
     nodes: [
-      { name: 'Strait of Hormuz',     role: 'De facto closure since 28 Feb 2026; ~600 tankers trapped in Gulf', status: 'severed'   },
-      { name: 'Strait of Malacca',    role: '23.2 mb/d · largest oil flow (1H25); rising geopolitical risk',     status: 'pressured' },
-      { name: 'Suez / SUMED',         role: '4.9 mb/d · ~half of 2023 levels; transits still near multi-year lows', status: 'pressured' },
-      { name: 'Bab el-Mandeb',        role: 'U.S. MARAD advisory 2026-006 (2026-03-26): Houthis continue to pose threat; high-risk transit until further notice', status: 'severed'   },
-      { name: 'Cape of Good Hope',    role: 'Reroute institutionalized; +~2 weeks transit and elevated bunker burn', status: 'held'  },
+      { name: 'Strait of Hormuz',   role: 'De facto closure since 28 Feb 2026; ~600 tankers trapped in Gulf',                                                    status: 'severed',   detail: '~20% of global petroleum liquids; closed since US–Israeli strikes on Iran (28 Feb 2026); IMO: ~2,000 ships and 20,000 mariners stranded.' },
+      { name: 'Strait of Malacca',  role: '23.2 mb/d · largest oil flow (1H25); rising geopolitical risk',                                                       status: 'pressured', detail: 'Busiest oil lane; ~25% of global trade transits here; US–China rivalry and piracy elevate interdiction risk.' },
+      { name: 'Suez / SUMED',       role: '4.9 mb/d · ~half of 2023 levels; transits still near multi-year lows',                                                status: 'pressured', detail: 'Connects Mediterranean to Red Sea; Houthi threat has suppressed throughput since late 2023; Egyptian revenues severely hit.' },
+      { name: 'Bab el-Mandeb',      role: 'U.S. MARAD advisory 2026-006 (2026-03-26): Houthis continue to pose threat; high-risk transit until further notice', status: 'severed',   detail: 'Gateway to Suez; MARAD advisory 2026-006 in force; Houthi interdiction posture resumes following ceasefire collapse.' },
+      { name: 'Cape of Good Hope',  role: 'Reroute institutionalized; +~2 weeks transit and elevated bunker burn',                                                status: 'held',      detail: 'Alternate routing adds ~14 days and ~$1M/voyage in fuel; now treated as standard for many operators.' },
     ],
     mapNodes: [
       { id: 'n1', label: 'Hormuz · severed',            status: 'severed',   x: 62, y: 47 },
@@ -215,6 +215,15 @@ const DASHBOARD_DATA = {
       },
     ],
   },
+
+  imperialRadar: [
+    { axis: 'Authority', value: 79 },
+    { axis: 'Data',      value: 68 },
+    { axis: 'Energy',    value: 91 },
+    { axis: 'Credit',    value: 89 },
+    { axis: 'Crypto',    value: 66 },
+    { axis: 'Unity',     value: 55 },
+  ],
 
   rebelResistanceIndex: [
     {

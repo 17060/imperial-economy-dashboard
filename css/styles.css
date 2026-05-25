@@ -200,6 +200,7 @@ body:before {
 
 .v { font-size: 30px; font-weight: 900; margin: 8px 0; }
 .up { color: var(--green); font: 12px ui-monospace, monospace; }
+.dn { color: var(--red);   font: 12px ui-monospace, monospace; }
 
 .orb { height: 320px; display: grid; place-items: center; }
 
@@ -256,7 +257,12 @@ body:before {
   background: var(--red);
   box-shadow: 0 0 18px var(--red);
   border: 2px solid #ffd1d1;
+  cursor: pointer;
+  transition: transform .15s ease;
 }
+
+.node:hover, .node:focus { transform: scale(1.4); outline: none; }
+.node.node-selected { outline: 2px solid #fff; outline-offset: 3px; }
 
 .node.amber { background: var(--amber); box-shadow: 0 0 18px var(--amber); }
 .node.cyan  { background: var(--cyan);  box-shadow: 0 0 18px var(--cyan); }
@@ -358,6 +364,8 @@ body:before {
 
 .row.row-stacked { align-items: start; }
 .row.row-stacked > div .small { margin-top: 4px; }
+.row.node-active { border-color: var(--cyan); background: #0c1520; }
+.detail { font-style: italic; opacity: .8; }
 
 .gaugegrid-compact { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 .gaugegrid-compact .ring { width: 110px; height: 110px; }
