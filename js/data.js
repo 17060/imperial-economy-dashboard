@@ -61,7 +61,7 @@ const DASHBOARD_DATA = {
     operation: 'ASHEN HEEL',
     authority: 'Lord Vader',
     clearance: 'SITH-OMEGA',
-    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-05-18',
+    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-05-25',
     subjugationIndex: 79,
     subjugationTier: 'CRITICAL',
   },
@@ -78,12 +78,13 @@ const DASHBOARD_DATA = {
     { label: 'Economic Grip',         value: 78 },
     { label: 'Surveillance Mesh',     value: 68 },
     { label: 'Compliance Engines',    value: 55 },
-    { label: 'Crypto Perimeter',      value: 62 },
-    { label: 'Insurgent Liquidity',   value: 36 },
+    { label: 'Crypto Perimeter',      value: 66 },
+    { label: 'Insurgent Liquidity',   value: 38 },
   ],
 
   directives: [
     'Hold the Hormuz blockade as primary leverage (traffic still heavily restricted).',
+    'Prepare countermeasures for rerouting and black-flagged shipping around the Strait.',
     'Refinance sovereign debt under Imperial bonds.',
     'Exploit governance fractures.',
     'Tighten the crypto regulatory perimeter via GENIUS Act AML/sanctions compliance rules.',
@@ -107,8 +108,8 @@ const DASHBOARD_DATA = {
       { id: 'n5', label: 'Cape of Good Hope · held',    status: 'held',      x: 50, y: 72 },
     ],
     citation: {
-      label: 'NYT (2026-05-09) Hormuz effectively blocked · U.S. MARAD advisory 2026-006 (2026-03-26) Red Sea/Bab el-Mandeb risk',
-      url: 'https://www.nytimes.com/2026/05/09/world/middleeast/strait-hormuz-ships-blockade-us-iran.html',
+      label: 'CNN (2026-04-29) traffic through Hormuz shrank sharply (Kpler) · U.S. MARAD advisory 2026-006 (2026-03-26) Red Sea/Bab el-Mandeb risk',
+      url: 'https://www.cnn.com/2026/04/29/world/iran-war-gulf-hormuz-shipping-maps-intl-vis',
     },
   },
 
@@ -194,10 +195,10 @@ const DASHBOARD_DATA = {
       { name: 'Jurisdictional arbitrage', role: 'UAE ADGM · Switzerland · Singapore · El Salvador',           status: 'open'      },
     ],
     gauges: [
-      { label: 'Sanctions Perimeter',      value: 78, sub: '+694% YoY sanctioned-entity receipts (Chainalysis 2026)' },
+      { label: 'Sanctions Perimeter',      value: 82, sub: 'OFAC SDN update + Tether freeze of $344M USDT tied to Iran-linked wallets (Chainalysis Apr 2026)' },
       { label: 'Stablecoin Concentration', value: 84, sub: '84% of illicit volume rides stablecoins (FATF Mar 2026)' },
-      { label: 'Regulatory Clarity',       value: 67, sub: 'GENIUS Act + SEC interpretation (Mar 2026)'                },
-      { label: 'Self-Custody Surface',     value: 56, sub: 'Unhosted wallets and P2P still outside KYC perimeter'    },
+      { label: 'Regulatory Clarity',       value: 69, sub: 'SEC Crypto Task Force intake continues (May 2026) alongside GENIUS/SEC guidance' },
+      { label: 'Self-Custody Surface',     value: 57, sub: 'Unhosted wallets and P2P still outside KYC perimeter'    },
     ],
     citations: [
       {
@@ -209,8 +210,8 @@ const DASHBOARD_DATA = {
         url: 'https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets',
       },
       {
-        label: 'Chainalysis · FATF Targeted Report on Stablecoins & Unhosted Wallets (Mar 2026)',
-        url: 'https://www.chainalysis.com/blog/fatf-targeted-report-secondary-market-monitoring-stablecoins-march-2026/',
+        label: 'Chainalysis · OFAC sanctions tracker (Apr 2026 SDN update + USDT freeze cited)',
+        url: 'https://www.chainalysis.com/blog/ofac-sanctions/',
       },
     ],
   },
@@ -252,8 +253,8 @@ const DASHBOARD_DATA = {
     {
       id: 'crypto',
       name: 'Crypto',
-      score: 55,
-      blurb: 'GENIUS Act + SEC/CFTC clarification + FATF stablecoin focus tighten the perimeter, but self-custody and jurisdictional arbitrage hold. Imperial Control 61 · Rebel Resistance 55.',
+      score: 54,
+      blurb: 'Perimeter tightened via stablecoin sanctions coordination (OFAC SDN update + issuer freeze activity) and continuing SEC Crypto Task Force process; resistance remains via self-custody and jurisdictional fragmentation. Imperial Control 64 · Rebel Resistance 54.',
       mech: [
         'Hardware self-custody and multisig reduce custodial seizure surface',
         'Peer-to-peer settlement and non-custodial paths remain outside KYC/AML perimeter at the margin',
@@ -276,11 +277,11 @@ const DASHBOARD_DATA = {
   /* Free-text scratchpad for the weekly updater. Not rendered.
      Append a dated entry per cycle with rationale / citations. */
   sources: [
-    '2026-05-18 — Weekly metric refresh (current to 2026-05-18):',
-    '  Biggest mover: Energy chokepoints (Imperial 90 / Rebel 28). Driver: Hormuz still effectively blocked (NYT 2026-05-09) + MARAD advisory 2026-006 keeps Bab el-Mandeb/Red Sea at high risk until further notice (2026-03-26).',
+    '2026-05-25 — Weekly metric refresh (current to 2026-05-25):',
+    '  Biggest mover: Crypto perimeter (Imperial 66 / Rebel 54). Driver: OFAC SDN list update + coordination with stablecoin issuers to freeze assets (Chainalysis cites Apr 2026 action) increases perceived control leverage; resistance capacity only slightly reduced.',
     '  Debt (Imperial 72 / Rebel 42): IMF Fiscal Monitor April 2026 (public debt ~94% in 2025 → 100% by 2029); IMF LIC DSA list 31 Mar 2026 (9 in distress, 23 high risk); Moody’s US Aaa→Aa1 downgrade May 2025.',
     '  Governance (Imperial 65 / Rebel 58): Freedom House FIW 2026 — 20th consecutive year of decline, 54 declined vs 35 improved; coups in Guinea-Bissau and Madagascar; ICG 2026 watchlist.',
-    '  Crypto (Imperial 62 / Rebel 56): Treasury sb0435 (FinCEN/OFAC joint proposed rule implementing GENIUS Act AML + sanctions requirements for permitted payment stablecoin issuers, 8 Apr 2026); SEC 2026-30 interpretation (17 Mar 2026). Resistance: self-custody and jurisdictional fragmentation persist (non-operational framing).',
+    '  Crypto (Imperial 66 / Rebel 54): Treasury sb0435 (FinCEN/OFAC joint proposed rule implementing GENIUS Act AML + sanctions requirements for permitted payment stablecoin issuers, 8 Apr 2026); SEC Crypto Task Force input (May 2026); Chainalysis cites Apr 2026 OFAC SDN update + $344M USDT freeze tied to Iran-linked wallets. Resistance: self-custody and jurisdictional fragmentation persist (non-operational framing).',
     '  AI (Imperial 74 / Rebel 38): Stanford HAI 2026 AI Index (88% adoption, FMTI 58→40); Freedom on the Net 2025 (15th consecutive decline; 57 countries with arrests; 69% blocking; 52% shutdowns); DHS surveillance investment narrative from fedscoop reporting on AI funding documents.',
     '  Conservatism notes: Brent $111 spike and IRGC "Persian Gulf Strait Authority" toll figure NOT echoed in dashboard copy (single-source, time-sensitive). No operational evasion mechanisms surfaced for crypto resistance. Ceasefire-collapse / blockade language softened to "de facto closure" + status flag rather than rolling event narration.',
     '',
