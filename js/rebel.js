@@ -15,8 +15,8 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 25 May 2026',
-      morale: 56,
+      transmission: 'Counter-briefing · current to 1 June 2026',
+      morale: 57,
       moraleTier: 'CAUTIOUS HOLD',
     },
 
@@ -51,11 +51,11 @@
       {
         id: 'energy',
         name: 'Energy',
-        score: 41,
-        imperial: 72,
+        score: 44,
+        imperial: 78,
         blurb:
-          'Hormuz remains effectively blocked and Bab el-Mandeb high-risk per MARAD advisory 2026-006. ' +
-          'Resilience accrues at the demand edge: distributed generation, storage, and substitution paths.',
+          'Tentative US-Iran 60-day MOU (28–30 May, unsigned) and resumed escorts ease the Hormuz chokehold; Brent fell ~19% in May to ~$92. ' +
+          'Resilience still accrues at the demand edge: distributed generation, storage, and substitution paths.',
         mech: [
           'Rooftop solar + behind-the-meter storage erode single-point dependence',
           'Community microgrids and regional renewables blunt pipeline coercion',
@@ -65,10 +65,10 @@
       {
         id: 'debt',
         name: 'Debt',
-        score: 47,
-        imperial: 88,
+        score: 46,
+        imperial: 75,
         blurb:
-          'Global public debt ~94% of GDP in 2025, projected to reach 100% by 2029 (IMF Fiscal Monitor, April 2026). ' +
+          'Global public debt ~94% of GDP in 2025, projected to reach 100% by 2029 (IMF Fiscal Monitor, April 2026); 30-yr UST hit 5.197% (19 May 2026) and Venezuela opened a ~$150–170B restructuring. ' +
           'Resilience: creditor fragmentation, EM local-currency markets, and reserve diversification.',
         mech: [
           'G20 Common Framework + IMF/Paris Club preserve sovereign optionality',
@@ -94,10 +94,10 @@
       {
         id: 'crypto',
         name: 'Crypto',
-        score: 57,
-        imperial: 64,
+        score: 56,
+        imperial: 67,
         blurb:
-          'Perimeter tightened via the GENIUS Act framework, FinCEN/OFAC proposed rule (8 Apr 2026), and SEC/CFTC harmonization. ' +
+          'Perimeter tightened via the GENIUS Act stablecoin rule (issuer comment period closes 9 Jun 2026), the CLARITY Act clearing Senate Banking 15–9, and Tether’s $344M OFAC-coordinated freeze. ' +
           'Resistance capacity: self-custody, P2P settlement, jurisdictional fragmentation.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
@@ -108,10 +108,10 @@
       {
         id: 'ai',
         name: 'AI / Digital',
-        score: 43,
-        imperial: 74,
+        score: 42,
+        imperial: 77,
         blurb:
-          'Frontier scale concentrates; FMTI transparency average fell 58 → 40 (HAI 2026). ' +
+          'Frontier scale concentrates; FMTI transparency average fell 58 → 40 (HAI 2026); ICE $25.1M iris-biometric award (May 2026) and the EU AI Act Digital Omnibus deferring high-risk timelines expand surveillance headroom. ' +
           'Resilience comes from open-weight ecosystems, on-device inference, and federated learning.',
         mech: [
           'Open-weight models + permissive licenses enable independent audit and local fine-tuning',
@@ -266,16 +266,24 @@
         url: 'https://hai.stanford.edu/ai-index/2026-ai-index-report',
       },
       {
-        label: 'U.S. Treasury · FinCEN/OFAC GENIUS Act proposed rule (8 Apr 2026)',
-        url: 'https://home.treasury.gov/news/press-releases/sb0435',
+        label: 'U.S. Federal Register · Permitted Payment Stablecoin Issuer AML/CFT rule (comment closes 9 Jun 2026)',
+        url: 'https://www.federalregister.gov/documents/2026/04/10/2026-06963/permitted-payment-stablecoin-issuer-anti-money-launderingcountering-the-financing-of-terrorism',
       },
       {
-        label: 'U.S. SEC · Clarifies application of federal securities laws to crypto (17 Mar 2026)',
-        url: 'https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets',
+        label: 'U.S. Senate Banking Committee · CLARITY Act advanced 15–9 (14 May 2026)',
+        url: 'https://www.banking.senate.gov/newsroom/majority/chairman-scott-senate-banking-committee-advance-clarity-act-in-historic-bipartisan-vote',
       },
       {
-        label: 'Chainalysis · OFAC sanctions tracker',
-        url: 'https://www.chainalysis.com/blog/ofac-sanctions/',
+        label: 'Tether · $344M USDT frozen in coordination with OFAC (Apr 2026)',
+        url: 'https://tether.io/news/tether-supports-freeze-of-more-than-344-million-in-usdt-in-coordination-with-ofac-and-u-s-law-enforcement/',
+      },
+      {
+        label: 'CNBC · Brent posts worst month since 2020 as market counts on a US-Iran deal (29 May 2026)',
+        url: 'https://www.cnbc.com/2026/05/29/oil-price-iran-deal-war-ceasefire-trump.html',
+      },
+      {
+        label: 'NPR · ICE buys iris scanners and biometric tools (27 May 2026)',
+        url: 'https://www.npr.org/2026/05/27/nx-s1-5822429/ice-buys-iris-scanners-tech-tools',
       },
       {
         label: 'U.S. MARAD · Advisory 2026-006 (Red Sea / Bab el-Mandeb risk, 26 Mar 2026)',
