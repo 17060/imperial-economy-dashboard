@@ -61,7 +61,7 @@ const DASHBOARD_DATA = {
     operation: 'ASHEN HEEL',
     authority: 'Lord Vader',
     clearance: 'SITH-OMEGA',
-    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-06-01',
+    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-06-08',
     subjugationIndex: 78,
     subjugationTier: 'CRITICAL',
   },
@@ -78,8 +78,8 @@ const DASHBOARD_DATA = {
     { label: 'Economic Grip',         value: 80 },
     { label: 'Surveillance Mesh',     value: 71 },
     { label: 'Compliance Engines',    value: 55 },
-    { label: 'Crypto Perimeter',      value: 69 },
-    { label: 'Insurgent Liquidity',   value: 38 },
+    { label: 'Crypto Perimeter',      value: 72 },
+    { label: 'Insurgent Liquidity',   value: 37 },
   ],
 
   directives: [
@@ -203,20 +203,20 @@ const DASHBOARD_DATA = {
   },
 
   crypto: {
-    dossier: 'Crypto remains dual-use in the control loop. The perimeter tightened further into mid-2026: the FinCEN/OFAC GENIUS Act stablecoin rule (issued 8 Apr 2026) entered its public comment period (closing 9 Jun 2026), treating permitted payment stablecoin issuers as BSA financial institutions with mandatory sanctions programs; the Digital Asset Market CLARITY Act cleared the Senate Banking Committee 15–9 on 14 May 2026 and heads toward Senate floor reconciliation; and Tether froze $344M USDT in coordination with OFAC (23 Apr 2026). Self-custody, non-custodial settlement, and jurisdictional fragmentation continue to provide meaningful resistance capacity (high-level, non-operational).',
+    dossier: 'Crypto remains dual-use in the control loop. The perimeter tightened further into mid-2026: the FinCEN/OFAC GENIUS Act stablecoin rule (issued 8 Apr 2026) entered its public comment period (closing 9 Jun 2026), treating permitted payment stablecoin issuers as BSA financial institutions with mandatory sanctions programs; the SEC issued an interpretive release (S7-2026-09; 17 Mar 2026) on how federal securities laws apply to certain crypto assets and transactions; and OFAC expanded Iran-linked crypto exchange designations (June 2026), reinforced by issuer-side freezes. Self-custody, non-custodial settlement, and jurisdictional fragmentation continue to provide meaningful resistance capacity (high-level, non-operational).',
     nodes: [
       { name: 'Stablecoin perimeter',     role: 'GENIUS Act rule · FinCEN/OFAC comment period closes 9 Jun 2026 (issuers = BSA institutions)', status: 'severed' },
       { name: 'CLARITY Act market structure', role: 'Cleared Senate Banking Cttee 15–9 (14 May 2026); toward Senate floor', status: 'pressured' },
       { name: 'FATF stablecoin focus',    role: 'March 2026 report · 84% of illicit volume in stablecoins',    status: 'pressured' },
-      { name: 'Sanctioned-entity flows',  role: '+694% YoY value received (Chainalysis 2026)',                 status: 'severed'   },
+      { name: 'Iran exchange chokepoints', role: 'OFAC designated major Iran domestic exchanges (June 2, 2026) + issuer-side freezes amplify pressure', status: 'severed' },
       { name: 'Self-custody / P2P',       role: 'Hardware wallets · multisig · DEX · unhosted-wallet gap',     status: 'open'      },
       { name: 'Jurisdictional arbitrage', role: 'UAE ADGM · Switzerland · Singapore · El Salvador',           status: 'open'      },
     ],
     gauges: [
-      { label: 'Sanctions Perimeter',      value: 85, sub: 'Tether froze $344M USDT in coordination with OFAC (23 Apr 2026); GENIUS rule mandates issuer sanctions programs' },
+      { label: 'Sanctions Perimeter',      value: 88, sub: 'OFAC designations targeting Iran domestic exchanges (June 2026) + issuer-side freezes ($344M USDT cited by TRM Labs) increase enforcement leverage' },
       { label: 'Stablecoin Concentration', value: 84, sub: '84% of illicit volume rides stablecoins (FATF Mar 2026)' },
-      { label: 'Regulatory Clarity',       value: 72, sub: 'CLARITY Act cleared Senate Banking 15–9 (14 May 2026); GENIUS rule comment period closes 9 Jun 2026' },
-      { label: 'Self-Custody Surface',     value: 57, sub: 'Unhosted wallets and P2P still outside KYC perimeter'    },
+      { label: 'Regulatory Clarity',       value: 71, sub: 'SEC interpretive release (S7-2026-09; 17 Mar 2026) + EU zero-threshold Travel Rule perimeter (TFR) harden compliance expectations' },
+      { label: 'Self-Custody Surface',     value: 56, sub: 'Unhosted wallets and P2P still outside KYC perimeter, but fiat on/off ramps increasingly Travel-Rule gated'    },
     ],
     citations: [
       {
@@ -228,8 +228,8 @@ const DASHBOARD_DATA = {
         url: 'https://www.banking.senate.gov/newsroom/majority/chairman-scott-senate-banking-committee-advance-clarity-act-in-historic-bipartisan-vote',
       },
       {
-        label: 'Tether · $344M USDT frozen in coordination with OFAC and U.S. law enforcement (Apr 2026)',
-        url: 'https://tether.io/news/tether-supports-freeze-of-more-than-344-million-in-usdt-in-coordination-with-ofac-and-u-s-law-enforcement/',
+        label: 'TRM Labs · OFAC designates Iran domestic crypto exchanges; cites $344M USDT freeze (June 2026)',
+        url: 'https://www.trmlabs.com/resources/blog/three-enforcement-layers-in-five-months-ofac-designates-irans-domestic-crypto-exchanges',
       },
     ],
   },
@@ -271,8 +271,8 @@ const DASHBOARD_DATA = {
     {
       id: 'crypto',
       name: 'Crypto',
-      score: 52,
-      blurb: 'Perimeter tightened via the GENIUS Act stablecoin rule (issuer comment period closes 9 Jun 2026), the CLARITY Act clearing Senate Banking 15–9, and Tether’s $344M OFAC-coordinated freeze; resistance remains via self-custody and jurisdictional fragmentation. Imperial Control 67 · Rebel Resistance 52.',
+      score: 51,
+      blurb: 'Perimeter tightened via OFAC designations targeting Iran domestic exchanges (June 2026), issuer-side stablecoin freezes, and hardening Travel Rule gating at regulated on/off ramps; resistance remains via self-custody and jurisdictional fragmentation. Imperial Control 72 · Rebel Resistance 51.',
       mech: [
         'Hardware self-custody and multisig reduce custodial seizure surface',
         'Peer-to-peer settlement and non-custodial paths remain outside KYC/AML perimeter at the margin',
@@ -295,11 +295,11 @@ const DASHBOARD_DATA = {
   /* Free-text scratchpad for the weekly updater. Not rendered.
      Append a dated entry per cycle with rationale / citations. */
   sources: [
-    '2026-06-01 — Weekly metric refresh (current to 2026-06-01):',
-    '  Biggest mover: Energy chokepoints EASED (Imperial 90 → 78 / Rebel 28 → 34). Driver: tentative US-Iran 60-day MOU framework (28–30 May, unsigned), resumed US Navy commercial escorts, and Brent ~19% May decline to ~$92 (CNBC 2026-05-29, worst month since 2020). Conservative: moved Hormuz severed → pressured, not held — MOU unsigned, Iran state media denials, traffic still constrained.',
+    '2026-06-08 — Weekly metric refresh (current to 2026-06-08):',
+    '  Biggest mover: Crypto perimeter (Imperial 72 / Rebel 51). Driver: OFAC expansion targeting Iran domestic exchanges (June 2026) + issuer-side freezes (TRM cites $344M USDT) increase perceived perimeter leverage; resistance capacity trimmed as Travel-Rule gating hardens at regulated on/off ramps (non-operational framing).',
     '  Debt (Imperial 72 → 75 / Rebel 42 → 40): IMF FM Apr 2026 backdrop holds; added verified 30-yr UST 5.197% intraday (CNBC 2026-05-19) and Venezuela ~$150–170B restructuring launch (CNBC 2026-05-14, softened from memo “largest in history” to “one of the largest”).',
     '  Governance (Imperial 65 / Rebel 58): unchanged — persistent elevated baseline, no new state collapse in the window. Memo claims accepted as no-change.',
-    '  Crypto (Imperial 64 → 67 / Rebel 54 → 52): GENIUS Act stablecoin rule comment period closes 9 Jun 2026 (Federal Register 2026-06963); CLARITY Act cleared Senate Banking 15–9 on 14 May 2026 (banking.senate.gov); Tether $344M USDT freeze coordinated with OFAC, 23 Apr 2026 (tether.io). Resistance framing kept high-level/non-operational.',
+    '  Crypto (Imperial 64 → 72 / Rebel 54 → 51): OFAC designated major Iran domestic exchanges (June 2, 2026; TRM cites Nobitex, Bit Pin, Wallex, Ramzinex) and highlighted issuer coordination to freeze $344M USDT; SEC interpretive release S7-2026-09 (17 Mar 2026) clarifies securities-law perimeter; Chainalysis notes EU TFR zero-threshold Travel Rule requirements for CASPs. Resistance framing kept high-level/non-operational.',
     '  AI (Imperial 74 → 77 / Rebel 38 → 36): ICE $25.1M sole-source BI2 iris-scanner award (NPR 2026-05-27, 5M+ records, Jun 2026 field run); EU AI Act Digital Omnibus (EU Council 2026-05-07) defers high-risk timelines. HAI 2026 / FOTN 2025 baselines retained.',
     '  Conservatism / excluded-softened claims (verified against public sources): Memo dated Moody’s downgrade and OBBBA passage to May 2026 — INCORRECT; Moody’s Aa1 downgrade was May 2025 and OBBBA was signed into law July 2025 (not “now in the Senate”). Kept the correct Moody’s May-2025 date; did NOT render OBBBA as fresh legislation. Memo SCOTUS VRA ruling dated 29 May — actually 29 Apr 2026 (Louisiana v. Callais); EXCLUDED from rendered copy (not a tracked dashboard axis, avoid date error). May Day 1M figure is an organizer claim and “largest in recent memory” is unverified — NOT rendered as a hard metric. Tether “$514M total across May” aggregate is soft — used the verified $344M (Apr) figure instead. Subjugation index 79 → 78 (net slight ease: one large energy drawdown vs. three +1 increments).',
     '',
