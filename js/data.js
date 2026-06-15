@@ -61,7 +61,7 @@ const DASHBOARD_DATA = {
     operation: 'ASHEN HEEL',
     authority: 'Lord Vader',
     clearance: 'SITH-OMEGA',
-    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-06-08',
+    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-06-15',
     subjugationIndex: 78,
     subjugationTier: 'CRITICAL',
   },
@@ -76,7 +76,7 @@ const DASHBOARD_DATA = {
   theatreReadiness: [
     { label: 'Fleet Posture',         value: 88 },
     { label: 'Economic Grip',         value: 80 },
-    { label: 'Surveillance Mesh',     value: 71 },
+    { label: 'Surveillance Mesh',     value: 73 },
     { label: 'Compliance Engines',    value: 55 },
     { label: 'Crypto Perimeter',      value: 72 },
     { label: 'Insurgent Liquidity',   value: 37 },
@@ -108,8 +108,8 @@ const DASHBOARD_DATA = {
       { id: 'n5', label: 'Cape of Good Hope · held',    status: 'held',      x: 50, y: 72 },
     ],
     citation: {
-      label: 'CNBC (2026-05-29) Brent posts worst month since 2020 as market counts on a US-Iran deal · U.S. MARAD advisory 2026-006 (2026-03-26) Red Sea/Bab el-Mandeb risk',
-      url: 'https://www.cnbc.com/2026/05/29/oil-price-iran-deal-war-ceasefire-trump.html',
+      label: 'CNBC (2026-05-29) Brent posts worst month since 2020 as market counts on a US-Iran deal · U.S. Maritime Advisory 2026-006 (expires 2026-09-22) Red Sea/Bab el-Mandeb risk',
+      url: 'https://www.maritime.dot.gov/msci/2026-006-red-sea-bab-el-mandeb-strait-gulf-aden-arabian-sea-and-somali-basin-houthi-attacks',
     },
   },
 
@@ -165,6 +165,7 @@ const DASHBOARD_DATA = {
       '[FOTN-2025] 15th consecutive year of internet-freedom decline',
       '[DIRECTIVE] arrests for online expression in 57 countries',
       '[PALANTIR] $1B DHS blanket-purchase agreement active since Feb 2026',
+      '[NSPM-11] White House directive (5 Jun 2026) accelerates AI adoption and multi-vendor onboarding across national-security enterprise',
       '[IRIS-NET] ICE $25.1M sole-source BI2 award (May 2026) · 5M+ booking records · field run Jun 2026',
     ],
     tools: [
@@ -186,6 +187,10 @@ const DASHBOARD_DATA = {
       {
         label: 'Stanford HAI · 2026 AI Index Report (March 2026)',
         url: 'https://hai.stanford.edu/ai-index/2026-ai-index-report',
+      },
+      {
+        label: 'White House · National Security Presidential Memorandum NSPM-11 (5 Jun 2026)',
+        url: 'https://www.whitehouse.gov/presidential-actions/2026/06/national-security-presidential-memorandum-nspm-11/',
       },
       {
         label: 'Freedom House · Freedom on the Net 2025 (PDF)',
@@ -282,8 +287,8 @@ const DASHBOARD_DATA = {
     {
       id: 'ai',
       name: 'AI',
-      score: 36,
-      blurb: 'Frontier scale concentrates (HAI 2026); FMTI transparency dropped 58 → 40; DHS $1B Palantir BPA active; ICE $25.1M iris-biometric award (May 2026) and EU AI Act Digital Omnibus deferring high-risk timelines expand surveillance headroom. Imperial Control 77 · Rebel Resistance 36.',
+      score: 35,
+      blurb: 'Frontier scale concentrates (HAI 2026); FMTI transparency dropped 58 → 40; White House NSPM-11 (5 Jun 2026) accelerates national-security AI adoption; DHS $1B Palantir BPA and ICE biometrics expansion persist. Imperial Control 79 · Rebel Resistance 35.',
       mech: [
         'Open-weights models and permissive licenses enable independent audit and local fine-tuning',
         'Edge and on-device inference reduces dependence on centralized API gatekeepers',
@@ -295,12 +300,12 @@ const DASHBOARD_DATA = {
   /* Free-text scratchpad for the weekly updater. Not rendered.
      Append a dated entry per cycle with rationale / citations. */
   sources: [
-    '2026-06-08 — Weekly metric refresh (current to 2026-06-08):',
-    '  Biggest mover: Crypto perimeter (Imperial 72 / Rebel 51). Driver: OFAC expansion targeting Iran domestic exchanges (June 2026) + issuer-side freezes (TRM cites $344M USDT) increase perceived perimeter leverage; resistance capacity trimmed as Travel-Rule gating hardens at regulated on/off ramps (non-operational framing).',
+    '2026-06-15 — Weekly metric refresh (current to 2026-06-15):',
+    '  Biggest mover: AI surveillance (Imperial 77 → 79 / Rebel 36 → 35). Driver: White House NSPM-11 (5 Jun 2026) accelerates AI adoption and multi-vendor onboarding across national-security enterprise, reinforcing procurement leverage and model concentration in security domains.',
     '  Debt (Imperial 72 → 75 / Rebel 42 → 40): IMF FM Apr 2026 backdrop holds; added verified 30-yr UST 5.197% intraday (CNBC 2026-05-19) and Venezuela ~$150–170B restructuring launch (CNBC 2026-05-14, softened from memo “largest in history” to “one of the largest”).',
-    '  Governance (Imperial 65 / Rebel 58): unchanged — persistent elevated baseline, no new state collapse in the window. Memo claims accepted as no-change.',
+    '  Governance (Imperial 65 / Rebel 58): unchanged — persistent elevated baseline, no new state collapse in the window.',
     '  Crypto (Imperial 64 → 72 / Rebel 54 → 51): OFAC designated major Iran domestic exchanges (June 2, 2026; TRM cites Nobitex, Bit Pin, Wallex, Ramzinex) and highlighted issuer coordination to freeze $344M USDT; SEC interpretive release S7-2026-09 (17 Mar 2026) clarifies securities-law perimeter; Chainalysis notes EU TFR zero-threshold Travel Rule requirements for CASPs. Resistance framing kept high-level/non-operational.',
-    '  AI (Imperial 74 → 77 / Rebel 38 → 36): ICE $25.1M sole-source BI2 iris-scanner award (NPR 2026-05-27, 5M+ records, Jun 2026 field run); EU AI Act Digital Omnibus (EU Council 2026-05-07) defers high-risk timelines. HAI 2026 / FOTN 2025 baselines retained.',
+    '  AI (Imperial 77 → 79 / Rebel 36 → 35): Added White House NSPM-11 (5 Jun 2026) accelerating AI adoption + procurement onboarding in national-security enterprise; kept DHS/ICE biometrics and HAI/FOTN baselines.',
     '  Conservatism / excluded-softened claims (verified against public sources): Memo dated Moody’s downgrade and OBBBA passage to May 2026 — INCORRECT; Moody’s Aa1 downgrade was May 2025 and OBBBA was signed into law July 2025 (not “now in the Senate”). Kept the correct Moody’s May-2025 date; did NOT render OBBBA as fresh legislation. Memo SCOTUS VRA ruling dated 29 May — actually 29 Apr 2026 (Louisiana v. Callais); EXCLUDED from rendered copy (not a tracked dashboard axis, avoid date error). May Day 1M figure is an organizer claim and “largest in recent memory” is unverified — NOT rendered as a hard metric. Tether “$514M total across May” aggregate is soft — used the verified $344M (Apr) figure instead. Subjugation index 79 → 78 (net slight ease: one large energy drawdown vs. three +1 increments).',
     '',
     '2026-05-25 — Weekly metric refresh (current to 2026-05-25):',
