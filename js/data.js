@@ -61,29 +61,29 @@ const DASHBOARD_DATA = {
     operation: 'ASHEN HEEL',
     authority: 'Lord Vader',
     clearance: 'SITH-OMEGA',
-    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-06-15',
-    subjugationIndex: 78,
+    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-06-22',
+    subjugationIndex: 80,
     subjugationTier: 'CRITICAL',
   },
 
   imperialControl: [
-    { label: 'Compliant Polities',   value: '121',    delta: '▲ 3 this cycle',     deltaTone: 'up'   },
-    { label: 'Theatres Encircled',   value: '15 / 17', delta: '▲ 1 this cycle',    deltaTone: 'up'   },
-    { label: 'Resistance Cells',     value: '308',    delta: '▼ 1.3% attrition',   deltaTone: 'flat' },
-    { label: 'Levy Yield',           value: '¤1.92T', delta: '▲ 4.3% q/q',         deltaTone: 'up'   },
+    { label: 'Compliant Polities',   value: '122',    delta: '▲ 1 this cycle',     deltaTone: 'up'   },
+    { label: 'Theatres Encircled',   value: '15 / 17', delta: '— flat',            deltaTone: 'flat' },
+    { label: 'Resistance Cells',     value: '309',    delta: '▲ 0.3% churn',       deltaTone: 'flat' },
+    { label: 'Levy Yield',           value: '¤1.93T', delta: '▲ 0.5% q/q',         deltaTone: 'up'   },
   ],
 
   theatreReadiness: [
-    { label: 'Fleet Posture',         value: 88 },
-    { label: 'Economic Grip',         value: 80 },
-    { label: 'Surveillance Mesh',     value: 73 },
+    { label: 'Fleet Posture',         value: 90 },
+    { label: 'Economic Grip',         value: 82 },
+    { label: 'Surveillance Mesh',     value: 74 },
     { label: 'Compliance Engines',    value: 55 },
-    { label: 'Crypto Perimeter',      value: 72 },
+    { label: 'Crypto Perimeter',      value: 75 },
     { label: 'Insurgent Liquidity',   value: 37 },
   ],
 
   directives: [
-    'Manage the Hormuz drawdown: tentative US-Iran MOU and resumed escorts ease leverage, but the framework is unsigned.',
+    'Hormuz threat reset: Reuters/Kpler report sharp transit drop after Iran again declares the waterway shut (22 Jun); closure claims + mine risk keep leverage elevated.',
     'Prepare countermeasures for rerouting and black-flagged shipping around the Strait.',
     'Press sovereign debt advantage as US fiscal credibility erodes and EM restructurings open.',
     'Exploit governance fractures.',
@@ -94,21 +94,25 @@ const DASHBOARD_DATA = {
 
   energyChokepoints: {
     nodes: [
-      { name: 'Strait of Hormuz',     role: 'Tentative US-Iran 60-day MOU (28–30 May) + resumed US Navy escorts; Brent ~$92 (worst month since 2020). Unsigned; traffic still constrained', status: 'pressured' },
+      { name: 'Strait of Hormuz',     role: 'Reuters/Kpler (22 Jun): transits dropped to 5 vessels vs 26 prior day after Iran again declares closure; U.S. says traffic continues; AIS-off transit likely undercounts', status: 'severed' },
       { name: 'Strait of Malacca',    role: '23.2 mb/d · largest oil flow (1H25); rising geopolitical risk',     status: 'pressured' },
       { name: 'Suez / SUMED',         role: '4.9 mb/d · ~half of 2023 levels; transits still near multi-year lows', status: 'pressured' },
       { name: 'Bab el-Mandeb',        role: 'U.S. MARAD advisory 2026-006 (2026-03-26): Houthis continue to pose threat; high-risk transit until further notice', status: 'severed'   },
       { name: 'Cape of Good Hope',    role: 'Reroute institutionalized; +~2 weeks transit and elevated bunker burn', status: 'held'  },
     ],
     mapNodes: [
-      { id: 'n1', label: 'Hormuz · pressured',          status: 'pressured', x: 62, y: 47 },
+      { id: 'n1', label: 'Hormuz · severed',            status: 'severed',   x: 62, y: 47 },
       { id: 'n2', label: 'Malacca · pressured',         status: 'pressured', x: 76, y: 55 },
       { id: 'n3', label: 'Suez / SUMED · pressured',    status: 'pressured', x: 54, y: 42 },
       { id: 'n4', label: 'Bab el-Mandeb · severed',     status: 'severed',   x: 57, y: 52 },
       { id: 'n5', label: 'Cape of Good Hope · held',    status: 'held',      x: 50, y: 72 },
     ],
     citation: {
-      label: 'CNBC (2026-05-29) Brent posts worst month since 2020 as market counts on a US-Iran deal · U.S. Maritime Advisory 2026-006 (expires 2026-09-22) Red Sea/Bab el-Mandeb risk',
+      label: 'Reuters via Al-Monitor (2026-06-22) Kpler: Hormuz transits plunge after renewed closure claim · U.S. Maritime Advisory 2026-006 (expires 2026-09-22) Red Sea/Bab el-Mandeb risk',
+      url: 'https://www.al-monitor.com/originals/2026/06/shipping-slows-after-iran-says-it-has-again-shut-strait-hormuz',
+    },
+    citation2: {
+      label: 'U.S. Maritime Administration · Advisory 2026-006 (Red Sea / Bab el-Mandeb risk, expires 22 Sep 2026)',
       url: 'https://www.maritime.dot.gov/msci/2026-006-red-sea-bab-el-mandeb-strait-gulf-aden-arabian-sea-and-somali-basin-houthi-attacks',
     },
   },
@@ -193,6 +197,10 @@ const DASHBOARD_DATA = {
         url: 'https://www.whitehouse.gov/presidential-actions/2026/06/national-security-presidential-memorandum-nspm-11/',
       },
       {
+        label: 'Breaking Defense · NSPM-11 aims to avoid vendor lock-in / withdrawal risk (8 Jun 2026)',
+        url: 'https://breakingdefense.com/2026/06/trump-memo-on-ai-aims-to-avoid-repeat-of-anthropic-debacle/',
+      },
+      {
         label: 'Freedom House · Freedom on the Net 2025 (PDF)',
         url: 'https://freedomhouse.org/sites/default/files/2025-11/Freedom_on_the_Net_2025_Digital.pdf',
       },
@@ -213,13 +221,13 @@ const DASHBOARD_DATA = {
       { name: 'Stablecoin perimeter',     role: 'GENIUS Act rule · FinCEN/OFAC comment period closes 9 Jun 2026 (issuers = BSA institutions)', status: 'severed' },
       { name: 'CLARITY Act market structure', role: 'Cleared Senate Banking Cttee 15–9 (14 May 2026); toward Senate floor', status: 'pressured' },
       { name: 'FATF stablecoin focus',    role: 'March 2026 report · 84% of illicit volume in stablecoins',    status: 'pressured' },
-      { name: 'Iran exchange chokepoints', role: 'OFAC designated major Iran domestic exchanges (June 2, 2026) + issuer-side freezes amplify pressure', status: 'severed' },
+      { name: 'Iran exchange chokepoints', role: 'OFAC press release (June 2): designated Nobitex + Wallex/Bitpin/Ramzinex; notes regime use of stablecoins and post-operations asset movement; secondary-risk signaling tightens global compliance posture', status: 'severed' },
       { name: 'Self-custody / P2P',       role: 'Hardware wallets · multisig · DEX · unhosted-wallet gap',     status: 'open'      },
       { name: 'Jurisdictional arbitrage', role: 'UAE ADGM · Switzerland · Singapore · El Salvador',           status: 'open'      },
     ],
     gauges: [
-      { label: 'Sanctions Perimeter',      value: 88, sub: 'OFAC designations targeting Iran domestic exchanges (June 2026) + issuer-side freezes ($344M USDT cited by TRM Labs) increase enforcement leverage' },
-      { label: 'Stablecoin Concentration', value: 84, sub: '84% of illicit volume rides stablecoins (FATF Mar 2026)' },
+      { label: 'Sanctions Perimeter',      value: 91, sub: 'OFAC (June 2) designated Iran’s largest domestic exchanges (Nobitex, Wallex, Bitpin, Ramzinex); Treasury says it has frozen nearly half a billion dollars in regime-linked crypto, increasing enforcement leverage' },
+      { label: 'Stablecoin Concentration', value: 84, sub: 'Stablecoin rails remain a concentrated settlement perimeter, amplifying issuer/regulated-gateway leverage (FATF Mar 2026 framing retained)' },
       { label: 'Regulatory Clarity',       value: 71, sub: 'SEC interpretive release (S7-2026-09; 17 Mar 2026) + EU zero-threshold Travel Rule perimeter (TFR) harden compliance expectations' },
       { label: 'Self-Custody Surface',     value: 56, sub: 'Unhosted wallets and P2P still outside KYC perimeter, but fiat on/off ramps increasingly Travel-Rule gated'    },
     ],
@@ -233,8 +241,8 @@ const DASHBOARD_DATA = {
         url: 'https://www.banking.senate.gov/newsroom/majority/chairman-scott-senate-banking-committee-advance-clarity-act-in-historic-bipartisan-vote',
       },
       {
-        label: 'TRM Labs · OFAC designates Iran domestic crypto exchanges; cites $344M USDT freeze (June 2026)',
-        url: 'https://www.trmlabs.com/resources/blog/three-enforcement-layers-in-five-months-ofac-designates-irans-domestic-crypto-exchanges',
+        label: 'U.S. Treasury · OFAC designates Nobitex + other Iranian exchanges (June 2, 2026)',
+        url: 'https://home.treasury.gov/news/press-releases/sb0519',
       },
     ],
   },
@@ -243,8 +251,8 @@ const DASHBOARD_DATA = {
     {
       id: 'energy',
       name: 'Energy',
-      score: 34,
-      blurb: 'Tentative US-Iran 60-day MOU (28–30 May) and resumed US Navy escorts ease the Hormuz chokehold; Brent fell ~19% in May to ~$92. Framework unsigned and traffic still constrained. Imperial Control 78 · Rebel Resistance 34 — the cycle’s biggest mover (eased).',
+      score: 31,
+      blurb: 'Hormuz threat re-escalated: Reuters/Kpler report transits dropping to 5 vs 26 prior day after Iran again declares the waterway shut (22 Jun), while U.S. says traffic continues and AIS-off transit likely undercounts. Imperial Control 82 · Rebel Resistance 31 — the cycle’s biggest mover (tightened).',
       mech: [
         'Cape of Good Hope reroute institutionalized; pipeline diversions (Yanbu, Fujairah, Ceyhan) reduce but do not replace Gulf flows',
         'Rooftop solar, behind-the-meter storage, and community microgrids still erode single-point dependence at the demand edge',
@@ -277,7 +285,7 @@ const DASHBOARD_DATA = {
       id: 'crypto',
       name: 'Crypto',
       score: 51,
-      blurb: 'Perimeter tightened via OFAC designations targeting Iran domestic exchanges (June 2026), issuer-side stablecoin freezes, and hardening Travel Rule gating at regulated on/off ramps; resistance remains via self-custody and jurisdictional fragmentation. Imperial Control 72 · Rebel Resistance 51.',
+      blurb: 'Perimeter tightened further: U.S. Treasury (June 2) designated Nobitex and other Iranian domestic exchanges and highlighted large-scale freezes of regime-linked crypto; resistance remains via self-custody and jurisdictional fragmentation. Imperial Control 75 · Rebel Resistance 51.',
       mech: [
         'Hardware self-custody and multisig reduce custodial seizure surface',
         'Peer-to-peer settlement and non-custodial paths remain outside KYC/AML perimeter at the margin',
@@ -287,8 +295,8 @@ const DASHBOARD_DATA = {
     {
       id: 'ai',
       name: 'AI',
-      score: 35,
-      blurb: 'Frontier scale concentrates (HAI 2026); FMTI transparency dropped 58 → 40; White House NSPM-11 (5 Jun 2026) accelerates national-security AI adoption; DHS $1B Palantir BPA and ICE biometrics expansion persist. Imperial Control 79 · Rebel Resistance 35.',
+      score: 34,
+      blurb: 'NSPM-11 (5 Jun 2026) mandates accelerated AI adoption and multi-vendor onboarding for national-security systems, including requirements to prevent vendor disablement/degradation; DHS/ICE biometrics expansion persists. Imperial Control 80 · Rebel Resistance 34.',
       mech: [
         'Open-weights models and permissive licenses enable independent audit and local fine-tuning',
         'Edge and on-device inference reduces dependence on centralized API gatekeepers',
