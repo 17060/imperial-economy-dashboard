@@ -61,29 +61,29 @@ const DASHBOARD_DATA = {
     operation: 'ASHEN HEEL',
     authority: 'Lord Vader',
     clearance: 'SITH-OMEGA',
-    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-06-29',
-    subjugationIndex: 80,
+    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-07-13',
+    subjugationIndex: 81,
     subjugationTier: 'CRITICAL',
   },
 
   imperialControl: [
     { label: 'Compliant Polities',   value: '122',    delta: '▲ 1 this cycle',     deltaTone: 'up'   },
-    { label: 'Theatres Encircled',   value: '15 / 17', delta: '— flat',            deltaTone: 'flat' },
+    { label: 'Theatres Encircled',   value: '16 / 17', delta: '▲ 1 this cycle',     deltaTone: 'up'   },
     { label: 'Resistance Cells',     value: '309',    delta: '▲ 0.3% churn',       deltaTone: 'flat' },
     { label: 'Levy Yield',           value: '¤1.93T', delta: '▲ 0.5% q/q',         deltaTone: 'up'   },
   ],
 
   theatreReadiness: [
-    { label: 'Fleet Posture',         value: 90 },
-    { label: 'Economic Grip',         value: 82 },
+    { label: 'Fleet Posture',         value: 92 },
+    { label: 'Economic Grip',         value: 83 },
     { label: 'Surveillance Mesh',     value: 74 },
     { label: 'Compliance Engines',    value: 55 },
-    { label: 'Crypto Perimeter',      value: 76 },
-    { label: 'Insurgent Liquidity',   value: 36 },
+    { label: 'Crypto Perimeter',      value: 77 },
+    { label: 'Insurgent Liquidity',   value: 35 },
   ],
 
   directives: [
-    'Hormuz threat reset: Reuters/Kpler report sharp transit drop after Iran again declares the waterway shut (22 Jun); closure claims + mine risk keep leverage elevated.',
+    'Hormuz near-standstill: Reuters/Kpler report just two tankers transited early 9 Jul after renewed vessel attacks; insurers advise pauses; AIS-off transits obscure full count — coercive leverage surged.',
     'Prepare countermeasures for rerouting and black-flagged shipping around the Strait.',
     'Press sovereign debt advantage as US fiscal credibility erodes and EM restructurings open.',
     'Exploit governance fractures.',
@@ -94,7 +94,7 @@ const DASHBOARD_DATA = {
 
   energyChokepoints: {
     nodes: [
-      { name: 'Strait of Hormuz',     role: 'Reuters/Kpler (22 Jun): transits dropped to 5 vessels vs 26 prior day after Iran again declares closure; U.S. says traffic continues; AIS-off transit likely undercounts', status: 'severed' },
+      { name: 'Strait of Hormuz',     role: 'Reuters/Kpler (9 Jul): traffic near standstill; just two tankers transited early Thursday; war underwriters advise pauses; AIS-off transits obscure full count', status: 'severed' },
       { name: 'Strait of Malacca',    role: '23.2 mb/d · largest oil flow (1H25); rising geopolitical risk',     status: 'pressured' },
       { name: 'Suez / SUMED',         role: '4.9 mb/d · ~half of 2023 levels; transits still near multi-year lows', status: 'pressured' },
       { name: 'Bab el-Mandeb',        role: 'Reuters (8 Jun): Houthis announce ban on Israeli vessels; Bab al-Mandab traffic still below pre-Oct 2023; MARAD advisory 2026-006 remains in effect', status: 'severed'   },
@@ -108,8 +108,8 @@ const DASHBOARD_DATA = {
       { id: 'n5', label: 'Cape of Good Hope · held',    status: 'held',      x: 50, y: 72 },
     ],
     citation: {
-      label: 'Reuters via Al-Monitor (2026-06-22) Kpler: Hormuz transits plunge after renewed closure claim · Reuters (2026-06-08) Houthi Red Sea ban / Bab el-Mandeb traffic still depressed · U.S. Maritime Advisory 2026-006 (expires 2026-09-22)',
-      url: 'https://www.al-monitor.com/originals/2026/06/shipping-slows-after-iran-says-it-has-again-shut-strait-hormuz',
+      label: 'Reuters (2026-07-09) Hormuz tanker traffic near standstill · Reuters (2026-06-08) Houthi Red Sea ban / Bab el-Mandeb traffic still depressed · U.S. Maritime Advisory 2026-006 (expires 2026-09-22)',
+      url: 'https://www.reuters.com/world/middle-east/oil-tanker-traffic-through-hormuz-near-standstill-attacks-strain-iran-truce-2026-07-09/',
     },
     citation3: {
       label: 'Reuters via U.S. News · Houthis threaten Israeli shipping; Bab el-Mandeb traffic still below pre-Oct 2023 (2026-06-08)',
@@ -122,7 +122,7 @@ const DASHBOARD_DATA = {
   },
 
   debt: [
-    { label: 'Sovereign Rollovers',   value: 90, sub: 'Global public debt ~94% of GDP in 2025 (IMF FM Apr 2026); EM restructurings reopening (Venezuela, May 2026)' },
+    { label: 'Sovereign Rollovers',   value: 91, sub: 'IMF FM Apr 2026 baseline; Venezuela seeks record-time restructure with claims approaching $200B (Reuters, 9 Jul 2026)' },
     { label: 'Projected Debt 2029',   value: 100, sub: 'IMF: 100% of GDP by 2029, one year earlier than April 2025 path' },
     { label: 'LIC Debt Distress',     value: 74, sub: '9 LICs formally in distress; 23 high risk (IMF DSA, 31 Mar 2026)' },
     { label: 'Reserve Hierarchy',     value: 93, sub: 'US below AAA tri-agency (Moody’s Aa1, May 2025); 30-yr UST touched 5.197% on 19 May 2026' },
@@ -146,8 +146,8 @@ const DASHBOARD_DATA = {
       url: 'https://www.cnbc.com/2026/05/19/treasurys-yields-inflation-traders-fed-interest-rates.html',
     },
     {
-      label: 'CNBC · Venezuela launches sovereign debt restructuring (~$150–170B, May 2026)',
-      url: 'https://www.cnbc.com/2026/05/14/venezuela-bonds-debt-restructure-maduro-trump-oil.html',
+      label: 'Reuters · Venezuela seeks swift restructuring; claims approaching $200B (9 Jul 2026)',
+      url: 'https://www.reuters.com/world/americas/quake-hit-venezuelas-push-swift-debt-deal-raises-fears-future-crisis-2026-07-09/',
     },
   ],
 
@@ -234,7 +234,7 @@ const DASHBOARD_DATA = {
       { name: 'Jurisdictional arbitrage', role: 'UAE ADGM · Switzerland · Singapore · El Salvador',           status: 'open'      },
     ],
     gauges: [
-      { label: 'Sanctions Perimeter',      value: 92, sub: 'OFAC (June 2) designated Iran’s major domestic exchanges (Nobitex, Wallex, Bitpin, Ramzinex) and warns non-U.S. persons/FFIs face exposure for significant transactions; Treasury says its actions have led to the freezing of nearly half a billion dollars in regime-linked cryptocurrency' },
+      { label: 'Sanctions Perimeter',      value: 93, sub: 'OFAC (June 2) designated Iran’s major domestic exchanges (Nobitex, Wallex, Bitpin, Ramzinex) and warns non-U.S. persons/FFIs face exposure for significant transactions; Treasury says its actions have led to the freezing of nearly half a billion dollars in regime-linked cryptocurrency' },
       { label: 'Stablecoin Concentration', value: 84, sub: 'Stablecoin rails remain a concentrated settlement perimeter, amplifying issuer/regulated-gateway leverage (FATF Mar 2026 framing retained)' },
       { label: 'Regulatory Clarity',       value: 72, sub: 'SEC interpretive release (S7-2026-09; 17 Mar 2026) + EU zero-threshold Travel Rule perimeter (TFR) harden compliance expectations' },
       { label: 'Self-Custody Surface',     value: 57, sub: 'Unhosted wallets and P2P still outside KYC perimeter, but fiat on/off ramps increasingly Travel-Rule gated'    },
@@ -263,8 +263,8 @@ const DASHBOARD_DATA = {
     {
       id: 'energy',
       name: 'Energy',
-      score: 31,
-      blurb: 'Hormuz threat re-escalated: Reuters/Kpler report transits dropping to 5 vs 26 prior day after Iran again declares the waterway shut (22 Jun), while U.S. says traffic continues and AIS-off transit likely undercounts. Imperial Control 82 · Rebel Resistance 31 — the cycle’s biggest mover (tightened).',
+      score: 26,
+      blurb: 'Hormuz shock: Reuters reports tanker traffic at near standstill (9 Jul) with just two tankers transiting early Thursday; some underwriters advised pausing voyages and AIS-off transits obscure full counts. Imperial Control 86 · Rebel Resistance 26 — the cycle’s biggest mover (tightened).',
       mech: [
         'Cape of Good Hope reroute institutionalized; pipeline diversions (Yanbu, Fujairah, Ceyhan) reduce but do not replace Gulf flows',
         'Rooftop solar, behind-the-meter storage, and community microgrids still erode single-point dependence at the demand edge',
@@ -274,8 +274,8 @@ const DASHBOARD_DATA = {
     {
       id: 'debt',
       name: 'Debt',
-      score: 40,
-      blurb: 'Global public debt ~94% of GDP in 2025, projected 100% by 2029 (IMF FM Apr 2026); 9 LICs in distress; US below AAA across all three agencies; 30-yr UST hit 5.197% (19 May 2026) and Venezuela opened a ~$150–170B restructuring. Imperial Control 75 · Rebel Resistance 40.',
+      score: 39,
+      blurb: 'Global public debt ~94% of GDP in 2025, projected 100% by 2029 (IMF FM Apr 2026); 9 LICs in distress; US below AAA across all three agencies; 30-yr UST hit 5.197% (19 May 2026) and Venezuela opened a ~$150–170B restructuring. Imperial Control 76 · Rebel Resistance 39.',
       mech: [
         'G20 Common Framework restructuring and IMF/Paris Club processes preserve some sovereign optionality',
         'EM local-currency debt markets and non-Western reserve diversification push back on dollar-only architecture',
@@ -296,8 +296,8 @@ const DASHBOARD_DATA = {
     {
       id: 'crypto',
       name: 'Crypto',
-      score: 51,
-      blurb: 'Perimeter tightened further: OFAC (June 2) designated Iran-based exchanges and explicitly warns of secondary-sanctions exposure for non-U.S. persons/FFIs; Treasury (June 5) says its actions have led to the freezing of nearly half a billion dollars in regime-linked crypto. Resistance remains via self-custody and jurisdictional fragmentation. Imperial Control 76 · Rebel Resistance 51.',
+      score: 50,
+      blurb: 'Perimeter tightened further: OFAC (June 2) designated Iran-based exchanges and explicitly warns of secondary-sanctions exposure for non-U.S. persons/FFIs; Treasury (June 5) says its actions have led to the freezing of nearly half a billion dollars in regime-linked crypto. Resistance remains via self-custody and jurisdictional fragmentation. Imperial Control 77 · Rebel Resistance 50.',
       mech: [
         'Hardware self-custody and multisig reduce custodial seizure surface',
         'Peer-to-peer settlement and non-custodial paths remain outside KYC/AML perimeter at the margin',
@@ -307,8 +307,8 @@ const DASHBOARD_DATA = {
     {
       id: 'ai',
       name: 'AI',
-      score: 34,
-      blurb: 'NSPM-11 (5 Jun 2026) mandates accelerated AI adoption and multi-vendor onboarding for national-security systems, including requirements to prevent vendor disablement/degradation; DHS/ICE biometrics expansion persists. Imperial Control 80 · Rebel Resistance 34.',
+      score: 33,
+      blurb: 'NSPM-11 (5 Jun 2026) mandates accelerated AI adoption and multi-vendor onboarding for national-security systems, including requirements to prevent vendor disablement/degradation; DHS/ICE biometrics expansion persists. Imperial Control 81 · Rebel Resistance 33.',
       mech: [
         'Open-weights models and permissive licenses enable independent audit and local fine-tuning',
         'Edge and on-device inference reduces dependence on centralized API gatekeepers',
@@ -320,6 +320,13 @@ const DASHBOARD_DATA = {
   /* Free-text scratchpad for the weekly updater. Not rendered.
      Append a dated entry per cycle with rationale / citations. */
   sources: [
+    '2026-07-13 — Weekly metric refresh (current to 2026-07-13):',
+    '  Biggest mover: Energy chokepoints (Imperial 82 → 86 / Rebel 31 → 26). Driver: Reuters (9 Jul 2026) reports Hormuz tanker traffic near standstill (two tankers transited early Thursday), insurer pause guidance, and AIS-off transits — sharply elevating perceived chokepoint leverage.',
+    '  Crypto (Imperial 76 → 77 / Rebel 51 → 50): minor tighten — maintained OFAC Iran-exchange designations baseline; slight increase to sanctions-perimeter gauge given continued secondary-risk signaling and stablecoin-issuer freeze leverage.',
+    '  Debt (Imperial 75 → 76 / Rebel 40 → 39): modest tighten — Venezuela restructuring complexity/urgency (claims approaching $200B; Reuters 9 Jul) reinforces rollover stress narrative.',
+    '  Governance (Imperial 65 / Rebel 58): unchanged — ACLED July 2026 Africa overview shows continued multi-theatre escalations (Somalia political violence; Sudan drone fatalities; Sahel jihadist competition), consistent with fragmented baseline.',
+    '  AI (Imperial 80 → 81 / Rebel 34 → 33): slight tighten — continued NSPM-11 rollout posture and DHS biometrics procurement narrative; no new primary-source step-change in this window.',
+    '',
     '2026-06-29 — Weekly metric refresh (current to 2026-06-29):',
     '  Biggest mover: Crypto perimeter (Imperial 75 → 76 / Rebel 51 — flat). Driver: OFAC FAQ 1257 (June 2) explicitly warns of secondary-sanctions exposure for non-U.S. persons/FFIs transacting with Iran-based digital asset exchanges; Treasury SB0524 (June 5) repeats large-scale regime-linked crypto freezing language, slightly tightening perceived control leverage.',
     '  Energy (Imperial 82 / Rebel 31): unchanged — Hormuz remains the dominant chokepoint lever; Bab el-Mandeb remains severed with fresh Reuters note (June 8) on continued targeting language and depressed traffic.',
