@@ -61,7 +61,7 @@ const DASHBOARD_DATA = {
     operation: 'ASHEN HEEL',
     authority: 'Lord Vader',
     clearance: 'SITH-OMEGA',
-    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-07-20',
+    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-07-27',
     subjugationIndex: 82,
     subjugationTier: 'CRITICAL',
   },
@@ -78,7 +78,7 @@ const DASHBOARD_DATA = {
     { label: 'Economic Grip',         value: 83 },
     { label: 'Surveillance Mesh',     value: 74 },
     { label: 'Compliance Engines',    value: 55 },
-    { label: 'Crypto Perimeter',      value: 78 },
+    { label: 'Crypto Perimeter',      value: 80 },
     { label: 'Insurgent Liquidity',   value: 34 },
   ],
 
@@ -87,7 +87,7 @@ const DASHBOARD_DATA = {
     'Prepare countermeasures for rerouting and black-flagged shipping around the Strait.',
     'Press sovereign debt advantage as US fiscal credibility erodes and EM restructurings open.',
     'Exploit governance fractures.',
-    'Tighten the crypto regulatory perimeter via OFAC secondary-sanctions signaling and stablecoin issuer chokepoints.',
+    'Tighten the crypto regulatory perimeter via MiCA (EU) wind-down enforcement and OFAC/secondary-sanctions signaling; harden stablecoin and exchange chokepoints.',
     'Trace rebel digital reserves through stablecoin issuers.',
     'Saturate civilian biometrics across DHS theatres.',
   ],
@@ -236,7 +236,7 @@ const DASHBOARD_DATA = {
     gauges: [
       { label: 'Sanctions Perimeter',      value: 93, sub: 'OFAC/secondary exposure baseline remains elevated; issuer-side freezes reinforce chokepoints (June 2026 posture retained)' },
       { label: 'Stablecoin Concentration', value: 85, sub: 'Stablecoin rails remain a concentrated settlement perimeter; MiCA enforcement and issuer authorization requirements increase regulated-gateway leverage in the EU' },
-      { label: 'Regulatory Clarity',       value: 73, sub: 'EU MiCA enters full enforcement (1 Jul 2026) and FATF Travel Rule adoption rises, tightening licensed-venue expectations; SEC interpretive baseline retained' },
+      { label: 'Regulatory Clarity',       value: 74, sub: 'EU MiCA transitional period ends (1 Jul 2026) and ESMA calls unauthorised CASPs to stop onboarding and wind down EU activity; Travel Rule adoption rises; SEC interpretive baseline retained' },
       { label: 'Self-Custody Surface',     value: 57, sub: 'Unhosted wallets and P2P still outside KYC perimeter, but fiat on/off ramps increasingly Travel-Rule gated'    },
     ],
     citations: [
@@ -245,8 +245,8 @@ const DASHBOARD_DATA = {
         url: 'https://www.federalregister.gov/documents/2026/04/10/2026-06963/permitted-payment-stablecoin-issuer-anti-money-launderingcountering-the-financing-of-terrorism',
       },
       {
-        label: 'European Securities and Markets Authority (ESMA) · MiCA overview / implementation resources (2026)',
-        url: 'https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/crypto-assets',
+        label: 'European Securities and Markets Authority (ESMA) · Public statement: MiCA transitional period ends 1 July 2026; unauthorised CASPs should wind down',
+        url: 'https://www.esma.europa.eu/sites/default/files/2026-06/ESMA75-113276571-1710_Public_Statement_MiCA_transitional_period_ends.pdf',
       },
       {
         label: 'U.S. Senate Banking Committee · CLARITY Act advanced 15–9 (14 May 2026)',
@@ -301,7 +301,7 @@ const DASHBOARD_DATA = {
       id: 'crypto',
       name: 'Crypto',
       score: 50,
-      blurb: 'Perimeter tightened structurally: FATF notes widening Travel Rule adoption and stablecoin enforcement focus, while MiCA enters full EU enforcement (July 1) — narrowing compliant venues. Resistance remains via self-custody and jurisdictional fragmentation (high-level). Imperial Control 78 · Rebel Resistance 50.',
+      blurb: 'Perimeter tightened structurally: ESMA states MiCA transitional period ends 1 Jul 2026 and calls unauthorised CASPs to stop onboarding and wind down EU activity, narrowing compliant venues; FATF keeps Travel Rule effectiveness and stablecoins on the perimeter agenda. Resistance remains via self-custody and jurisdictional fragmentation (high-level). Imperial Control 80 · Rebel Resistance 50.',
       mech: [
         'Hardware self-custody and multisig reduce custodial seizure surface',
         'Peer-to-peer settlement and non-custodial paths remain outside KYC/AML perimeter at the margin',
