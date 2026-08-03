@@ -87,9 +87,16 @@
       ? 'Source: ' + arr.map(citeLink).join(' · ')
       : '';
 
+  const energySources = [
+    D.energyChokepoints.citation,
+    D.energyChokepoints.citation2,
+    D.energyChokepoints.citation3,
+    D.energyChokepoints.citation4,
+    D.energyChokepoints.citation5,
+  ].filter(Boolean);
   const energyCite = $('energyCite');
-  if (energyCite && D.energyChokepoints.citation) {
-    energyCite.innerHTML = 'Source: ' + citeLink(D.energyChokepoints.citation);
+  if (energyCite && energySources.length) {
+    energyCite.innerHTML = 'Sources: ' + energySources.map(citeLink).join(' · ');
   }
 
   /* ── Debt gauges ────────────────────────────────────────────────────── */

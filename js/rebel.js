@@ -15,7 +15,7 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 1 June 2026',
+      transmission: 'Counter-briefing · current to 3 August 2026',
       morale: 57,
       moraleTier: 'CAUTIOUS HOLD',
     },
@@ -94,11 +94,11 @@
       {
         id: 'crypto',
         name: 'Crypto',
-        score: 56,
-        imperial: 67,
+        score: 48,
+        imperial: 83,
         blurb:
-          'Perimeter tightened via the GENIUS Act stablecoin rule (issuer comment period closes 9 Jun 2026), the CLARITY Act clearing Senate Banking 15–9, and Tether’s $344M OFAC-coordinated freeze. ' +
-          'Resistance capacity: self-custody, P2P settlement, jurisdictional fragmentation.',
+          'Perimeter tightened via ESMA’s 8 Jul CASP custody-resilience action and Treasury/OFAC’s 29 Jul designation of a digital-asset-funded Hormuz insurance scheme, alongside MiCA/GENIUS Act gateway rules. ' +
+          'Resistance capacity remains in self-custody, P2P settlement, and jurisdictional fragmentation, but regulated ramps are narrower.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
           'Peer-to-peer settlement and DEX flow remain outside KYC perimeter at the margin',
@@ -266,7 +266,7 @@
         url: 'https://hai.stanford.edu/ai-index/2026-ai-index-report',
       },
       {
-        label: 'U.S. Federal Register · Permitted Payment Stablecoin Issuer AML/CFT rule (comment closes 9 Jun 2026)',
+        label: 'U.S. Federal Register · Permitted Payment Stablecoin Issuer AML/CFT rule (10 Apr 2026)',
         url: 'https://www.federalregister.gov/documents/2026/04/10/2026-06963/permitted-payment-stablecoin-issuer-anti-money-launderingcountering-the-financing-of-terrorism',
       },
       {
@@ -288,6 +288,14 @@
       {
         label: 'U.S. MARAD · Advisory 2026-006 (Red Sea / Bab el-Mandeb risk, 26 Mar 2026)',
         url: 'https://www.maritime.dot.gov/msci/2026-006',
+      },
+      {
+        label: 'ESMA · Common Supervisory Action on CASP custody resilience (8 Jul 2026)',
+        url: 'https://www.esma.europa.eu/press-news/esma-news/esma-launches-common-supervisory-action-casps-digital-operational-resilience',
+      },
+      {
+        label: 'U.S. Treasury/OFAC · Hormuz insurance scheme accepts digital assets (29 Jul 2026)',
+        url: 'https://home.treasury.gov/news/press-releases/sb0581',
       },
     ],
 
