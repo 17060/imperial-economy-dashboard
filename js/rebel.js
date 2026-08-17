@@ -15,7 +15,7 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 3 August 2026',
+      transmission: 'Counter-briefing · current to 17 August 2026',
       morale: 57,
       moraleTier: 'CAUTIOUS HOLD',
     },
@@ -51,10 +51,10 @@
       {
         id: 'energy',
         name: 'Energy',
-        score: 44,
-        imperial: 78,
+        score: 41,
+        imperial: 91,
         blurb:
-          'Tentative US-Iran 60-day MOU (28–30 May, unsigned) and resumed escorts ease the Hormuz chokehold; Brent fell ~19% in May to ~$92. ' +
+          'IEA (12 Aug) reports renewed disruption, falling regional exports, and tighter product markets; UN/ITC (4 Aug) reports natural-gas exports down 95% y/y. ' +
           'Resilience still accrues at the demand edge: distributed generation, storage, and substitution paths.',
         mech: [
           'Rooftop solar + behind-the-meter storage erode single-point dependence',
@@ -65,10 +65,10 @@
       {
         id: 'debt',
         name: 'Debt',
-        score: 46,
-        imperial: 75,
+        score: 37,
+        imperial: 78,
         blurb:
-          'Global public debt ~94% of GDP in 2025, projected to reach 100% by 2029 (IMF Fiscal Monitor, April 2026); 30-yr UST hit 5.197% (19 May 2026) and Venezuela opened a ~$150–170B restructuring. ' +
+          'Fitch projects developed-market debt at $75.8T / 104% of GDP in 2026; IIF’s 5 Aug monitor keeps higher-for-longer funding costs in view. ' +
           'Resilience: creditor fragmentation, EM local-currency markets, and reserve diversification.',
         mech: [
           'G20 Common Framework + IMF/Paris Club preserve sovereign optionality',
@@ -79,11 +79,11 @@
       {
         id: 'governance',
         name: 'Governance',
-        score: 62,
-        imperial: 65,
+        score: 59,
+        imperial: 67,
         blurb:
-          '20th consecutive year of global freedom decline (Freedom in the World 2026). ' +
-          'But polycentric institutions, federalism, and civic counter-power retain structural defensive value.',
+          'Freedom House records a 20th consecutive year of global decline; ACLED’s 13 Aug Sudan profile highlights SAF gains, RSF pressure, and intensifying drone warfare. ' +
+          'Polycentric institutions, federalism, and civic counter-power retain structural defensive value.',
         mech: [
           'Federalism diffuses compliance burdens across thousands of subnational units',
           'Independent judiciaries, free press, civil society maintain legitimacy alternatives',
@@ -94,11 +94,11 @@
       {
         id: 'crypto',
         name: 'Crypto',
-        score: 48,
-        imperial: 83,
+        score: 47,
+        imperial: 84,
         blurb:
-          'Perimeter tightened via ESMA’s 8 Jul CASP custody-resilience action and Treasury/OFAC’s 29 Jul designation of a digital-asset-funded Hormuz insurance scheme, alongside MiCA/GENIUS Act gateway rules. ' +
-          'Resistance capacity remains in self-custody, P2P settlement, and jurisdictional fragmentation, but regulated ramps are narrower.',
+          'Post-transition MiCA enforcement narrows the compliant venue set: ESMA says unauthorised CASPs must wind down while maintaining AML/sanctions controls; Treasury/OFAC stablecoin rulemaking embeds sanctions programs at permitted issuers. ' +
+          'Self-hosted wallets remain an option, but regulated gateways are tighter.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
           'Peer-to-peer settlement and DEX flow remain outside KYC perimeter at the margin',
@@ -111,7 +111,7 @@
         score: 42,
         imperial: 77,
         blurb:
-          'Frontier scale concentrates; FMTI transparency average fell 58 → 40 (HAI 2026); ICE $25.1M iris-biometric award (May 2026) and the EU AI Act Digital Omnibus deferring high-risk timelines expand surveillance headroom. ' +
+          'Frontier scale concentrates; Stanford HAI reports U.S. data-center and chip-foundry concentration, while EU AI Act transparency rules took effect 2 Aug 2026 for synthetic media and biometric categorisation. ' +
           'Resilience comes from open-weight ecosystems, on-device inference, and federated learning.',
         mech: [
           'Open-weight models + permissive licenses enable independent audit and local fine-tuning',

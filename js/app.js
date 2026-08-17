@@ -93,6 +93,10 @@
     D.energyChokepoints.citation3,
     D.energyChokepoints.citation4,
     D.energyChokepoints.citation5,
+    D.energyChokepoints.citation6,
+    D.energyChokepoints.citation7,
+    D.energyChokepoints.citation8,
+    D.energyChokepoints.citation9,
   ].filter(Boolean);
   const energyCite = $('energyCite');
   if (energyCite && energySources.length) {
@@ -125,7 +129,8 @@
   $('governanceDossier').textContent = D.governance.dossier;
   const governanceCite = $('governanceCite');
   if (governanceCite && D.governance.citation) {
-    governanceCite.innerHTML = 'Source: ' + citeLink(D.governance.citation);
+    const governanceSources = [D.governance.citation, D.governance.citation2, D.governance.citation3].filter(Boolean);
+    governanceCite.innerHTML = 'Sources: ' + governanceSources.map(citeLink).join(' · ');
   }
 
   /* ── AI surveillance ────────────────────────────────────────────────── */
