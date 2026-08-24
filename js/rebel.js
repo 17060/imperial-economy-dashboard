@@ -15,8 +15,8 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 17 August 2026',
-      morale: 57,
+      transmission: 'Counter-briefing · current to 24 August 2026',
+      morale: 56,
       moraleTier: 'CAUTIOUS HOLD',
     },
 
@@ -54,7 +54,7 @@
         score: 41,
         imperial: 91,
         blurb:
-          'IEA (12 Aug) reports renewed disruption, falling regional exports, and tighter product markets; UN/ITC (4 Aug) reports natural-gas exports down 95% y/y. ' +
+          'Reuters/Kpler (21 Aug) counted 7 commodity ships through Hormuz versus roughly 130–140 before the war; Bab el-Mandeb fell to 23 from 34 on each of the prior two days. ' +
           'Resilience still accrues at the demand edge: distributed generation, storage, and substitution paths.',
         mech: [
           'Rooftop solar + behind-the-meter storage erode single-point dependence',
@@ -65,10 +65,10 @@
       {
         id: 'debt',
         name: 'Debt',
-        score: 37,
-        imperial: 78,
+        score: 35,
+        imperial: 80,
         blurb:
-          'Fitch projects developed-market debt at $75.8T / 104% of GDP in 2026; IIF’s 5 Aug monitor keeps higher-for-longer funding costs in view. ' +
+          'Reuters (18 Aug) reports U.S. 30-year yields above 5%, Japan’s 10-year at a three-decade high, and a U.S. term premium near 80 bp amid debt and geopolitical risk. ' +
           'Resilience: creditor fragmentation, EM local-currency markets, and reserve diversification.',
         mech: [
           'G20 Common Framework + IMF/Paris Club preserve sovereign optionality',
@@ -79,10 +79,10 @@
       {
         id: 'governance',
         name: 'Governance',
-        score: 59,
-        imperial: 67,
+        score: 60,
+        imperial: 68,
         blurb:
-          'Freedom House records a 20th consecutive year of global decline; ACLED’s 13 Aug Sudan profile highlights SAF gains, RSF pressure, and intensifying drone warfare. ' +
+          'Freedom House records a 20th consecutive year of global decline; ACLED’s 19 Aug Yemen report records 16 Houthi attacks on oil assets and near-daily internal clashes. ' +
           'Polycentric institutions, federalism, and civic counter-power retain structural defensive value.',
         mech: [
           'Federalism diffuses compliance burdens across thousands of subnational units',
@@ -94,10 +94,10 @@
       {
         id: 'crypto',
         name: 'Crypto',
-        score: 47,
-        imperial: 84,
+        score: 46,
+        imperial: 85,
         blurb:
-          'Post-transition MiCA enforcement narrows the compliant venue set: ESMA says unauthorised CASPs must wind down while maintaining AML/sanctions controls; Treasury/OFAC stablecoin rulemaking embeds sanctions programs at permitted issuers. ' +
+          'OFAC’s 7 Aug action against Iran-linked exchanges and the EU’s 21st Russia-sanctions package tighten crypto exchange chokepoints; the SEC’s 18 Aug proposal improves rule clarity but preserves supervision. ' +
           'Self-hosted wallets remain an option, but regulated gateways are tighter.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
@@ -111,7 +111,7 @@
         score: 42,
         imperial: 77,
         blurb:
-          'Frontier scale concentrates; Stanford HAI reports U.S. data-center and chip-foundry concentration, while EU AI Act transparency rules took effect 2 Aug 2026 for synthetic media and biometric categorisation. ' +
+          'Stanford HAI reports U.S. data-center and chip-foundry concentration; Reuters (18 Aug update) shows Pennsylvania safeguards, a Texas grid pause, and New York’s 50 MW moratorium. ' +
           'Resilience comes from open-weight ecosystems, on-device inference, and federated learning.',
         mech: [
           'Open-weight models + permissive licenses enable independent audit and local fine-tuning',
@@ -296,6 +296,34 @@
       {
         label: 'U.S. Treasury/OFAC · Hormuz insurance scheme accepts digital assets (29 Jul 2026)',
         url: 'https://home.treasury.gov/news/press-releases/sb0581',
+      },
+      {
+        label: 'Reuters/Kpler · Hormuz crossings fall to 7, Bab el-Mandeb to 23 (21 Aug 2026)',
+        url: 'https://www.reuters.com/world/middle-east/hormuz-ship-crossings-hover-single-digits-data-shows-2026-08-21/',
+      },
+      {
+        label: 'Reuters · Global bond-market stress and multi-year yield highs (18 Aug 2026)',
+        url: 'https://www.reuters.com/world/china/selling-grips-bond-markets-us-japan-inflation-fiscal-worries-take-hold-2026-08-18/',
+      },
+      {
+        label: 'ACLED · Houthis ramp activity in Yemen and Saudi Arabia (19 Aug 2026)',
+        url: 'https://acleddata.com/report/houthis-ramp-activity-yemen-and-saudi-arabia-avoid-reigniting-civil-war-so-far',
+      },
+      {
+        label: 'Reuters · Authorities restrict data centres amid AI boom (updated 18 Aug 2026)',
+        url: 'https://www.reuters.com/legal/litigation/where-authorities-are-restricting-data-centres-amid-ai-boom-2026-08-18/',
+      },
+      {
+        label: 'U.S. Treasury/OFAC · Iran-linked crypto exchange action (7 Aug 2026)',
+        url: 'https://home.treasury.gov/news/press-releases/sb0598',
+      },
+      {
+        label: 'EU External Action Service · 21st Russia-sanctions package (24 Jul 2026)',
+        url: 'https://www.eeas.europa.eu/delegations/ukraine/21st-package-sanctions-eu-hits-russian-energy-financial-services-and-crypto-hard_en',
+      },
+      {
+        label: 'SEC · Regulation Crypto Assets proposal (18 Aug 2026)',
+        url: 'https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets',
       },
     ],
 
