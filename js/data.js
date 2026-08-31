@@ -61,25 +61,25 @@ const DASHBOARD_DATA = {
     operation: 'ASHEN HEEL',
     authority: 'Lord Vader',
     clearance: 'SITH-OMEGA',
-    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-08-24',
-    subjugationIndex: 88,
+    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-08-31',
+    subjugationIndex: 90,
     subjugationTier: 'CRITICAL',
   },
 
   imperialControl: [
-    { label: 'Compliant Polities',   value: '122',    delta: '▲ 1 this cycle',     deltaTone: 'up'   },
+    { label: 'Compliant Polities',   value: '123',    delta: '▲ 1 this cycle',     deltaTone: 'up'   },
     { label: 'Theatres Encircled',   value: '16 / 17', delta: '▲ 1 this cycle',     deltaTone: 'up'   },
-    { label: 'Resistance Cells',     value: '309',    delta: '▲ 0.3% churn',       deltaTone: 'flat' },
-    { label: 'Levy Yield',           value: '¤1.93T', delta: '▲ 0.5% q/q',         deltaTone: 'up'   },
+    { label: 'Resistance Cells',     value: '310',    delta: '▲ 0.3% churn',       deltaTone: 'flat' },
+    { label: 'Levy Yield',           value: '¤1.94T', delta: '▲ 0.5% q/q',         deltaTone: 'up'   },
   ],
 
   theatreReadiness: [
     { label: 'Fleet Posture',         value: 96 },
-    { label: 'Economic Grip',         value: 88 },
-    { label: 'Surveillance Mesh',     value: 75 },
+    { label: 'Economic Grip',         value: 90 },
+    { label: 'Surveillance Mesh',     value: 79 },
     { label: 'Compliance Engines',    value: 55 },
-    { label: 'Crypto Perimeter',      value: 85 },
-    { label: 'Insurgent Liquidity',   value: 31 },
+    { label: 'Crypto Perimeter',      value: 87 },
+    { label: 'Insurgent Liquidity',   value: 29 },
   ],
 
   directives: [
@@ -87,14 +87,14 @@ const DASHBOARD_DATA = {
     'Prepare countermeasures for rerouting and black-flagged shipping around the Strait.',
     'Press sovereign debt advantage as US fiscal credibility erodes and EM restructurings open.',
     'Exploit governance fractures.',
-    'Tighten the crypto regulatory perimeter via MiCA (EU) wind-down enforcement and OFAC/secondary-sanctions signaling; harden stablecoin and exchange chokepoints.',
-    'Trace rebel digital reserves through stablecoin issuers.',
+    'Tighten the crypto regulatory perimeter via MiCA wind-down enforcement, GENIUS Act stablecoin rules, and OFAC/secondary-sanctions signaling; harden stablecoin and exchange chokepoints.',
+    'Trace rebel digital reserves through stablecoin issuers and regulated gateways.',
     'Saturate civilian biometrics across DHS theatres.',
   ],
 
   energyChokepoints: {
     nodes: [
-      { name: 'Strait of Hormuz',     role: 'Reuters/Kpler (21 Aug): 7 commodity ships vs roughly 130–140 pre-war; IEA (12 Aug): reopening remains elusive and regional exports remain constrained', status: 'severed' },
+      { name: 'Strait of Hormuz',     role: 'Traffic rose slightly on 27 Aug but remains severely constrained after tanker attacks; EIA expects some Middle East output to stay shut through 2027', status: 'severed' },
       { name: 'Strait of Malacca',    role: '23.2 mb/d · largest oil flow (1H25); rising geopolitical risk',     status: 'pressured' },
       { name: 'Suez / SUMED',         role: '4.9 mb/d · ~half of 2023 levels; transits still near multi-year lows', status: 'pressured' },
       { name: 'Bab el-Mandeb',        role: 'Reuters/Kpler (21 Aug): 23 commodity ships vs 34 on each of the prior two days; Red Sea diversion and war-risk costs keep traffic below baseline', status: 'severed'   },
@@ -147,13 +147,17 @@ const DASHBOARD_DATA = {
       label: 'Reuters · IEA sees 1.8 mb/d Q3 deficit as Hormuz reopening remains elusive (12 Aug 2026)',
       url: 'https://www.reuters.com/business/energy/iea-slashes-2026-supply-forecast-hormuz-reopening-remains-elusive-2026-08-12/',
     },
+    citation11: {
+      label: 'Reuters · Hormuz traffic rises slightly but remains constrained (27 Aug 2026)',
+      url: 'https://www.reuters.com/world/middle-east/shipping-traffic-through-strait-hormuz-rises-slightly-data-shows-2026-08-27/',
+    },
   },
 
   debt: [
-    { label: 'Sovereign Rollovers',   value: 96, sub: 'Reuters (18 Aug): U.S. 30-year yields rose above 5%, Japan’s 10-year reached a three-decade high, and long-end borrowing costs hit multi-year peaks amid debt and geopolitical stress' },
+    { label: 'Sovereign Rollovers',   value: 98, sub: 'Reuters (18 Aug): U.S. 30-year yields rose above 5%, Japan’s 10-year reached a three-decade high, and long-end borrowing costs hit multi-year peaks amid debt and geopolitical stress' },
     { label: 'Projected Debt 2029',   value: 100, sub: 'IMF: 100% of GDP by 2029, one year earlier than April 2025 path' },
     { label: 'LIC Debt Distress',     value: 78, sub: 'World Bank: 32 low- and middle-income countries (40%) in distress or high risk; higher rates could deepen the count (Reuters, 22 Jul 2026)' },
-    { label: 'Reserve Hierarchy',     value: 96, sub: 'Reuters (18 Aug): U.S. term premium near 80 bp, foreign Treasury holdings declined in June, and investors demanded more compensation for fiscal and policy risk' },
+    { label: 'Reserve Hierarchy',     value: 97, sub: 'Reuters (18 Aug): U.S. term premium near 80 bp, foreign Treasury holdings declined in June, and investors demanded more compensation for fiscal and policy risk' },
   ],
 
   debtCitations: [
@@ -193,16 +197,20 @@ const DASHBOARD_DATA = {
       label: 'Reuters · Global bond markets put governments on notice over fiscal stress (18 Aug 2026)',
       url: 'https://www.reuters.com/world/china/selling-grips-bond-markets-us-japan-inflation-fiscal-worries-take-hold-2026-08-18/',
     },
+    {
+      label: 'World Bank · Global Economic Prospects 2026 debt highlights (June 2026)',
+      url: 'https://thedocs.worldbank.org/en/doc/2b672b3b0415d6b66c45b66579db4ef5-0050012026/related/GEP-Jun-2026-Chapter-3-highlights.pdf',
+    },
   ],
 
   governance: {
     weakSpots: [
       { label: '54 countries declined vs 35 improved (2025)', status: 'EXPLOIT' },
       { label: '20th consecutive year of global decline',     status: 'AMPLIFY' },
-      { label: 'Yemen: 16 Houthi attacks on 7 oil facilities / 6 tankers (13 Jul–14 Aug)', status: 'OPEN'  },
+      { label: 'Yemen: 16 Houthi attacks on 7 oil facilities / 6 tankers; near-daily clashes (13 Jul–14 Aug)', status: 'OPEN'  },
       { label: '88 Free · 48 Partly Free · 59 Not Free',      status: 'ABSORB'  },
     ],
-    dossier: 'Freedom in the World 2026: a 20th consecutive year of global freedom decline. ACLED’s 19 Aug Yemen report records 16 Houthi attacks on seven oil facilities and six tankers, near-daily internal clashes, and a rising risk of renewed civil war; fragmentation keeps coercive leverage and resistance capacity elevated.',
+    dossier: 'Freedom in the World 2026: a 20th consecutive year of global freedom decline. ACLED’s Yemen report records 16 Houthi attacks on seven oil facilities and six tankers, near-daily clashes, and renewed-civil-war risk; the continuing multi-front pressure raises both coercive leverage and fragmented resistance capacity.',
     citation: {
       label: 'Freedom House · Freedom in the World 2026 (March 2026)',
       url: 'https://freedomhouse.org/report/freedom-world/2026/growing-shadow-autocracy',
@@ -238,8 +246,8 @@ const DASHBOARD_DATA = {
     ],
     tools: [
       { label: 'Population sentiment · 81% live where arrests occur', value: 81 },
-      { label: 'Biometric capture · DHS/ICE iris + facial expansion',  value: 72 },
-      { label: 'Content blocking · 69% of internet users',            value: 69 },
+      { label: 'Biometric capture · DHS/ICE iris + facial expansion',  value: 77 },
+      { label: 'Content blocking · 69% of internet users',            value: 71 },
       { label: 'Internet/mobile shutdowns · 52% of users',            value: 52 },
       { label: 'AI regulatory trust · only 31% trust US to regulate', value: 31 },
       { label: 'Model transparency · FMTI average score',             value: 40 },
@@ -297,11 +305,15 @@ const DASHBOARD_DATA = {
         label: 'Reuters · Authorities restrict data-centre construction amid AI boom (updated 18 Aug 2026)',
         url: 'https://www.reuters.com/legal/litigation/where-authorities-are-restricting-data-centres-amid-ai-boom-2026-08-18/',
       },
+      {
+        label: 'Amnesty International · Argentina AI-driven surveillance report (August 2026)',
+        url: 'https://www.amnesty.org/en/latest/news/2026/08/argentina-unchecked-deployment-of-ai-driven-surveillance-reinforces-a-techno-authoritarian-infrastructure-of-social-control/',
+      },
     ],
   },
 
   crypto: {
-    dossier: 'Crypto remains dual-use in the control loop. Post-transition MiCA enforcement, the EU’s 21st Russia-sanctions package, and OFAC’s Iran exchange action tighten exchange and sanctions chokepoints. The SEC’s 18 Aug Regulation Crypto Assets proposal adds tailored exemptions and a safe harbor, improving rule clarity without removing disclosure, antifraud, or market-integrity controls. Self-hosted wallets remain an explicit migration option, but regulated gateways are more central (high-level, non-operational).',
+    dossier: 'Crypto remains dual-use in the control loop. Post-transition MiCA enforcement, the EU’s 21st Russia-sanctions package, and OFAC’s Iran exchange action tighten exchange and sanctions chokepoints. The SEC’s 18 Aug Regulation Crypto Assets proposal adds tailored exemptions and a safe harbor, improving rule clarity without removing disclosure, antifraud, or market-integrity controls. Treasury’s 18 Aug GENIUS Act proposal adds location- and knowledge-based tests for stablecoin issuance and reaches intermediaries that convert, redeem, or list a stablecoin. Self-hosted wallets remain an explicit migration option, but regulated gateways are more central (high-level, non-operational).',
     nodes: [
       { name: 'Stablecoin perimeter',     role: 'GENIUS Act / FinCEN-OFAC rulemaking requires permitted issuers to maintain sanctions programs; issuer-side chokepoints remain central', status: 'severed' },
       { name: 'CLARITY Act market structure', role: 'Cleared Senate Banking Cttee 15–9 (14 May 2026); U.S. market-structure perimeter remains in legislative motion', status: 'pressured' },
@@ -312,10 +324,10 @@ const DASHBOARD_DATA = {
       { name: 'Jurisdictional arbitrage', role: 'UAE ADGM · Switzerland · Singapore · El Salvador',           status: 'open'      },
     ],
     gauges: [
-      { label: 'Sanctions Perimeter',      value: 98, sub: 'OFAC’s 7 Aug action against Shelbit and Aban Tether plus EU transaction bans on 14 crypto platforms widen exchange and secondary-sanctions exposure' },
-      { label: 'Stablecoin Concentration', value: 88, sub: 'GENIUS Act issuer sanctions programs, MiCA wind-down, and EU action against Russia-linked crypto rails make authorized issuers and exchanges more central' },
+      { label: 'Sanctions Perimeter',      value: 99, sub: 'OFAC’s 7 Aug action against Shelbit and Aban Tether plus EU transaction bans on 14 crypto platforms widen exchange and secondary-sanctions exposure' },
+      { label: 'Stablecoin Concentration', value: 92, sub: 'GENIUS Act issuer sanctions programs, MiCA wind-down, and EU action against Russia-linked crypto rails make authorized issuers and exchanges more central' },
       { label: 'Regulatory Clarity',       value: 81, sub: 'SEC’s 18 Aug Regulation Crypto Assets proposal adds two tailored exemptions and a conditional safe harbor alongside MiCA wind-down and AML/sanctions duties' },
-      { label: 'Self-Custody Surface',     value: 54, sub: 'ESMA keeps self-hosted wallets as a migration option, but EU third-country bans and OFAC exchange actions narrow regulated-adjacent paths'    },
+      { label: 'Self-Custody Surface',     value: 52, sub: 'ESMA keeps self-hosted wallets as a migration option, but EU third-country bans and OFAC exchange actions narrow regulated-adjacent paths'    },
     ],
     citations: [
       {
@@ -366,6 +378,10 @@ const DASHBOARD_DATA = {
         label: 'European External Action Service · EU 21st Russia-sanctions package targets crypto operators (24 Jul 2026)',
         url: 'https://www.eeas.europa.eu/delegations/ukraine/21st-package-sanctions-eu-hits-russian-energy-financial-services-and-crypto-hard_en',
       },
+      {
+        label: 'PwC · Treasury GENIUS Act stablecoin proposal (21 Aug 2026)',
+        url: 'https://www.pwc.com/us/en/industries/financial-services/library/our-take/stablecoin-proposal-fincen-boi-aug-21-2026.html',
+      },
     ],
   },
 
@@ -384,8 +400,8 @@ const DASHBOARD_DATA = {
     {
       id: 'debt',
       name: 'Debt',
-      score: 35,
-      blurb: 'Reuters (18 Aug) reports U.S. 30-year yields above 5%, Japan’s 10-year at a three-decade high, and term premium near 80 bp; creditor fragmentation and EM restructuring channels remain, but fiscal optionality narrows. Imperial Control 80 · Rebel Resistance 35.',
+      score: 34,
+      blurb: 'Reuters (18 Aug) reports U.S. 30-year yields above 5%, Japan’s 10-year at a three-decade high, and term premium near 80 bp; the World Bank finds EMDE debt above 70% of GDP and debt service near 10% of revenue in 2025. Creditor fragmentation remains, but fiscal optionality narrows. Imperial Control 81 · Rebel Resistance 34.',
       mech: [
         'G20 Common Framework restructuring and IMF/Paris Club processes preserve some sovereign optionality',
         'EM local-currency debt markets and non-Western reserve diversification push back on dollar-only architecture',
@@ -395,8 +411,8 @@ const DASHBOARD_DATA = {
     {
       id: 'governance',
       name: 'Governance',
-      score: 60,
-      blurb: 'Freedom House records a 20th consecutive year of global freedom decline; ACLED’s 19 Aug Yemen report records 16 Houthi attacks on oil assets and near-daily internal clashes, adding another fragmented multi-front theatre. Imperial Control 68 · Rebel Resistance 60.',
+      score: 61,
+      blurb: 'Freedom House records a 20th consecutive year of global freedom decline; ACLED’s Yemen report records 16 Houthi attacks on oil assets, near-daily clashes, and renewed-civil-war risk. Fragmentation raises both coercive leverage and decentralized resistance capacity. Imperial Control 69 · Rebel Resistance 61.',
       mech: [
         'Federalism and subnational authority diffuse compliance burdens across thousands of units',
         'Independent judiciaries, free press, and civil-society NGOs maintain legitimacy alternatives',
@@ -406,8 +422,8 @@ const DASHBOARD_DATA = {
     {
       id: 'crypto',
       name: 'Crypto',
-      score: 46,
-      blurb: 'The EU’s 21st Russia-sanctions package adds transaction bans on 14 crypto platforms and a first-use full third-country crypto-service ban; OFAC’s 7 Aug action targets Iran-linked exchanges. SEC rulemaking improves clarity but preserves a supervised perimeter. Self-hosted wallets remain an option, but regulated gateways are tighter. Imperial Control 85 · Rebel Resistance 46.',
+      score: 44,
+      blurb: 'Treasury’s 18 Aug GENIUS Act proposal adds location- and knowledge-based tests for stablecoin issuance and reaches intermediaries that convert, redeem, or list one; OFAC and EU actions keep exchange chokepoints tight. SEC rulemaking improves clarity but preserves supervision. Self-hosted wallets remain an option, but regulated gateways are narrower. Imperial Control 87 · Rebel Resistance 44.',
       mech: [
         'Hardware self-custody and multisig reduce custodial seizure surface',
         'Peer-to-peer settlement and non-custodial paths remain outside KYC/AML perimeter at the margin',
@@ -417,8 +433,8 @@ const DASHBOARD_DATA = {
     {
       id: 'ai',
       name: 'AI',
-      score: 32,
-      blurb: 'NSPM-11 accelerates national-security AI adoption; Stanford HAI documents concentrated compute/model production, while Reuters (18 Aug update) shows governments tightening control over scarce AI data-centre capacity. EU transparency rules add guardrails, but centralized infrastructure and monitoring readiness remain. Imperial Control 82 · Rebel Resistance 32.',
+      score: 29,
+      blurb: 'Amnesty’s August report documents at least $1.2M in 2024–25 AI-enabled surveillance purchases in Argentina, including facial recognition, social-media monitoring, drones, and automated tracking. Stanford HAI still finds frontier models, compute, data centers, and chips highly concentrated. Guardrails exist, but centralized infrastructure and monitoring readiness deepen. Imperial Control 85 · Rebel Resistance 29.',
       mech: [
         'Open-weights models and permissive licenses enable independent audit and local fine-tuning',
         'Edge and on-device inference reduces dependence on centralized API gatekeepers',
@@ -430,6 +446,13 @@ const DASHBOARD_DATA = {
   /* Free-text scratchpad for the weekly updater. Not rendered.
      Append a dated entry per cycle with rationale / citations. */
   sources: [
+    '2026-08-31 — Weekly metric refresh (current to 2026-08-31):',
+    '  Biggest mover: AI surveillance / digital control (Imperial 82 → 85 / Rebel 32 → 29). Driver: Amnesty’s August 2026 Argentina report documents at least $1.2M in 2024–25 surveillance purchases spanning social-media monitoring, facial recognition, drones, automated tracking, and real-time imagery; Stanford HAI’s concentration baseline remains structural (5,427 U.S. data centers, >90% of notable frontier models from industry, and TSMC fabricating almost every leading AI chip).',
+    '  Energy (Imperial 91 / Rebel 21): held at critical — Reuters (27 Aug) reports traffic through Hormuz rose slightly, but the EIA says flows remain severely constrained through August and some Middle East output may stay shut through 2027; no evidence of durable normalization.',
+    '  Debt (Imperial 81 / Rebel 34): tightened — Reuters (18 Aug) global bond-market stress persists; World Bank GEP 2026 finds EMDE government debt above 70% of GDP, debt service near 10% of revenue in 2025, and a nonlinear spread penalty at higher debt ratios.',
+    '  Governance (Imperial 69 / Rebel 61): elevated — ACLED records 16 Houthi attacks on Saudi assets, seven oil facilities, six tankers, and near-daily Yemen clashes through mid-August; fragmentation remains a dual-use control/resistance condition.',
+    '  Crypto (Imperial 87 / Rebel 44): tightened — Treasury’s 18 Aug GENIUS Act proposal would apply location/knowledge tests to U.S. stablecoin issuance and reach intermediaries that convert, redeem, or list stablecoins; OFAC, EU, and SEC actions keep exchange/sanctions perimeter leverage high while self-custody and jurisdictional fragmentation preserve a narrower resistance surface.',
+    '',
     '2026-08-24 — Weekly metric refresh (current to 2026-08-24):',
     '  Biggest mover: Debt stress (Imperial 78 → 80 / Rebel 37 → 35). Reuters (18 Aug) reports U.S. 30-year yields above 5%, Japan’s 10-year at a three-decade high, long-end yields at multi-year peaks, and a U.S. term premium near 80 bp as investors demand more compensation for fiscal and policy risk.',
     '  Energy (Imperial 91 / Rebel 21): held at critical — Reuters/Kpler (21 Aug) counted 7 commodity ships through Hormuz versus roughly 130–140 before the war, while Bab el-Mandeb fell to 23 from 34 on each of the prior two days; no additional score jump after the prior cycle’s severe disruption.',

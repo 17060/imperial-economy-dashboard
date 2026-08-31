@@ -15,7 +15,7 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 24 August 2026',
+      transmission: 'Counter-briefing · current to 31 August 2026',
       morale: 56,
       moraleTier: 'CAUTIOUS HOLD',
     },
@@ -65,10 +65,10 @@
       {
         id: 'debt',
         name: 'Debt',
-        score: 35,
-        imperial: 80,
+        score: 34,
+        imperial: 81,
         blurb:
-          'Reuters (18 Aug) reports U.S. 30-year yields above 5%, Japan’s 10-year at a three-decade high, and a U.S. term premium near 80 bp amid debt and geopolitical risk. ' +
+          'Reuters (18 Aug) reports U.S. 30-year yields above 5%, Japan’s 10-year at a three-decade high, and a U.S. term premium near 80 bp; the World Bank finds EMDE debt above 70% of GDP and debt service near 10% of revenue. ' +
           'Resilience: creditor fragmentation, EM local-currency markets, and reserve diversification.',
         mech: [
           'G20 Common Framework + IMF/Paris Club preserve sovereign optionality',
@@ -79,8 +79,8 @@
       {
         id: 'governance',
         name: 'Governance',
-        score: 60,
-        imperial: 68,
+        score: 61,
+        imperial: 69,
         blurb:
           'Freedom House records a 20th consecutive year of global decline; ACLED’s 19 Aug Yemen report records 16 Houthi attacks on oil assets and near-daily internal clashes. ' +
           'Polycentric institutions, federalism, and civic counter-power retain structural defensive value.',
@@ -94,11 +94,11 @@
       {
         id: 'crypto',
         name: 'Crypto',
-        score: 46,
-        imperial: 85,
+        score: 44,
+        imperial: 87,
         blurb:
-          'OFAC’s 7 Aug action against Iran-linked exchanges and the EU’s 21st Russia-sanctions package tighten crypto exchange chokepoints; the SEC’s 18 Aug proposal improves rule clarity but preserves supervision. ' +
-          'Self-hosted wallets remain an option, but regulated gateways are tighter.',
+          'Treasury’s 18 Aug GENIUS Act proposal tightens the stablecoin perimeter through location/knowledge tests and intermediary coverage; OFAC and EU actions keep exchange chokepoints tight. ' +
+          'Self-hosted wallets remain an option, but regulated gateways are narrower.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
           'Peer-to-peer settlement and DEX flow remain outside KYC perimeter at the margin',
@@ -108,10 +108,10 @@
       {
         id: 'ai',
         name: 'AI / Digital',
-        score: 42,
-        imperial: 77,
+        score: 39,
+        imperial: 85,
         blurb:
-          'Stanford HAI reports U.S. data-center and chip-foundry concentration; Reuters (18 Aug update) shows Pennsylvania safeguards, a Texas grid pause, and New York’s 50 MW moratorium. ' +
+          'Amnesty’s August report documents at least $1.2M in Argentina’s 2024–25 AI-surveillance purchases, including facial recognition, social-media monitoring, drones, and automated tracking; Stanford HAI still finds frontier compute and model production highly concentrated. ' +
           'Resilience comes from open-weight ecosystems, on-device inference, and federated learning.',
         mech: [
           'Open-weight models + permissive licenses enable independent audit and local fine-tuning',
@@ -324,6 +324,14 @@
       {
         label: 'SEC · Regulation Crypto Assets proposal (18 Aug 2026)',
         url: 'https://www.sec.gov/newsroom/press-releases/2026-76-sec-proposes-new-regulation-crypto-assets',
+      },
+      {
+        label: 'PwC · Treasury GENIUS Act stablecoin proposal (21 Aug 2026)',
+        url: 'https://www.pwc.com/us/en/industries/financial-services/library/our-take/stablecoin-proposal-fincen-boi-aug-21-2026.html',
+      },
+      {
+        label: 'Amnesty International · Argentina AI-driven surveillance report (August 2026)',
+        url: 'https://www.amnesty.org/en/latest/news/2026/08/argentina-unchecked-deployment-of-ai-driven-surveillance-reinforces-a-techno-authoritarian-infrastructure-of-social-control/',
       },
     ],
 
