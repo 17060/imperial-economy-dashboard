@@ -15,7 +15,7 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 31 August 2026',
+      transmission: 'Counter-briefing · current to 7 September 2026',
       morale: 56,
       moraleTier: 'CAUTIOUS HOLD',
     },
@@ -51,10 +51,10 @@
       {
         id: 'energy',
         name: 'Energy',
-        score: 41,
-        imperial: 91,
+        score: 38,
+        imperial: 94,
         blurb:
-          'Reuters/Kpler (21 Aug) counted 7 commodity ships through Hormuz versus roughly 130–140 before the war; Bab el-Mandeb fell to 23 from 34 on each of the prior two days. ' +
+          'Reuters/Kpler counted 4 commodity vessels through Hormuz on 2 Sep versus a 10-day average near 13; Bab el-Mandeb remains constrained. ' +
           'Resilience still accrues at the demand edge: distributed generation, storage, and substitution paths.',
         mech: [
           'Rooftop solar + behind-the-meter storage erode single-point dependence',
@@ -65,10 +65,10 @@
       {
         id: 'debt',
         name: 'Debt',
-        score: 34,
-        imperial: 81,
+        score: 32,
+        imperial: 83,
         blurb:
-          'Reuters (18 Aug) reports U.S. 30-year yields above 5%, Japan’s 10-year at a three-decade high, and a U.S. term premium near 80 bp; the World Bank finds EMDE debt above 70% of GDP and debt service near 10% of revenue. ' +
+          'Fitch (26 Aug) reports average G7 long-term yields at their highest since 2008 and the U.S. 30-year at a 19-year high of 5.33%; the World Bank finds EMDE debt above 70% of GDP and debt service near 10% of revenue. ' +
           'Resilience: creditor fragmentation, EM local-currency markets, and reserve diversification.',
         mech: [
           'G20 Common Framework + IMF/Paris Club preserve sovereign optionality',
@@ -94,10 +94,10 @@
       {
         id: 'crypto',
         name: 'Crypto',
-        score: 44,
-        imperial: 87,
+        score: 42,
+        imperial: 89,
         blurb:
-          'Treasury’s 18 Aug GENIUS Act proposal tightens the stablecoin perimeter through location/knowledge tests and intermediary coverage; OFAC and EU actions keep exchange chokepoints tight. ' +
+          'MAS’s 1 Sep consultation would license and label qualifying stablecoins, while Treasury’s GENIUS Act NPRM adds U.S. licensing and foreign-issuer/order-compliance conditions; OFAC and EU actions keep exchange chokepoints tight. ' +
           'Self-hosted wallets remain an option, but regulated gateways are narrower.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
@@ -108,10 +108,10 @@
       {
         id: 'ai',
         name: 'AI / Digital',
-        score: 39,
-        imperial: 85,
+        score: 38,
+        imperial: 86,
         blurb:
-          'Amnesty’s August report documents at least $1.2M in Argentina’s 2024–25 AI-surveillance purchases, including facial recognition, social-media monitoring, drones, and automated tracking; Stanford HAI still finds frontier compute and model production highly concentrated. ' +
+          'UK OfDIA’s 2026 sector report counts 275 providers and says 57% offer biometrics/liveness detection; Amnesty’s August report documents at least $1.2M in Argentina’s 2024–25 AI-surveillance purchases, including facial recognition, social-media monitoring, drones, and automated tracking; Stanford HAI still finds frontier compute and model production highly concentrated. ' +
           'Resilience comes from open-weight ecosystems, on-device inference, and federated learning.',
         mech: [
           'Open-weight models + permissive licenses enable independent audit and local fine-tuning',
@@ -245,6 +245,22 @@
     ],
 
     sources: [
+      {
+        label: 'Reuters · Hormuz traffic below 10-day average (2 Sep 2026)',
+        url: 'https://www.reuters.com/business/energy/shipping-traffic-via-strait-hormuz-stays-below-10-day-average-data-shows-2026-09-02/',
+      },
+      {
+        label: 'Fitch Ratings · Sovereign bond-yield spike (26 Aug 2026)',
+        url: 'https://www.fitchratings.com/research/sovereigns/sovereign-bond-yield-spike-highlights-persistent-fiscal-challenges-26-08-2026',
+      },
+      {
+        label: 'Singapore MAS · Stablecoin consultation (1 Sep 2026)',
+        url: 'https://www.mas.gov.sg/news/media-releases/2026/mas-consults-on-legislative-amendments-to-implement-stablecoin-regulatory-framework',
+      },
+      {
+        label: 'UK OfDIA · Digital Identity Sectoral Analysis Report 2026',
+        url: 'https://www.gov.uk/government/publications/digital-identity-sectoral-analysis-report-2026/digital-identity-sectoral-analysis-report-2026',
+      },
       {
         label: 'IMF · Fiscal Monitor (April 2026)',
         url: 'https://www.imf.org/en/publications/fm/issues/2026/04/15/fiscal-monitor-april-2026',
