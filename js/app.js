@@ -131,7 +131,7 @@
   $('governanceDossier').textContent = D.governance.dossier;
   const governanceCite = $('governanceCite');
   if (governanceCite && D.governance.citation) {
-    const governanceSources = [D.governance.citation, D.governance.citation2, D.governance.citation3, D.governance.citation4, D.governance.citation5].filter(Boolean);
+    const governanceSources = [D.governance.citation, D.governance.citation2, D.governance.citation3, D.governance.citation4, D.governance.citation5, D.governance.citation6, D.governance.citation7].filter(Boolean);
     governanceCite.innerHTML = 'Sources: ' + governanceSources.map(citeLink).join(' · ');
   }
 

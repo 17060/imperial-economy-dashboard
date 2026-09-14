@@ -15,7 +15,7 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 7 September 2026',
+      transmission: 'Counter-briefing · current to 14 September 2026',
       morale: 56,
       moraleTier: 'CAUTIOUS HOLD',
     },
@@ -51,10 +51,10 @@
       {
         id: 'energy',
         name: 'Energy',
-        score: 38,
-        imperial: 94,
+        score: 16,
+        imperial: 96,
         blurb:
-          'Reuters/Kpler counted 4 commodity vessels through Hormuz on 2 Sep versus a 10-day average near 13; Bab el-Mandeb remains constrained. ' +
+          'Reuters/Kpler counted 7 commodity vessels through Hormuz on 7 Sep after the 10-day average fell to 10, the lowest since May; Bab el-Mandeb remains pressured. ' +
           'Resilience still accrues at the demand edge: distributed generation, storage, and substitution paths.',
         mech: [
           'Rooftop solar + behind-the-meter storage erode single-point dependence',
@@ -65,10 +65,10 @@
       {
         id: 'debt',
         name: 'Debt',
-        score: 32,
-        imperial: 83,
+        score: 31,
+        imperial: 84,
         blurb:
-          'Fitch (26 Aug) reports average G7 long-term yields at their highest since 2008 and the U.S. 30-year at a 19-year high of 5.33%; the World Bank finds EMDE debt above 70% of GDP and debt service near 10% of revenue. ' +
+          'IMF (3 Sep) warns rising bond yields threaten developing-country debt progress; Fitch found average G7 long-term yields highest since 2008. ' +
           'Resilience: creditor fragmentation, EM local-currency markets, and reserve diversification.',
         mech: [
           'G20 Common Framework + IMF/Paris Club preserve sovereign optionality',
@@ -79,10 +79,10 @@
       {
         id: 'governance',
         name: 'Governance',
-        score: 61,
-        imperial: 69,
+        score: 62,
+        imperial: 70,
         blurb:
-          'Freedom House records a 20th consecutive year of global decline; ACLED’s 19 Aug Yemen report records 16 Houthi attacks on oil assets and near-daily internal clashes. ' +
+          'Freedom House records a 20th consecutive year of global decline; ACLED’s September monitors add Mozambique insurgent incursions, post-election unrest risk, Houthi/Saudi escalation, and Kurdish-region contestation. ' +
           'Polycentric institutions, federalism, and civic counter-power retain structural defensive value.',
         mech: [
           'Federalism diffuses compliance burdens across thousands of subnational units',
@@ -94,10 +94,10 @@
       {
         id: 'crypto',
         name: 'Crypto',
-        score: 42,
-        imperial: 89,
+        score: 39,
+        imperial: 91,
         blurb:
-          'MAS’s 1 Sep consultation would license and label qualifying stablecoins, while Treasury’s GENIUS Act NPRM adds U.S. licensing and foreign-issuer/order-compliance conditions; OFAC and EU actions keep exchange chokepoints tight. ' +
+          'Thailand’s 2 Sep Travel Rule adds originator/beneficiary and self-custody checks for regulated transfers from 2027; Treasury’s expanded Iran digital-asset sanctions risk and GENIUS/MAS rules tighten the perimeter. ' +
           'Self-hosted wallets remain an option, but regulated gateways are narrower.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
@@ -108,10 +108,10 @@
       {
         id: 'ai',
         name: 'AI / Digital',
-        score: 38,
-        imperial: 86,
+        score: 25,
+        imperial: 89,
         blurb:
-          'UK OfDIA’s 2026 sector report counts 275 providers and says 57% offer biometrics/liveness detection; Amnesty’s August report documents at least $1.2M in Argentina’s 2024–25 AI-surveillance purchases, including facial recognition, social-media monitoring, drones, and automated tracking; Stanford HAI still finds frontier compute and model production highly concentrated. ' +
+          'Anthropic’s September 2026 report describes AI-assisted identity resolution, sentiment monitoring, opposition profiling, and a Mali surveillance platform aimed at roughly 25 million SIM cards; UK OfDIA counts 275 digital-identity firms with 57% offering biometrics/liveness. Stanford HAI still finds frontier compute and model production highly concentrated. ' +
           'Resilience comes from open-weight ecosystems, on-device inference, and federated learning.',
         mech: [
           'Open-weight models + permissive licenses enable independent audit and local fine-tuning',
@@ -245,6 +245,26 @@
     ],
 
     sources: [
+      {
+        label: 'Anthropic · Detecting and countering misuse of AI: September 2026',
+        url: 'https://www.anthropic.com/threat-intelligence-report-september-2026',
+      },
+      {
+        label: 'Reuters · Hormuz traffic slows after retaliation warning (8 Sep 2026)',
+        url: 'https://www.reuters.com/world/middle-east/hormuz-traffic-slows-after-iran-threatens-retaliation-us-attacks-2026-09-08/',
+      },
+      {
+        label: 'IEA · Oil Market Report September 2026',
+        url: 'https://www.iea.org/reports/oil-market-report-september-2026',
+      },
+      {
+        label: 'Thailand SEC · Travel Rule for Digital Assets (2 Sep 2026)',
+        url: 'https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13277',
+      },
+      {
+        label: 'ACLED · Mozambique Conflict Monitor Update (September 2026)',
+        url: 'https://acleddata.com/update/mozambique-conflict-monitor-update-september-2026',
+      },
       {
         label: 'Reuters · Hormuz traffic below 10-day average (2 Sep 2026)',
         url: 'https://www.reuters.com/business/energy/shipping-traffic-via-strait-hormuz-stays-below-10-day-average-data-shows-2026-09-02/',

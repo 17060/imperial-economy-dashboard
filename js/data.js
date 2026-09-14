@@ -61,8 +61,8 @@ const DASHBOARD_DATA = {
     operation: 'ASHEN HEEL',
     authority: 'Lord Vader',
     clearance: 'SITH-OMEGA',
-    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-09-07',
-    subjugationIndex: 92,
+    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-09-14',
+    subjugationIndex: 94,
     subjugationTier: 'CRITICAL',
   },
 
@@ -75,29 +75,29 @@ const DASHBOARD_DATA = {
 
   theatreReadiness: [
     { label: 'Fleet Posture',         value: 96 },
-    { label: 'Economic Grip',         value: 92 },
-    { label: 'Surveillance Mesh',     value: 80 },
-    { label: 'Compliance Engines',    value: 58 },
-    { label: 'Crypto Perimeter',      value: 89 },
-    { label: 'Insurgent Liquidity',   value: 28 },
+    { label: 'Economic Grip',         value: 94 },
+    { label: 'Surveillance Mesh',     value: 83 },
+    { label: 'Compliance Engines',    value: 61 },
+    { label: 'Crypto Perimeter',      value: 91 },
+    { label: 'Insurgent Liquidity',   value: 25 },
   ],
 
   directives: [
-    'Hormuz has deteriorated further: Reuters/Kpler counted only 4 commodity vessels on 2 Sep, below a 10-day average near 13 and down from 5 on 31 Aug; the passage remains a critical control lever with no durable normalization signal.',
+    'Hormuz risk deepened again: Reuters/Kpler counted 7 commodity vessels on 7 Sep after the 10-day average fell to 10, the lowest since May; Iran’s retaliation warnings keep the passage below baseline.',
     'Prepare countermeasures for rerouting and black-flagged shipping around the Strait.',
-    'Press sovereign debt advantage as G7 long-end yields and refinancing costs reprice higher.',
+    'Press sovereign debt advantage as IMF warns rising bond yields threaten developing-country debt progress.',
     'Exploit governance fractures.',
-    'Tighten the crypto regulatory perimeter via GENIUS Act implementation, Singapore MAS stablecoin rules, MiCA wind-down enforcement, and OFAC/secondary-sanctions signaling; harden stablecoin and exchange chokepoints.',
+    'Tighten the crypto regulatory perimeter via GENIUS Act implementation, Thailand’s Travel Rule, Singapore MAS stablecoin rules, and OFAC digital-asset sanctions; harden stablecoin and exchange chokepoints.',
     'Trace rebel digital reserves through stablecoin issuers and regulated gateways.',
-    'Expand identity and biometric readiness while monitoring digital-ID consolidation.',
+    'Expand identity and biometric readiness; monitor AI-assisted intelligence and national-scale digital control systems.',
   ],
 
   energyChokepoints: {
     nodes: [
-      { name: 'Strait of Hormuz',     role: 'Reuters/Kpler: 4 commodity vessels transited on 2 Sep versus a 10-day average near 13; traffic remains critically below baseline', status: 'severed' },
+      { name: 'Strait of Hormuz',     role: 'Reuters/Kpler: 7 commodity vessels on 7 Sep; 10-day average fell to 10, lowest since May, after retaliation warnings', status: 'severed' },
       { name: 'Strait of Malacca',    role: '23.2 mb/d · largest oil flow (1H25); rising geopolitical risk',     status: 'pressured' },
       { name: 'Suez / SUMED',         role: '4.9 mb/d · ~half of 2023 levels; transits still near multi-year lows', status: 'pressured' },
-      { name: 'Bab el-Mandeb',        role: 'Red Sea diversion and war-risk costs keep traffic below baseline; the southern route remains pressured alongside Hormuz', status: 'severed'   },
+      { name: 'Bab el-Mandeb',        role: 'ACLED tracks renewed Houthi escalation; Reuters reports 29 commodity vessels on 7 Sep, but risk remains elevated at the southern chokepoint', status: 'severed'   },
       { name: 'Cape of Good Hope',    role: 'Reroute institutionalized; +~2 weeks transit and elevated bunker burn', status: 'held'  },
     ],
     mapNodes: [
@@ -148,13 +148,17 @@ const DASHBOARD_DATA = {
       url: 'https://www.reuters.com/business/energy/iea-slashes-2026-supply-forecast-hormuz-reopening-remains-elusive-2026-08-12/',
     },
     citation11: {
-      label: 'Reuters · Hormuz traffic falls to 4 commodity vessels, below 10-day average (2 Sep 2026)',
-      url: 'https://www.reuters.com/business/energy/shipping-traffic-via-strait-hormuz-stays-below-10-day-average-data-shows-2026-09-02/',
+      label: 'Reuters · Hormuz traffic slows to 7 commodity vessels after retaliation warning (8 Sep 2026)',
+      url: 'https://www.reuters.com/world/middle-east/hormuz-traffic-slows-after-iran-threatens-retaliation-us-attacks-2026-09-08/',
+    },
+    citation12: {
+      label: 'IEA · Oil Market Report — September 2026 (11 Sep 2026)',
+      url: 'https://www.iea.org/reports/oil-market-report-september-2026',
     },
   },
 
   debt: [
-    { label: 'Sovereign Rollovers',   value: 100, sub: 'Fitch (26 Aug): average G7 long-term yields reached their highest since 2008; U.S. 30-year yields hit a 19-year high of 5.33% on 18 Aug' },
+    { label: 'Sovereign Rollovers',   value: 100, sub: 'IMF (3 Sep): rising advanced-economy bond yields threaten progress on developing-country debt; refinancing pressure remains elevated' },
     { label: 'Projected Debt 2029',   value: 100, sub: 'IMF: 100% of GDP by 2029, one year earlier than April 2025 path' },
     { label: 'LIC Debt Distress',     value: 78, sub: 'World Bank: 32 low- and middle-income countries (40%) in distress or high risk; higher rates could deepen the count (Reuters, 22 Jul 2026)' },
     { label: 'Reserve Hierarchy',     value: 99, sub: 'Fitch (26 Aug): higher term premiums and investor-base shifts make high-debt sovereigns more sensitive to fiscal and monetary uncertainty' },
@@ -209,6 +213,10 @@ const DASHBOARD_DATA = {
       label: 'Reuters · Global bond selloff deepens as oil prices and debt fears jolt markets (2 Sep 2026)',
       url: 'https://www.reuters.com/world/asia-pacific/bond-selloff-deepens-inflation-oil-prices-jolt-markets-2026-09-02/',
     },
+    {
+      label: 'Reuters · IMF warns rising bond yields threaten developing-country debt progress (3 Sep 2026)',
+      url: 'https://www.reuters.com/world/china/imfs-georgieva-says-rising-bond-yields-threaten-progress-developing-country-debt-2026-09-03/',
+    },
   ],
 
   governance: {
@@ -216,10 +224,11 @@ const DASHBOARD_DATA = {
       { label: '54 countries declined vs 35 improved (2025)', status: 'EXPLOIT' },
       { label: '20th consecutive year of global decline',     status: 'AMPLIFY' },
       { label: 'Yemen: 16 Houthi attacks on 7 oil facilities / 6 tankers; renewed-war risk', status: 'OPEN'  },
-      { label: 'Ukraine: 1,821 conflict events; 203 civilian-targeting incidents in latest ACLED monitor', status: 'ABSORB' },
+      { label: 'Mozambique: ISM incursions, abductions, and post-election unrest risk (ACLED Sep)', status: 'ABSORB' },
+      { label: 'Middle East: Houthi / Saudi escalation and Kurdish-region contestation (ACLED Sep)', status: 'OPEN' },
       { label: '88 Free · 48 Partly Free · 59 Not Free',      status: 'ABSORB'  },
     ],
-    dossier: 'Freedom in the World 2026: a 20th consecutive year of global freedom decline. ACLED’s Yemen report records 16 Houthi attacks on seven oil facilities and six tankers, while its current Ukraine monitor lists 1,821 conflict events and 203 incidents targeting civilians. Multi-front pressure raises both coercive leverage and fragmented resistance capacity without a single new consolidation trigger.',
+    dossier: 'Freedom in the World 2026: a 20th consecutive year of global freedom decline. ACLED’s September monitors describe Islamic State Mozambique incursions, abductions, post-election unrest risk, Houthi/Saudi escalation, and Kurdish-region contestation. Multi-front pressure raises both coercive leverage and fragmented resistance capacity.',
     citation: {
       label: 'Freedom House · Freedom in the World 2026 (March 2026)',
       url: 'https://freedomhouse.org/report/freedom-world/2026/growing-shadow-autocracy',
@@ -240,6 +249,14 @@ const DASHBOARD_DATA = {
       label: 'ACLED · Ukraine Conflict Monitor (current weekly monitor, accessed 7 Sep 2026)',
       url: 'https://acleddata.com/monitor/ukraine-conflict-monitor',
     },
+    citation6: {
+      label: 'ACLED · Mozambique Conflict Monitor Update (September 2026)',
+      url: 'https://acleddata.com/update/mozambique-conflict-monitor-update-september-2026',
+    },
+    citation7: {
+      label: 'ACLED · Middle East Conflict Monitor (10 Sep 2026)',
+      url: 'https://acleddata.com/monitor/middle-east-conflict-monitor',
+    },
   },
 
   aiSurveillance: {
@@ -257,16 +274,17 @@ const DASHBOARD_DATA = {
       '[IRIS-NET] ICE $25.1M sole-source BI2 award (May 2026) · 5M+ booking records · field run Jun 2026',
       '[EU AI ACT] transparency rules took effect 2 Aug 2026: labels for synthetic/deepfake content and biometric/emotion categorisation; enforcement fines up to €15M or 3% turnover',
       '[IDENTITY-MESH] UK OfDIA (Sep 2026): 275 digital-identity firms; 75% verify identity/attributes and 57% offer biometrics/liveness detection',
+      '[CLAUDE-WATCH] Anthropic (Sep 2026): AI-assisted surveillance pipelines mapped populations, identities, sentiment, and political opposition; one Mali platform targeted ~25M SIM cards',
     ],
     tools: [
       { label: 'Population sentiment · 81% live where arrests occur', value: 81 },
-      { label: 'Biometric capture · DHS/ICE iris + facial expansion',  value: 80 },
+      { label: 'Biometric capture · DHS/ICE iris + facial expansion',  value: 82 },
       { label: 'Content blocking · 69% of internet users',            value: 71 },
       { label: 'Internet/mobile shutdowns · 52% of users',            value: 52 },
       { label: 'AI regulatory trust · only 31% trust US to regulate', value: 31 },
       { label: 'Model transparency · FMTI average score',             value: 40 },
       { label: 'EU AI Act transparency enforcement · effective 2 Aug 2026', value: 63 },
-      { label: 'Digital identity / biometric readiness · UK providers', value: 68 },
+      { label: 'Digital identity / biometric readiness · UK providers', value: 70 },
     ],
     quotes: [
       'They have built a mirror that can learn their thoughts. They have not yet realized it can be turned into a window.',
@@ -332,25 +350,29 @@ const DASHBOARD_DATA = {
         label: 'UK OfDIA · Digital Identity Sectoral Analysis Report 2026',
         url: 'https://www.gov.uk/government/publications/digital-identity-sectoral-analysis-report-2026/digital-identity-sectoral-analysis-report-2026',
       },
+      {
+        label: 'Anthropic · Detecting and countering misuse of AI: September 2026',
+        url: 'https://www.anthropic.com/threat-intelligence-report-september-2026',
+      },
     ],
   },
 
   crypto: {
-    dossier: 'Crypto remains dual-use in the control loop. Singapore’s 1 Sep MAS consultation would reserve the “MAS-regulated stablecoin” label for licensed issuers, treat non-MAS-regulated stablecoins as Digital Payment Tokens, recognise only a limited set of comparable foreign-issued coins, prohibit interest, and require stress testing and orderly wind-down plans. Treasury’s GENIUS Act NPRM adds U.S. licensing and foreign-issuer/order-compliance conditions from Jan 2027, while OFAC’s Iran exchange action and MiCA enforcement keep exchange and sanctions chokepoints tight. Self-hosted wallets and P2P settlement remain high-level resistance surfaces, but regulated gateways are narrower.',
+    dossier: 'Crypto remains dual-use in the control loop. Thailand’s SEC Travel Rule (2 Sep) adds originator/beneficiary information requirements and self-custody checks for regulated digital-asset transfers from 2027; Treasury’s Operation Economic Outcast places Iran’s digital-asset sector inside expanded sanctions risk and describes more than $100M in crypto payments tied to oil sanctions evasion. MAS stablecoin licensing, the GENIUS Act NPRM, and MiCA wind-down keep issuer and exchange chokepoints tight. Self-hosted wallets, P2P settlement, and jurisdictional fragmentation remain high-level resistance surfaces, but regulated gateways are narrower.',
     nodes: [
-      { name: 'Stablecoin perimeter',     role: 'U.S. GENIUS Act licensing/order-compliance rules and Singapore MAS-SCS consultation make issuer approval, reserves, disclosure, stress testing, and wind-down central', status: 'severed' },
+      { name: 'Stablecoin perimeter',     role: 'GENIUS Act and MAS consultation make issuer approval, reserves, disclosure, stress testing, and wind-down central', status: 'severed' },
       { name: 'CLARITY Act market structure', role: 'Cleared Senate Banking Cttee 15–9 (14 May 2026); U.S. market-structure perimeter remains in legislative motion', status: 'pressured' },
       { name: 'FATF stablecoin focus',    role: 'Targeted updates keep stablecoins and Travel Rule effectiveness on the perimeter agenda', status: 'pressured' },
       { name: 'Iran exchange chokepoints', role: 'OFAC’s 7 Aug action targets Shelbit and Aban Tether for Iran-linked sanctions evasion; secondary-risk signaling tightens global compliance posture', status: 'severed' },
-      { name: 'Self-custody / P2P',       role: 'FATF flags unhosted-wallet P2P stablecoin risk while self-custody remains a non-custodial surface outside some regulated gateways',     status: 'open'      },
+      { name: 'Self-custody / P2P',       role: 'Thailand’s Travel Rule adds self-custody checks for regulated rails from 2027; non-custodial custody and P2P remain a narrower surface',     status: 'open'      },
       { name: 'EU third-country perimeter', role: 'EU 21st Russia-sanctions package: transaction bans on 14 crypto platforms and a first-use full third-country crypto-service ban', status: 'severed' },
       { name: 'Jurisdictional arbitrage', role: 'UAE ADGM · Switzerland · Singapore · El Salvador',           status: 'open'      },
     ],
     gauges: [
-      { label: 'Sanctions Perimeter',      value: 99, sub: 'OFAC’s 7 Aug action against Shelbit and Aban Tether plus EU transaction bans on 14 crypto platforms widen exchange and secondary-sanctions exposure' },
-      { label: 'Stablecoin Concentration', value: 94, sub: 'MAS consultation, GENIUS Act licensing/order-compliance tests, MiCA wind-down, and issuer sanctions programs make authorized issuers and exchanges more central' },
+      { label: 'Sanctions Perimeter',      value: 100, sub: 'Treasury Operation Economic Outcast expands Iran digital-asset sanctions risk; OFAC exchange action and EU platform bans widen secondary-sanctions exposure' },
+      { label: 'Stablecoin Concentration', value: 96, sub: 'MAS consultation, GENIUS Act licensing/order-compliance tests, MiCA wind-down, and issuer sanctions programs make authorized issuers and exchanges more central' },
       { label: 'Regulatory Clarity',       value: 84, sub: 'SEC’s 18 Aug proposal, Treasury’s GENIUS Act NPRM, and MAS’s 1 Sep consultation make the perimeter more legible while preserving supervision' },
-      { label: 'Self-Custody Surface',     value: 51, sub: 'FATF’s 2026 stablecoin/unhosted-wallet focus and OFAC exchange actions raise pressure, but non-custodial custody and P2P settlement remain possible at the margin'    },
+      { label: 'Self-Custody Surface',     value: 48, sub: 'Thailand’s Travel Rule and FATF’s 2026 stablecoin/unhosted-wallet focus raise pressure, but non-custodial custody and P2P settlement remain possible at the margin'    },
     ],
     citations: [
       {
@@ -417,6 +439,14 @@ const DASHBOARD_DATA = {
         label: 'FATF · Targeted report on stablecoins and unhosted wallets / P2P transactions (March 2026)',
         url: 'https://www.fatf-gafi.org/en/publications/Methodsandtrends/targeted-report-stablecoins-unhosted-wallets-peer-to-peer-transactions.html',
       },
+      {
+        label: 'Thailand SEC · Travel Rule for Digital Assets (2 Sep 2026)',
+        url: 'https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13277',
+      },
+      {
+        label: 'U.S. Treasury · Operation Economic Outcast expands Iran digital-asset sanctions risk (2026)',
+        url: 'https://home.treasury.gov/news/press-releases/sb0613',
+      },
     ],
   },
 
@@ -424,8 +454,8 @@ const DASHBOARD_DATA = {
     {
       id: 'energy',
       name: 'Energy',
-      score: 18,
-      blurb: 'Reuters/Kpler counted 4 commodity vessels through Hormuz on 2 Sep versus a 10-day average near 13; the passage remains far below baseline and Bab el-Mandeb remains constrained. Imperial Control 94 · Rebel Resistance 18.',
+      score: 16,
+      blurb: 'Reuters/Kpler counted 7 commodity vessels through Hormuz on 7 Sep after the 10-day average fell to 10, the lowest since May; Bab el-Mandeb remains pressured. Imperial Control 96 · Rebel Resistance 16.',
       mech: [
         'Cape of Good Hope reroute institutionalized; pipeline diversions (Yanbu, Fujairah, Ceyhan) reduce but do not replace Gulf flows',
         'Rooftop solar, behind-the-meter storage, and community microgrids still erode single-point dependence at the demand edge',
@@ -435,8 +465,8 @@ const DASHBOARD_DATA = {
     {
       id: 'debt',
       name: 'Debt',
-      score: 32,
-      blurb: 'Fitch (26 Aug) reports average G7 long-term yields at their highest since 2008 and the U.S. 30-year at a 19-year high of 5.33%; the World Bank finds EMDE debt above 70% of GDP and debt service near 10% of revenue in 2025. Creditor fragmentation remains, but fiscal optionality narrows. Imperial Control 83 · Rebel Resistance 32.',
+      score: 31,
+      blurb: 'IMF (3 Sep) warns rising bond yields threaten progress on developing-country debt; Fitch found average G7 long-term yields highest since 2008. Creditor fragmentation remains, but fiscal optionality narrows. Imperial Control 84 · Rebel Resistance 31.',
       mech: [
         'G20 Common Framework restructuring and IMF/Paris Club processes preserve some sovereign optionality',
         'EM local-currency debt markets and non-Western reserve diversification push back on dollar-only architecture',
@@ -446,8 +476,8 @@ const DASHBOARD_DATA = {
     {
       id: 'governance',
       name: 'Governance',
-      score: 61,
-      blurb: 'Freedom House records a 20th consecutive year of global freedom decline; ACLED’s Yemen report records 16 Houthi attacks on oil assets, near-daily clashes, and renewed-civil-war risk. Fragmentation raises both coercive leverage and decentralized resistance capacity. Imperial Control 69 · Rebel Resistance 61.',
+      score: 62,
+      blurb: 'Freedom House records a 20th consecutive year of global freedom decline; ACLED’s September monitors add Mozambique insurgent incursions, post-election unrest risk, Houthi/Saudi escalation, and Kurdish-region contestation. Fragmentation raises both coercive leverage and decentralized resistance capacity. Imperial Control 70 · Rebel Resistance 62.',
       mech: [
         'Federalism and subnational authority diffuse compliance burdens across thousands of units',
         'Independent judiciaries, free press, and civil-society NGOs maintain legitimacy alternatives',
@@ -457,8 +487,8 @@ const DASHBOARD_DATA = {
     {
       id: 'crypto',
       name: 'Crypto',
-      score: 42,
-      blurb: 'MAS’s 1 Sep consultation would license and label qualifying stablecoins, while Treasury’s GENIUS Act NPRM adds U.S. licensing and foreign-issuer/order-compliance conditions; OFAC and EU actions keep exchange chokepoints tight. Self-hosted wallets remain an option, but regulated gateways are narrower. Imperial Control 89 · Rebel Resistance 42.',
+      score: 39,
+      blurb: 'Thailand’s 2 Sep Travel Rule adds originator/beneficiary and self-custody checks for regulated transfers from 2027; Treasury’s expanded Iran digital-asset sanctions risk and GENIUS/MAS rules tighten the perimeter. Self-hosted wallets remain an option, but regulated gateways are narrower. Imperial Control 91 · Rebel Resistance 39.',
       mech: [
         'Hardware self-custody and multisig reduce custodial seizure surface',
         'Peer-to-peer settlement and non-custodial paths remain outside KYC/AML perimeter at the margin',
@@ -468,8 +498,8 @@ const DASHBOARD_DATA = {
     {
       id: 'ai',
       name: 'AI',
-      score: 28,
-      blurb: 'The UK OfDIA’s September 2026 sector report counts 275 digital-identity firms, with biometrics/liveness offered by 57%; Amnesty’s August report documents at least $1.2M in 2024–25 AI-enabled surveillance purchases in Argentina. Stanford HAI still finds frontier models, compute, data centers, and chips highly concentrated. Guardrails exist, but centralized infrastructure and monitoring readiness deepen. Imperial Control 86 · Rebel Resistance 28.',
+      score: 25,
+      blurb: 'Anthropic’s September 2026 report describes AI-assisted surveillance, identity resolution, sentiment monitoring, and a Mali platform targeting roughly 25 million SIM cards; UK OfDIA counts 275 digital-identity firms with 57% offering biometrics/liveness. Stanford HAI still finds frontier models, compute, data centers, and chips highly concentrated. Guardrails exist, but centralized infrastructure and monitoring readiness deepen. Imperial Control 89 · Rebel Resistance 25.',
       mech: [
         'Open-weights models and permissive licenses enable independent audit and local fine-tuning',
         'Edge and on-device inference reduces dependence on centralized API gatekeepers',
@@ -481,6 +511,13 @@ const DASHBOARD_DATA = {
   /* Free-text scratchpad for the weekly updater. Not rendered.
      Append a dated entry per cycle with rationale / citations. */
   sources: [
+    '2026-09-14 — Weekly metric refresh (current to 2026-09-14):',
+    '  Biggest mover: AI / digital control (Imperial 86 → 89 / Rebel 28 → 25). Anthropic’s September report documents AI-assisted identity resolution, sentiment monitoring, opposition profiling, and a Mali surveillance platform aimed at roughly 25 million SIM cards; concentration and deployment readiness materially increased. Source: https://www.anthropic.com/threat-intelligence-report-september-2026',
+    '  Energy (Imperial 94 → 96 / Rebel 18 → 16): Reuters reports 7 commodity vessels through Hormuz on 7 Sep and a 10-day average of 10, the lowest since May, after retaliation warnings; IEA (11 Sep) cuts 2026 supply by 5.7 mb/d and delays Gulf recovery to 2027. Sources: https://www.reuters.com/world/middle-east/hormuz-traffic-slows-after-iran-threatens-retaliation-us-attacks-2026-09-08/ ; https://www.iea.org/reports/oil-market-report-september-2026',
+    '  Debt (Imperial 83 → 84 / Rebel 32 → 31): IMF chief Georgieva warned rising bond yields threaten developing-country debt progress; high refinancing costs keep sovereign leverage elevated. Source: https://www.reuters.com/world/china/imfs-georgieva-says-rising-bond-yields-threaten-progress-developing-country-debt-2026-09-03/',
+    '  Governance (Imperial 69 → 70 / Rebel 61 → 62): ACLED September monitors report ISM incursions and abductions in Mozambique, post-election unrest risk, Houthi/Saudi escalation, and Kurdish-region contestation. Sources: https://acleddata.com/update/mozambique-conflict-monitor-update-september-2026 ; https://acleddata.com/monitor/middle-east-conflict-monitor',
+    '  Crypto (Imperial 89 → 91 / Rebel 42 → 39): Thailand SEC Travel Rule adds originator/beneficiary and self-custody checks for regulated transfers from 2027; Treasury’s Operation Economic Outcast places Iran’s digital-asset sector inside expanded sanctions risk and describes over $100M in crypto payments tied to oil sanctions evasion. Sources: https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=13277 ; https://home.treasury.gov/news/press-releases/sb0613',
+    '',
     '2026-09-07 — Weekly metric refresh (current to 2026-09-07):',
     '  Biggest mover: Energy chokepoints (Imperial 91 → 94 / Rebel 21 → 18). Reuters (2 Sep) reports only 4 commodity vessels transited Hormuz, below a 10-day average near 13 and below the prior week’s single-digit baseline; the chokepoint remains critically constrained. Source: https://www.reuters.com/business/energy/shipping-traffic-via-strait-hormuz-stays-below-10-day-average-data-shows-2026-09-02/',
     '  Debt (Imperial 81 → 83 / Rebel 34 → 32): Fitch (26 Aug) reports average G7 long-term yields at their highest since 2008 and the U.S. 30-year at a 19-year high of 5.33%; Reuters (2 Sep) reports the global bond selloff deepening as oil and debt fears lift borrowing costs. Sources: https://www.fitchratings.com/research/sovereigns/sovereign-bond-yield-spike-highlights-persistent-fiscal-challenges-26-08-2026 ; https://www.reuters.com/world/asia-pacific/bond-selloff-deepens-inflation-oil-prices-jolt-markets-2026-09-02/',
