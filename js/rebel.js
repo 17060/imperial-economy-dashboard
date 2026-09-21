@@ -15,7 +15,7 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 14 September 2026',
+      transmission: 'Counter-briefing · current to 21 September 2026',
       morale: 56,
       moraleTier: 'CAUTIOUS HOLD',
     },
@@ -51,10 +51,10 @@
       {
         id: 'energy',
         name: 'Energy',
-        score: 16,
-        imperial: 96,
+        score: 14,
+        imperial: 98,
         blurb:
-          'Reuters/Kpler counted 7 commodity vessels through Hormuz on 7 Sep after the 10-day average fell to 10, the lowest since May; Bab el-Mandeb remains pressured. ' +
+          'Reuters/Kpler counted only 4 commodity vessels through Hormuz on 18 Sep versus a 10-day average near 16; Bab el-Mandeb remains pressured. ' +
           'Resilience still accrues at the demand edge: distributed generation, storage, and substitution paths.',
         mech: [
           'Rooftop solar + behind-the-meter storage erode single-point dependence',
@@ -65,10 +65,10 @@
       {
         id: 'debt',
         name: 'Debt',
-        score: 31,
-        imperial: 84,
+        score: 30,
+        imperial: 85,
         blurb:
-          'IMF (3 Sep) warns rising bond yields threaten developing-country debt progress; Fitch found average G7 long-term yields highest since 2008. ' +
+          'IMF (7 Sep) says US, French, and Japanese 10-year yields are at multi-decade highs and higher core yields can more than offset spread compression in emerging markets. ' +
           'Resilience: creditor fragmentation, EM local-currency markets, and reserve diversification.',
         mech: [
           'G20 Common Framework + IMF/Paris Club preserve sovereign optionality',
@@ -79,10 +79,10 @@
       {
         id: 'governance',
         name: 'Governance',
-        score: 62,
-        imperial: 70,
+        score: 63,
+        imperial: 71,
         blurb:
-          'Freedom House records a 20th consecutive year of global decline; ACLED’s September monitors add Mozambique insurgent incursions, post-election unrest risk, Houthi/Saudi escalation, and Kurdish-region contestation. ' +
+          'Freedom House records a 20th consecutive year of global decline; ACLED adds Blue Nile drone strikes and territorial advances plus 8–14 September Iran-war strike activity. ' +
           'Polycentric institutions, federalism, and civic counter-power retain structural defensive value.',
         mech: [
           'Federalism diffuses compliance burdens across thousands of subnational units',
@@ -94,10 +94,10 @@
       {
         id: 'crypto',
         name: 'Crypto',
-        score: 39,
-        imperial: 91,
+        score: 35,
+        imperial: 94,
         blurb:
-          'Thailand’s 2 Sep Travel Rule adds originator/beneficiary and self-custody checks for regulated transfers from 2027; Treasury’s expanded Iran digital-asset sanctions risk and GENIUS/MAS rules tighten the perimeter. ' +
+          'OFAC’s 17 Sep BitBank and 9 Sep Xinbi designations extend exchange, service-provider, and sanctions-screening chokepoints; SEC rulemaking clarifies supervised issuance while FATF’s DeFi report focuses on identifiable control. ' +
           'Self-hosted wallets remain an option, but regulated gateways are narrower.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
@@ -250,8 +250,8 @@
         url: 'https://www.anthropic.com/threat-intelligence-report-september-2026',
       },
       {
-        label: 'Reuters · Hormuz traffic slows after retaliation warning (8 Sep 2026)',
-        url: 'https://www.reuters.com/world/middle-east/hormuz-traffic-slows-after-iran-threatens-retaliation-us-attacks-2026-09-08/',
+        label: 'Reuters/Kpler · Hormuz traffic below 10-day average (18 Sep 2026)',
+        url: 'https://www.reuters.com/world/middle-east/shipping-traffic-via-strait-hormuz-stays-below-10-day-average-data-shows-2026-09-18/',
       },
       {
         label: 'IEA · Oil Market Report September 2026',
@@ -276,6 +276,18 @@
       {
         label: 'Singapore MAS · Stablecoin consultation (1 Sep 2026)',
         url: 'https://www.mas.gov.sg/news/media-releases/2026/mas-consults-on-legislative-amendments-to-implement-stablecoin-regulatory-framework',
+      },
+      {
+        label: 'U.S. Treasury/OFAC · BitBank digital-asset exchange designation (17 Sep 2026)',
+        url: 'https://home.treasury.gov/news/press-releases/sb0632',
+      },
+      {
+        label: 'U.S. Treasury/OFAC · Xinbi Guarantee digital-currency marketplace designation (9 Sep 2026)',
+        url: 'https://home.treasury.gov/news/press-releases/sb0624',
+      },
+      {
+        label: 'ACLED · Blue Nile flashpoint in Sudan (13–14 Sep 2026)',
+        url: 'https://acleddata.com/expert-comment/why-has-blue-nile-become-new-flashpoint-sudans-war',
       },
       {
         label: 'UK OfDIA · Digital Identity Sectoral Analysis Report 2026',

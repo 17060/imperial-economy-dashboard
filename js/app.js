@@ -99,6 +99,8 @@
     D.energyChokepoints.citation9,
     D.energyChokepoints.citation10,
     D.energyChokepoints.citation11,
+    D.energyChokepoints.citation12,
+    D.energyChokepoints.citation13,
   ].filter(Boolean);
   const energyCite = $('energyCite');
   if (energyCite && energySources.length) {
