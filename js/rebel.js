@@ -15,7 +15,7 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 21 September 2026',
+      transmission: 'Counter-briefing · current to 28 September 2026',
       morale: 56,
       moraleTier: 'CAUTIOUS HOLD',
     },
