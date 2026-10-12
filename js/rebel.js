@@ -15,7 +15,7 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 28 September 2026',
+      transmission: 'Counter-briefing · current to 12 October 2026',
       morale: 56,
       moraleTier: 'CAUTIOUS HOLD',
     },
@@ -51,10 +51,10 @@
       {
         id: 'energy',
         name: 'Energy',
-        score: 14,
-        imperial: 98,
+        score: 12,
+        imperial: 100,
         blurb:
-          'Reuters/Kpler counted only 4 commodity vessels through Hormuz on 18 Sep versus a 10-day average near 16; Bab el-Mandeb remains pressured. ' +
+          'EIA’s 6 Oct outlook expects constrained Middle East flows through Q4 after attacks interrupted the East-West pipeline; partial September recovery and rerouting moderate the movement. ' +
           'Resilience still accrues at the demand edge: distributed generation, storage, and substitution paths.',
         mech: [
           'Rooftop solar + behind-the-meter storage erode single-point dependence',
@@ -65,10 +65,10 @@
       {
         id: 'debt',
         name: 'Debt',
-        score: 30,
-        imperial: 85,
+        score: 27,
+        imperial: 88,
         blurb:
-          'IMF (7 Sep) says US, French, and Japanese 10-year yields are at multi-decade highs and higher core yields can more than offset spread compression in emerging markets. ' +
+          'IMF’s 7 Oct warning links record public debt with multi-decade sovereign-yield highs and rising refinancing costs. ' +
           'Resilience: creditor fragmentation, EM local-currency markets, and reserve diversification.',
         mech: [
           'G20 Common Framework + IMF/Paris Club preserve sovereign optionality',
@@ -79,10 +79,10 @@
       {
         id: 'governance',
         name: 'Governance',
-        score: 63,
-        imperial: 71,
+        score: 65,
+        imperial: 73,
         blurb:
-          'Freedom House records a 20th consecutive year of global decline; ACLED adds Blue Nile drone strikes and territorial advances plus 8–14 September Iran-war strike activity. ' +
+          'ACLED reports Eritrean forces crossed into Tigray and Ethiopian drones targeted troops; its Guinea analysis documents militant spillover near mining regions, while rights groups report expanding Turkish online blocks. ' +
           'Polycentric institutions, federalism, and civic counter-power retain structural defensive value.',
         mech: [
           'Federalism diffuses compliance burdens across thousands of subnational units',
@@ -94,11 +94,11 @@
       {
         id: 'crypto',
         name: 'Crypto',
-        score: 35,
-        imperial: 94,
+        score: 36,
+        imperial: 96,
         blurb:
-          'OFAC’s 17 Sep BitBank and 9 Sep Xinbi designations extend exchange, service-provider, and sanctions-screening chokepoints; SEC rulemaking clarifies supervised issuance while FATF’s DeFi report focuses on identifiable control. ' +
-          'Self-hosted wallets remain an option, but regulated gateways are narrower.',
+          'FinCEN withdrew proposed rules covering certain unhosted-wallet transactions and virtual-currency mixing; the SEC proposed conditional self-custody pathways for advisers and funds. ESMA tightened MiCA controls on non-compliant stablecoins. ' +
+          'Self-custody and decentralized settlement remain high-level resistance surfaces.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
           'Peer-to-peer settlement and DEX flow remain outside KYC perimeter at the margin',
@@ -108,10 +108,10 @@
       {
         id: 'ai',
         name: 'AI / Digital',
-        score: 25,
-        imperial: 89,
+        score: 24,
+        imperial: 90,
         blurb:
-          'Anthropic’s September 2026 report describes AI-assisted identity resolution, sentiment monitoring, opposition profiling, and a Mali surveillance platform aimed at roughly 25 million SIM cards; UK OfDIA counts 275 digital-identity firms with 57% offering biometrics/liveness. Stanford HAI still finds frontier compute and model production highly concentrated. ' +
+          'VA and CLEAR launched an optional biometric login pilot for VA.gov on 7 Oct, with selfie sign-in and in-person enrollment at six medical centers; frontier compute and model production remain highly concentrated. ' +
           'Resilience comes from open-weight ecosystems, on-device inference, and federated learning.',
         mech: [
           'Open-weight models + permissive licenses enable independent audit and local fine-tuning',
@@ -245,6 +245,42 @@
     ],
 
     sources: [
+      {
+        label: 'U.S. EIA · Short-Term Energy Outlook (6 Oct 2026)',
+        url: 'https://www.eia.gov/outlooks/steo/',
+      },
+      {
+        label: 'IMF · Annual Meetings curtain-raiser on debt, energy, and AI (7 Oct 2026)',
+        url: 'https://www.imf.org/en/news/articles/2026/10/07/sp100726-2026-annual-meetings-curtain-raiser',
+      },
+      {
+        label: 'ACLED · Eritrean forces cross into Tigray (7 Oct 2026)',
+        url: 'https://acleddata.com/expert-comment/what-main-reason-eritrean-forces-crossed-border-fight-within-ethiopias-tigray-region',
+      },
+      {
+        label: 'ACLED · Militant spillover in Guinea (8 Oct 2026)',
+        url: 'https://acleddata.com/report/militant-spillover-mali-raises-mining-related-security-risks-guinea',
+      },
+      {
+        label: 'Human Rights Watch and partners · Türkiye: End Internet Censorship (12 Oct 2026)',
+        url: 'https://www.bignewsnetwork.com/news/279367980/trkiye-end-internet-censorship',
+      },
+      {
+        label: 'FinCEN · Withdrawal of proposed unhosted-wallet and mixing rules (5 Oct 2026)',
+        url: 'https://www.fincen.gov/news/news-releases/fincen-announces-withdrawals-proposed-digital-asset-related-rules',
+      },
+      {
+        label: 'ESMA · Supervisory expectations for services involving non-MiCA stablecoins (8 Oct 2026)',
+        url: 'https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised',
+      },
+      {
+        label: 'SEC · Adviser and regulated-fund crypto custody proposal (1 Oct 2026)',
+        url: 'https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal',
+      },
+      {
+        label: 'CLEAR · VA.gov optional biometric identity pilot (7 Oct 2026)',
+        url: 'https://ir.clearme.com/news-events/press-releases/detail/197/u-s-department-of-veterans-affairs-selects-clear-for-new',
+      },
       {
         label: 'Anthropic · Detecting and countering misuse of AI: September 2026',
         url: 'https://www.anthropic.com/threat-intelligence-report-september-2026',

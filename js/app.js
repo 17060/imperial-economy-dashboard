@@ -101,6 +101,9 @@
     D.energyChokepoints.citation11,
     D.energyChokepoints.citation12,
     D.energyChokepoints.citation13,
+    D.energyChokepoints.citation14,
+    D.energyChokepoints.citation15,
+    D.energyChokepoints.citation16,
   ].filter(Boolean);
   const energyCite = $('energyCite');
   if (energyCite && energySources.length) {
@@ -133,7 +136,7 @@
   $('governanceDossier').textContent = D.governance.dossier;
   const governanceCite = $('governanceCite');
   if (governanceCite && D.governance.citation) {
-    const governanceSources = [D.governance.citation, D.governance.citation2, D.governance.citation3, D.governance.citation4, D.governance.citation5, D.governance.citation6, D.governance.citation7].filter(Boolean);
+    const governanceSources = [D.governance.citation, D.governance.citation2, D.governance.citation3, D.governance.citation4, D.governance.citation5, D.governance.citation6, D.governance.citation7, D.governance.citation8, D.governance.citation9, D.governance.citation10, D.governance.citation11, D.governance.citation12].filter(Boolean);
     governanceCite.innerHTML = 'Sources: ' + governanceSources.map(citeLink).join(' · ');
   }
 
@@ -203,6 +206,9 @@
             <b>${esc(d.name)} · Resistance Mechanisms</b>
             ${esc(d.blurb)}
             <ul>${d.mech.map((m) => `<li>${esc(m)}</li>`).join('')}</ul>
+            ${Array.isArray(d.citations) && d.citations.length
+              ? `<div class="rri-cite-links"><b>Sources</b>${d.citations.map(citeLink).join(' · ')}</div>`
+              : ''}
           </div>
         </article>`;
     })

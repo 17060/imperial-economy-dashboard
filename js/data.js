@@ -61,7 +61,7 @@ const DASHBOARD_DATA = {
     operation: 'ASHEN HEEL',
     authority: 'Lord Vader',
     clearance: 'SITH-OMEGA',
-    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-09-28',
+    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-10-12',
     subjugationIndex: 98,
     subjugationTier: 'CRITICAL',
   },
@@ -83,22 +83,22 @@ const DASHBOARD_DATA = {
   ],
 
   directives: [
-    'Hormuz pressure intensified: a 24 Sep traffic readout puts the seven-day average at only 3.1 vessels/day versus 86 a year earlier; Bab el-Mandeb is also weakening and the East-West pipeline remains vulnerable.',
+    'EIA’s 6 Oct outlook expects Middle East oil flows to remain constrained through Q4 after attacks interrupted Saudi Arabia’s East-West bypass pipeline; partial recovery and rerouting limit additional score movement.',
     'Prepare countermeasures for rerouting and black-flagged shipping around the Strait.',
-    'Press sovereign debt advantage: IMF market monitoring on 25 Sep put nearly the entire U.S. Treasury curve above 5% amid a global sovereign bond selloff.',
-    'Exploit governance fractures: ACLED flags renewed Tigray conflict risk and continuing multi-front fragmentation.',
-    'Tighten the crypto regulatory perimeter: U.S. scrutiny of Binance over possible Iran-sanctions violations and a $61M forfeiture action add exchange and seizure pressure after the BitBank and Xinbi actions.',
+    'Press sovereign debt advantage: IMF’s 7 Oct warning links record public debt and multi-decade sovereign yields to rising refinancing pressure.',
+    'Exploit governance fractures: ACLED reports renewed fighting and Eritrean cross-border movement in Tigray; militant spillover is also approaching Guinea’s mining regions.',
+    'Balance the crypto perimeter: ESMA tightened MiCA controls on non-compliant stablecoins, while FinCEN withdrew proposed unhosted-wallet and mixing rules and the SEC proposed conditional self-custody options for advisers and funds.',
     'Trace rebel digital reserves through stablecoin issuers and regulated gateways.',
     'Expand identity and biometric readiness; monitor AI-assisted intelligence and national-scale digital control systems.',
   ],
 
   energyChokepoints: {
     nodes: [
-      { name: 'Strait of Hormuz',     role: '24 Sep readout: 3.1 vessels/day in the seven-day average versus 86 a year earlier; tanker movement is near historic lows', status: 'severed' },
+      { name: 'Strait of Hormuz',     role: 'EIA (6 Oct): Middle East flows remain constrained through Q4; September shipments recovered slightly as Saudi Arabia shifted exports and used ship-to-ship transfers', status: 'severed' },
       { name: 'Strait of Malacca',    role: '23.2 mb/d · largest oil flow (1H25); rising geopolitical risk',     status: 'pressured' },
       { name: 'Suez / SUMED',         role: '4.9 mb/d · ~half of 2023 levels; transits still near multi-year lows', status: 'pressured' },
-      { name: 'Bab el-Mandeb',        role: '17 Sep reporting: only four vessels transited amid conflict; later traffic readout puts the route near 70% of normal levels', status: 'severed'   },
-      { name: 'Cape of Good Hope',    role: 'Reroute institutionalized; +~2 weeks transit and elevated bunker burn as both chokepoints remain impaired', status: 'held'  },
+      { name: 'Bab el-Mandeb',        role: 'September reporting shows disrupted traffic and continued regional risk; alternative routes remain exposed to attacks on nearby energy infrastructure', status: 'severed'   },
+      { name: 'Cape of Good Hope',    role: 'Rerouting remains established; EIA says bypass routes help but do not remove Q4 supply constraints', status: 'held'  },
     ],
     mapNodes: [
       { id: 'n1', label: 'Hormuz · severed',            status: 'severed',   x: 62, y: 47 },
@@ -167,13 +167,17 @@ const DASHBOARD_DATA = {
       label: 'Anadolu Agency · Bab el-Mandeb traffic falls to four vessels amid Yemen conflict (17 Sep 2026)',
       url: 'https://www.aa.com.tr/en/middle-east/bab-el-mandeb-strait-s-shipping-traffic-comes-to-halt-amid-conflict-in-yemen/4060177',
     },
+    citation16: {
+      label: 'U.S. EIA · Short-Term Energy Outlook, October 2026 (6 Oct 2026)',
+      url: 'https://www.eia.gov/outlooks/steo/',
+    },
   },
 
   debt: [
-    { label: 'Sovereign Rollovers',   value: 100, sub: 'IMF market monitor (25 Sep): nearly the entire U.S. Treasury curve traded above 5% amid a global sovereign bond selloff' },
+    { label: 'Sovereign Rollovers',   value: 100, sub: 'IMF (7 Oct): energy-driven inflation and multi-decade sovereign-yield highs compound the refinancing burden' },
     { label: 'Projected Debt 2029',   value: 100, sub: 'IMF: 100% of GDP by 2029, one year earlier than April 2025 path' },
     { label: 'LIC Debt Distress',     value: 78, sub: 'World Bank: 32 low- and middle-income countries (40%) in distress or high risk; higher rates could deepen the count (Reuters, 22 Jul 2026)' },
-    { label: 'Reserve Hierarchy',     value: 100, sub: 'IMF (25 Sep): long-term Treasury yields reached two-decade highs; dollar-funded EM carry trades face growing pressure' },
+    { label: 'Reserve Hierarchy',     value: 100, sub: 'IMF (7 Oct): rising benchmark yields and elevated public debt increase funding pressure across advanced and developing economies' },
   ],
 
   debtCitations: [
@@ -237,6 +241,14 @@ const DASHBOARD_DATA = {
       label: 'IMF · Executive Board reviews joint IMF–World Bank LIC debt-sustainability framework (21 Sep 2026)',
       url: 'https://www.imf.org/en/news/articles/2026/09/21/pr26296-lics-imf-executive-board-reviews-the-joint-world-bank-debt-sustainability-framework',
     },
+    {
+      label: 'IMF Managing Director · Annual Meetings curtain-raiser on debt, energy, and AI crosscurrents (7 Oct 2026)',
+      url: 'https://www.imf.org/en/news/articles/2026/10/07/sp100726-2026-annual-meetings-curtain-raiser',
+    },
+    {
+      label: 'Reuters · IMF warns record debt and multi-decade sovereign yields are rising amid energy shock (7 Oct 2026)',
+      url: 'https://www.reuters.com/world/asia-pacific/imf-chief-warns-energy-shock-growing-debt-ai-risks-threaten-global-growth-2026-10-07/',
+    },
   ],
 
   governance: {
@@ -246,10 +258,12 @@ const DASHBOARD_DATA = {
       { label: 'Sudan Blue Nile: drone strikes on al-Damazine and six-village advance (ACLED 13–14 Sep)', status: 'OPEN'  },
       { label: 'Mozambique: ISM incursions, abductions, and post-election unrest risk (ACLED Sep)', status: 'ABSORB' },
       { label: 'Middle East: 8–14 Sep ACLED data logs 10 US-Israeli and 11 Iranian strike events', status: 'OPEN' },
-      { label: 'Ethiopia: Tigray fighting threatens to restart after four years of fragile peace (ACLED, 24 Sep)', status: 'OPEN' },
+      { label: 'Ethiopia: Eritrean forces crossed into Tigray; Ethiopian drones targeted troops (ACLED, 7 Oct)', status: 'OPEN' },
+      { label: 'Guinea: militant spillover approaches eastern gold-producing region (ACLED, 8 Oct)', status: 'OPEN' },
+      { label: 'Türkiye: rights groups report 1,270 X-account blocking orders in September (12 Oct)', status: 'AMPLIFY' },
       { label: '88 Free · 48 Partly Free · 59 Not Free',      status: 'ABSORB'  },
     ],
-    dossier: 'Freedom in the World 2026: a 20th consecutive year of global freedom decline. ACLED’s September updates add Blue Nile drone strikes and territorial advances in Sudan, renewed Tigray conflict risk, 8–14 September Iran-war strike activity, and continuing Mozambique and Middle East fragmentation. Multi-front pressure raises both coercive leverage and fragmented resistance capacity.',
+    dossier: 'Freedom in the World 2026 marks a 20th consecutive year of global freedom decline. ACLED reports Eritrean forces crossed into Tigray on 7 October amid Ethiopian drone strikes and expanding front-line control; its 8 October analysis finds militant spillover nearing Guinea’s mining region. A 12 October statement by Human Rights Watch and partner groups says Turkish authorities ordered at least 1,270 X accounts blocked in September. New conflict and information-control pressures deepen fragmentation, while local institutions and civic networks remain counterweights.',
     citation: {
       label: 'Freedom House · Freedom in the World 2026 (March 2026)',
       url: 'https://freedomhouse.org/report/freedom-world/2026/growing-shadow-autocracy',
@@ -286,6 +300,18 @@ const DASHBOARD_DATA = {
       label: 'NPR · Fears of return to war grow in Ethiopia’s Tigray region (24 Sep 2026)',
       url: 'https://www.npr.org/2026/09/24/nx-s1-5978861/conflict-ethiopia-tigray',
     },
+    citation10: {
+      label: 'ACLED · Eritrean forces cross into Tigray as Ethiopian forces deploy drones (7 Oct 2026)',
+      url: 'https://acleddata.com/expert-comment/what-main-reason-eritrean-forces-crossed-border-fight-within-ethiopias-tigray-region',
+    },
+    citation11: {
+      label: 'ACLED · Militant spillover from Mali raises mining-related security risks in Guinea (8 Oct 2026)',
+      url: 'https://acleddata.com/report/militant-spillover-mali-raises-mining-related-security-risks-guinea',
+    },
+    citation12: {
+      label: 'Human Rights Watch and partner groups · Türkiye: End Internet Censorship (12 Oct 2026)',
+      url: 'https://www.bignewsnetwork.com/news/279367980/trkiye-end-internet-censorship',
+    },
   },
 
   aiSurveillance: {
@@ -303,6 +329,7 @@ const DASHBOARD_DATA = {
       '[IRIS-NET] ICE $25.1M sole-source BI2 award (May 2026) · 5M+ booking records · field run Jun 2026',
       '[EU AI ACT] transparency rules took effect 2 Aug 2026: labels for synthetic/deepfake content and biometric/emotion categorisation; enforcement fines up to €15M or 3% turnover',
       '[IDENTITY-MESH] UK OfDIA (Sep 2026): 275 digital-identity firms; 75% verify identity/attributes and 57% offer biometrics/liveness detection',
+      '[IDENTITY-PILOT] VA (7 Oct 2026): optional CLEAR biometric login pilot across VA.gov and six medical centers; selfie sign-in and in-person enrollment',
       '[CLAUDE-WATCH] Anthropic (Sep 2026): AI-assisted surveillance pipelines mapped populations, identities, sentiment, and political opposition; one Mali platform targeted ~25M SIM cards',
     ],
     tools: [
@@ -313,7 +340,7 @@ const DASHBOARD_DATA = {
       { label: 'AI regulatory trust · only 31% trust US to regulate', value: 31 },
       { label: 'Model transparency · FMTI average score',             value: 40 },
       { label: 'EU AI Act transparency enforcement · effective 2 Aug 2026', value: 63 },
-      { label: 'Digital identity / biometric readiness · UK providers', value: 70 },
+      { label: 'Digital identity / biometric readiness · UK sector + VA pilot', value: 72 },
     ],
     quotes: [
       'They have built a mirror that can learn their thoughts. They have not yet realized it can be turned into a window.',
@@ -383,25 +410,29 @@ const DASHBOARD_DATA = {
         label: 'Anthropic · Detecting and countering misuse of AI: September 2026',
         url: 'https://www.anthropic.com/threat-intelligence-report-september-2026',
       },
+      {
+        label: 'CLEAR · VA.gov optional biometric identity pilot (7 Oct 2026)',
+        url: 'https://ir.clearme.com/news-events/press-releases/detail/197/u-s-department-of-veterans-affairs-selects-clear-for-new',
+      },
     ],
   },
 
   crypto: {
-    dossier: 'Crypto remains dual-use in the control loop. After OFAC designated BitBank on 17 September and Xinbi Guarantee on 9 September, U.S. authorities scrutinized Binance over possible Iran-sanctions violations (22 Sep) and a New York forfeiture action sought $61M in crypto tied to an Iran oil-sale investigation (23 Sep). These steps increase exchange, analytics, and seizure leverage; self-hosted wallets, P2P settlement, and jurisdictional fragmentation remain high-level resistance surfaces, but regulated gateways are narrower.',
+    dossier: 'Crypto remains dual-use. ESMA’s 8 October opinion says MiCA-authorised firms should cease a broad range of services involving non-compliant stablecoins, tightening regulated access points. On 5 October, FinCEN withdrew proposed rules for certain unhosted-wallet transactions and virtual-currency mixing; the SEC’s 1 October custody proposal would permit conditional self-custody for advisers and regulated funds. The U.S. changes widen policy optionality for self-custody and decentralized settlement, while stablecoin issuer and exchange controls remain substantial. This cycle lifts Rebel Resistance and holds Imperial Control near its high baseline.',
     nodes: [
-      { name: 'Stablecoin perimeter',     role: 'GENIUS Act and MAS consultation make issuer approval, reserves, disclosure, stress testing, and wind-down central', status: 'severed' },
+      { name: 'Stablecoin perimeter',     role: 'ESMA (8 Oct): MiCA-authorised firms should stop services involving non-compliant stablecoins; controls span trading, transfers, and custody', status: 'severed' },
       { name: 'CLARITY Act market structure', role: 'Cleared Senate Banking Cttee 15–9 (14 May 2026); U.S. market-structure perimeter remains in legislative motion', status: 'pressured' },
       { name: 'FATF / DeFi perimeter',    role: 'July 2026 FATF DeFi report focuses AML/CFT expectations on identifiable control or sufficient influence', status: 'pressured' },
-      { name: 'Iran exchange chokepoints', role: 'OFAC’s 17 Sep BitBank action targets an Iranian digital-asset exchange tied to regime-linked Bitcoin transfers; subsequent Binance scrutiny and a $61M forfeiture action extend exchange and seizure pressure', status: 'severed' },
-      { name: 'Self-custody / P2P',       role: 'Thailand’s Travel Rule adds self-custody checks for regulated rails from 2027; non-custodial custody and P2P remain a narrower surface',     status: 'open'      },
+      { name: 'U.S. custody perimeter', role: 'SEC (1 Oct): proposed adviser/fund rules would allow crypto self-custody in specified circumstances and state trust companies as custodians', status: 'pressured' },
+      { name: 'Self-custody / P2P',       role: 'FinCEN withdrew proposed reporting rules for certain unhosted-wallet transactions and its virtual-currency mixing proposal; policy space is broader, not unlimited', status: 'open' },
       { name: 'EU third-country perimeter', role: 'EU 21st Russia-sanctions package: transaction bans on 14 crypto platforms and a first-use full third-country crypto-service ban', status: 'severed' },
       { name: 'Jurisdictional arbitrage', role: 'UAE ADGM · Switzerland · Singapore · El Salvador',           status: 'open'      },
     ],
     gauges: [
-      { label: 'Sanctions Perimeter',      value: 100, sub: 'OFAC’s BitBank/Xinbi actions, Binance scrutiny, and the $61M forfeiture action extend sanctions, analytics, and seizure pressure across exchange and digital-currency service nodes' },
-      { label: 'Stablecoin Concentration', value: 96, sub: 'MAS consultation, GENIUS Act licensing/order-compliance tests, MiCA wind-down, and issuer sanctions programs make authorized issuers and exchanges more central' },
-      { label: 'Regulatory Clarity',       value: 86, sub: 'SEC innovation-exemption and Regulation Crypto Assets work make lawful issuance pathways more legible while preserving supervision' },
-      { label: 'Self-Custody Surface',     value: 45, sub: 'FATF’s July DeFi report and OFAC exchange actions increase pressure on identifiable control points, but non-custodial custody and P2P settlement remain possible at the margin'    },
+      { label: 'Sanctions Perimeter',      value: 100, sub: 'OFAC’s September designations and Iran-related exchange actions keep sanctions and analytics leverage high; no new U.S. crypto designation was score-changing this cycle' },
+      { label: 'Stablecoin Concentration', value: 98, sub: 'ESMA’s 8 Oct opinion extends MiCA access controls across trading, transfers, custody, and other services tied to non-compliant stablecoins' },
+      { label: 'Regulatory Clarity',       value: 89, sub: 'SEC’s 1 Oct adviser/fund custody proposal defines supervised paths for crypto custody, including conditional self-custody and state trust-company custodians' },
+      { label: 'Self-Custody Surface',     value: 55, sub: 'FinCEN withdrew proposed unhosted-wallet and mixing rules; the SEC proposal also permits self-custody in specified cases. These are policy signals, not a guarantee against other laws or controls' },
     ],
     citations: [
       {
@@ -500,6 +531,18 @@ const DASHBOARD_DATA = {
         label: 'CNBC · U.S. seeks crypto tied to Iran oil sales investigation (15 Sep 2026)',
         url: 'https://www.cnbc.com/2026/09/15/us-attorney-crypto-tether-iran-china-.html',
       },
+      {
+        label: 'FinCEN · Withdrawal of proposed rules on unhosted-wallet transactions and virtual-currency mixing (5 Oct 2026)',
+        url: 'https://www.fincen.gov/news/news-releases/fincen-announces-withdrawals-proposed-digital-asset-related-rules',
+      },
+      {
+        label: 'ESMA · Supervisory expectations for services involving non-MiCA-compliant stablecoins (8 Oct 2026)',
+        url: 'https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised',
+      },
+      {
+        label: 'SEC · Proposed adviser and regulated-fund crypto custody rules (1 Oct 2026)',
+        url: 'https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal',
+      },
     ],
   },
 
@@ -508,7 +551,11 @@ const DASHBOARD_DATA = {
       id: 'energy',
       name: 'Energy',
       score: 12,
-      blurb: 'A 24 Sep traffic readout puts Hormuz at only 3.1 vessels/day in the seven-day average versus 86 a year earlier; Bab el-Mandeb traffic also weakened and the East-West pipeline remained vulnerable. Imperial Control 100 · Rebel Resistance 12.',
+      blurb: 'EIA’s 6 Oct outlook expects Middle East flows to remain constrained through Q4 after attacks interrupted the East-West pipeline; September shipping and oil exports partially recovered through alternative routing. Imperial Control 100 · Rebel Resistance 12.',
+      citations: [
+        { label: 'EIA · October 2026 Short-Term Energy Outlook', url: 'https://www.eia.gov/outlooks/steo/' },
+        { label: 'Moneycontrol · Hormuz and Bab el-Mandeb traffic analysis (24 Sep 2026)', url: 'https://www.moneycontrol.com/world/hormuz-ship-traffic-down-96-bab-el-mandeb-at-70-of-normal-levels-article-14037505.html' },
+      ],
       mech: [
         'Cape of Good Hope reroute institutionalized; pipeline diversions (Yanbu, Fujairah, Ceyhan) reduce but do not replace Gulf flows',
         'Rooftop solar, behind-the-meter storage, and community microgrids still erode single-point dependence at the demand edge',
@@ -518,8 +565,12 @@ const DASHBOARD_DATA = {
     {
       id: 'debt',
       name: 'Debt',
-      score: 28,
-      blurb: 'IMF market monitoring on 25 Sep put nearly the entire U.S. Treasury curve above 5% as long-term yields reached two-decade highs; dollar-funded EM carry trades face growing pressure. Imperial Control 87 · Rebel Resistance 28.',
+      score: 27,
+      blurb: 'IMF’s 7 Oct warning links record public debt with multi-decade sovereign-yield highs and rising refinancing costs; energy inflation and higher benchmark rates add pressure. Imperial Control 88 · Rebel Resistance 27.',
+      citations: [
+        { label: 'IMF · Annual Meetings curtain-raiser on debt, energy, and AI (7 Oct 2026)', url: 'https://www.imf.org/en/news/articles/2026/10/07/sp100726-2026-annual-meetings-curtain-raiser' },
+        { label: 'Reuters · IMF warns of record debt and multi-decade sovereign yields (7 Oct 2026)', url: 'https://www.reuters.com/world/asia-pacific/imf-chief-warns-energy-shock-growing-debt-ai-risks-threaten-global-growth-2026-10-07/' },
+      ],
       mech: [
         'G20 Common Framework restructuring and IMF/Paris Club processes preserve some sovereign optionality',
         'EM local-currency debt markets and non-Western reserve diversification push back on dollar-only architecture',
@@ -529,8 +580,13 @@ const DASHBOARD_DATA = {
     {
       id: 'governance',
       name: 'Governance',
-      score: 64,
-      blurb: 'Freedom House records a 20th consecutive year of global freedom decline; ACLED now flags renewed Tigray conflict risk alongside Blue Nile drone strikes, territorial advances, and Iran-war strike activity. Fragmentation raises both coercive leverage and decentralized resistance capacity. Imperial Control 72 · Rebel Resistance 64.',
+      score: 65,
+      blurb: 'ACLED reports Eritrean forces crossed into Tigray and Ethiopian drones targeted troops (7 Oct), while militant spillover approached Guinea’s eastern mining region (8 Oct). HRW and partners document expanded Turkish online blocking. Imperial Control 73 · Rebel Resistance 65.',
+      citations: [
+        { label: 'ACLED · Eritrean forces cross into Tigray (7 Oct 2026)', url: 'https://acleddata.com/expert-comment/what-main-reason-eritrean-forces-crossed-border-fight-within-ethiopias-tigray-region' },
+        { label: 'ACLED · Militant spillover in Guinea (8 Oct 2026)', url: 'https://acleddata.com/report/militant-spillover-mali-raises-mining-related-security-risks-guinea' },
+        { label: 'Human Rights Watch and partners · Türkiye: End Internet Censorship (12 Oct 2026)', url: 'https://www.bignewsnetwork.com/news/279367980/trkiye-end-internet-censorship' },
+      ],
       mech: [
         'Federalism and subnational authority diffuse compliance burdens across thousands of units',
         'Independent judiciaries, free press, and civil-society NGOs maintain legitimacy alternatives',
@@ -540,8 +596,13 @@ const DASHBOARD_DATA = {
     {
       id: 'crypto',
       name: 'Crypto',
-      score: 32,
-      blurb: 'After OFAC’s BitBank/Xinbi actions, U.S. scrutiny of Binance over possible Iran-sanctions violations and a $61M forfeiture action extend exchange, analytics, and seizure chokepoints. Self-hosted wallets and P2P remain high-level resistance surfaces, but regulated gateways are narrower. Imperial Control 96 · Rebel Resistance 32.',
+      score: 36,
+      blurb: 'FinCEN withdrew proposed rules on certain unhosted-wallet transactions and virtual-currency mixing (5 Oct); the SEC’s 1 Oct proposal permits conditional self-custody for advisers and funds. ESMA tightened MiCA access controls on non-compliant stablecoins. Imperial Control 96 · Rebel Resistance 36.',
+      citations: [
+        { label: 'FinCEN · Withdrawn unhosted-wallet and mixing proposals (5 Oct 2026)', url: 'https://www.fincen.gov/news/news-releases/fincen-announces-withdrawals-proposed-digital-asset-related-rules' },
+        { label: 'SEC · Proposed adviser/fund crypto custody rules (1 Oct 2026)', url: 'https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal' },
+        { label: 'ESMA · Supervisory expectations for non-MiCA stablecoins (8 Oct 2026)', url: 'https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised' },
+      ],
       mech: [
         'Hardware self-custody and multisig reduce custodial seizure surface',
         'Peer-to-peer settlement and non-custodial paths remain outside KYC/AML perimeter at the margin',
@@ -551,8 +612,12 @@ const DASHBOARD_DATA = {
     {
       id: 'ai',
       name: 'AI',
-      score: 25,
-      blurb: 'Anthropic’s September 2026 report describes AI-assisted surveillance, identity resolution, sentiment monitoring, and a Mali platform targeting roughly 25 million SIM cards; UK OfDIA counts 275 digital-identity firms with 57% offering biometrics/liveness. No post-21 September step-change was verified, so the concentrated compute/model baseline remains. Imperial Control 89 · Rebel Resistance 25.',
+      score: 24,
+      blurb: 'VA and CLEAR launched an optional biometric identity pilot for VA.gov on 7 Oct, with selfie sign-in and in-person enrollment at six medical centers; the AI compute and model-concentration baseline remains. Imperial Control 90 · Rebel Resistance 24.',
+      citations: [
+        { label: 'CLEAR · VA.gov biometric identity pilot (7 Oct 2026)', url: 'https://ir.clearme.com/news-events/press-releases/detail/197/u-s-department-of-veterans-affairs-selects-clear-for-new' },
+        { label: 'Stanford HAI · 2026 AI Index Report', url: 'https://hai.stanford.edu/ai-index/2026-ai-index-report' },
+      ],
       mech: [
         'Open-weights models and permissive licenses enable independent audit and local fine-tuning',
         'Edge and on-device inference reduces dependence on centralized API gatekeepers',
@@ -564,6 +629,13 @@ const DASHBOARD_DATA = {
   /* Free-text scratchpad for the weekly updater. Not rendered.
      Append a dated entry per cycle with rationale / citations. */
   sources: [
+    '2026-10-12 — Weekly metric refresh (current to 2026-10-12):',
+    '  Biggest movement: Crypto Rebel Resistance (32 → 36), while Imperial Control holds at 96. FinCEN withdrew its proposed rules on certain unhosted-wallet transactions and virtual-currency mixing (5 Oct), and the SEC proposed conditional adviser/fund self-custody pathways (1 Oct); ESMA simultaneously tightened MiCA access controls for non-compliant stablecoins (8 Oct). Sources: https://www.fincen.gov/news/news-releases/fincen-announces-withdrawals-proposed-digital-asset-related-rules ; https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal ; https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised',
+    '  Energy (Imperial 100 / Rebel 12): EIA’s 6 Oct outlook expects constrained Middle East flows through Q4; attacks temporarily halted the East-West pipeline, which partially resumed by 22 Sep, while alternative routes and ship-to-ship transfers supported some recovery. Scores held at the ceiling/constrained baseline. Source: https://www.eia.gov/outlooks/steo/',
+    '  Debt (Imperial 87 → 88 / Rebel 28 → 27): IMF’s 7 Oct curtain-raiser warns of record global public debt and multi-decade sovereign-yield highs, with energy inflation adding pressure to borrowing and refinancing costs. Sources: https://www.imf.org/en/news/articles/2026/10/07/sp100726-2026-annual-meetings-curtain-raiser ; https://www.reuters.com/world/asia-pacific/imf-chief-warns-energy-shock-growing-debt-ai-risks-threaten-global-growth-2026-10-07/',
+    '  Governance (Imperial 72 → 73 / Rebel 64 → 65): ACLED reported Eritrean forces crossing into Tigray and Ethiopian drone strikes (7 Oct), plus militant spillover near Guinea’s mining region (8 Oct); HRW and partners described 1,270 September blocking orders targeting X accounts in Türkiye. Sources: https://acleddata.com/expert-comment/what-main-reason-eritrean-forces-crossed-border-fight-within-ethiopias-tigray-region ; https://acleddata.com/report/militant-spillover-mali-raises-mining-related-security-risks-guinea ; https://www.bignewsnetwork.com/news/279367980/trkiye-end-internet-censorship',
+    '  AI / digital control (Imperial 89 → 90 / Rebel 25 → 24): VA and CLEAR launched an optional biometric login pilot for VA.gov on 7 Oct, including selfie sign-in and in-person enrollment at six VA medical centers; no change to the frontier-compute concentration baseline. Source: https://ir.clearme.com/news-events/press-releases/detail/197/u-s-department-of-veterans-affairs-selects-clear-for-new',
+    '',
     '2026-09-28 — Weekly metric refresh (current to 2026-09-28):',
     '  Biggest mover: Crypto perimeter (Imperial 94 → 96 / Rebel 35 → 32). U.S. scrutiny of Binance over possible Iran-sanctions violations (22 Sep) and a New York $61M crypto forfeiture action (23 Sep) add exchange, analytics, and seizure leverage after the BitBank/Xinbi designations. Sources: https://www.reuters.com/legal/government/binance-under-us-scrutiny-over-possible-iran-sanctions-violations-bloomberg-news-2026-09-22/ ; https://www.skadden.com/insights/publications/2026/09/sdnys-$61-million-crypto-forfeiture-action ; https://home.treasury.gov/news/press-releases/sb0632 ; https://home.treasury.gov/news/press-releases/sb0624',
     '  Energy (Imperial 98 → 100 / Rebel 14 → 12): 24 Sep traffic analysis puts Hormuz at 3.1 vessels/day in the seven-day average versus 86 a year earlier, while Bab el-Mandeb weakened and the East-West pipeline remained vulnerable. Sources: https://www.moneycontrol.com/world/hormuz-ship-traffic-down-96-bab-el-mandeb-at-70-of-normal-levels-article-14037505.html ; https://issafrica.org/iss-today/middle-eastern-maritime-chokepoints-no-windfall-for-southern-africa ; https://www.iea.org/reports/oil-market-report-september-2026',

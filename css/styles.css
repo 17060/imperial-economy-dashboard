@@ -503,6 +503,10 @@ body:before {
 
 .rri-tip ul { margin: 6px 0 0; padding-left: 18px; color: var(--muted); }
 .rri-tip li { margin: 2px 0; }
+.rri-cite-links { margin-top: 8px; color: var(--muted); font-size: 10px; }
+.rri-cite-links b { display: block; margin-bottom: 2px; }
+.rri-cite-links a { color: var(--cyan); text-decoration: none; }
+.rri-cite-links a:hover, .rri-cite-links a:focus { color: #9fe6ec; text-decoration: underline; }
 
 .rri-legend {
   display: flex;
