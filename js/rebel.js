@@ -15,7 +15,7 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 12 October 2026',
+      transmission: 'Counter-briefing · current to 19 October 2026',
       morale: 56,
       moraleTier: 'CAUTIOUS HOLD',
     },
@@ -28,11 +28,11 @@
     ],
 
     theatreReadiness: [
-      { label: 'Distributed Liquidity', value: 54 },
+      { label: 'Distributed Liquidity', value: 56 },
       { label: 'Civic Institutions',    value: 58 },
       { label: 'Open Information',      value: 47 },
       { label: 'Demand-Side Energy',    value: 41 },
-      { label: 'Self-Custody Surface',  value: 60 },
+      { label: 'Self-Custody Surface',  value: 62 },
       { label: 'Federated Compute',     value: 44 },
     ],
 
@@ -51,11 +51,11 @@
       {
         id: 'energy',
         name: 'Energy',
-        score: 12,
+        score: 13,
         imperial: 100,
         blurb:
-          'EIA’s 6 Oct outlook expects constrained Middle East flows through Q4 after attacks interrupted the East-West pipeline; partial September recovery and rerouting moderate the movement. ' +
-          'Resilience still accrues at the demand edge: distributed generation, storage, and substitution paths.',
+          'EIA reports partial September recovery through bypass routes and ship-to-ship transfers, while Q4 flows remain constrained and the IEA’s October report describes a historically severe disruption. ' +
+          'The small resilience gain reflects rerouting and partial flow recovery, not normalization.',
         mech: [
           'Rooftop solar + behind-the-meter storage erode single-point dependence',
           'Community microgrids and regional renewables blunt pipeline coercion',
@@ -65,10 +65,10 @@
       {
         id: 'debt',
         name: 'Debt',
-        score: 27,
-        imperial: 88,
+        score: 26,
+        imperial: 89,
         blurb:
-          'IMF’s 7 Oct warning links record public debt with multi-decade sovereign-yield highs and rising refinancing costs. ' +
+          'The IMF’s 14 Oct Fiscal Monitor says public debt is very high and rising as interest rates and persistent spending pressures increase fiscal risk. ' +
           'Resilience: creditor fragmentation, EM local-currency markets, and reserve diversification.',
         mech: [
           'G20 Common Framework + IMF/Paris Club preserve sovereign optionality',
@@ -79,10 +79,10 @@
       {
         id: 'governance',
         name: 'Governance',
-        score: 65,
-        imperial: 73,
+        score: 66,
+        imperial: 74,
         blurb:
-          'ACLED reports Eritrean forces crossed into Tigray and Ethiopian drones targeted troops; its Guinea analysis documents militant spillover near mining regions, while rights groups report expanding Turkish online blocks. ' +
+          'ACLED reports a further breakdown of the Pretoria arrangements in Tigray, a former DRC president’s alliance with M23, and election-linked violence in Kenya. ' +
           'Polycentric institutions, federalism, and civic counter-power retain structural defensive value.',
         mech: [
           'Federalism diffuses compliance burdens across thousands of subnational units',
@@ -94,14 +94,14 @@
       {
         id: 'crypto',
         name: 'Crypto',
-        score: 36,
-        imperial: 96,
+        score: 38,
+        imperial: 97,
         blurb:
-          'FinCEN withdrew proposed rules covering certain unhosted-wallet transactions and virtual-currency mixing; the SEC proposed conditional self-custody pathways for advisers and funds. ESMA tightened MiCA controls on non-compliant stablecoins. ' +
-          'Self-custody and decentralized settlement remain high-level resistance surfaces.',
+          'FinCEN’s 1 Oct A7 alert strengthens sanctions-linked screening; Chainalysis measures one direct domestic personal-wallet series up 302.9% to $228.7B, while its broader crypto-economy measure and separate all-asset domestic P2P series declined. ' +
+          'CFTC and SEC rulemaking remains in comment-stage, not adopted; the SEC adviser/fund self-custody path is conditional and proposed. Settlement alternatives expand at the margin, while regulated gateways retain substantial leverage.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
-          'Peer-to-peer settlement and DEX flow remain outside KYC perimeter at the margin',
+          'Peer-to-peer settlement remains a measured, growing alternative at the margin, subject to applicable rules and service boundaries',
           'Jurisdictional arbitrage (UAE ADGM, Switzerland, Singapore, El Salvador) preserves optionality',
         ],
       },
@@ -109,10 +109,10 @@
         id: 'ai',
         name: 'AI / Digital',
         score: 24,
-        imperial: 90,
+        imperial: 91,
         blurb:
-          'VA and CLEAR launched an optional biometric login pilot for VA.gov on 7 Oct, with selfie sign-in and in-person enrollment at six medical centers; frontier compute and model production remain highly concentrated. ' +
-          'Resilience comes from open-weight ecosystems, on-device inference, and federated learning.',
+          'DOE’s Genesis Mission is integrating national laboratories, supercomputers, AI systems, and datasets; Stanford reports concentrated frontier model production and compute. ' +
+          'No distinct new surveillance deployment was verified, so the open-weight and on-device resilience counterweight is unchanged.',
         mech: [
           'Open-weight models + permissive licenses enable independent audit and local fine-tuning',
           'Edge and on-device inference reduces dependence on centralized API gatekeepers',
@@ -129,8 +129,8 @@
         title: 'Self-Custody',
         category: 'custody',
         body:
-          'Hardware wallets and multisig schemes separate ownership from any single counterparty. ' +
-          'Removes a custodian as a sanctions or seizure choke-point.',
+          'Self-custody separates ownership from a single custodian and can reduce dependence on one service provider. ' +
+          'Applicable laws, public-ledger visibility, and regulated on-ramps still matter.',
         pills: [
           { text: 'no third-party hold', kind: '' },
           { text: 'multisig quorum', kind: 'green' },
@@ -142,8 +142,8 @@
         title: 'Stablecoin Rails',
         category: 'rails',
         body:
-          'Dollar-denominated tokens on public ledgers provide 24/7 settlement and remittance. ' +
-          'High-leverage axis — 84% of illicit volume rides stablecoins per FATF (Mar 2026) — so this is the most pressured rail.',
+          'Dollar-denominated tokens on public ledgers provide around-the-clock settlement and remittance. ' +
+          'Issuer concentration and compliance obligations create a strong control perimeter, while direct wallet-to-wallet activity has grown.',
         pills: [
           { text: 'high pressure', kind: 'warn' },
           { text: 'genius act perimeter', kind: 'warn' },
@@ -155,7 +155,7 @@
         title: 'P2P Liquidity',
         category: 'rails',
         body:
-          'Decentralized exchanges, atomic swaps, and non-custodial market-making preserve a settlement surface that does not require a regulated intermediary.',
+          'Peer-to-peer settlement and decentralized venues preserve alternative pathways at the margin; measured wallet-to-wallet transfer value expanded in the latest adoption period.',
         pills: [
           { text: 'non-custodial', kind: 'green' },
           { text: 'thin-margin', kind: '' },
@@ -167,7 +167,7 @@
         title: 'Cross-Border Settlement',
         category: 'rails',
         body:
-          'Public blockchains move value across jurisdictions in minutes at flat fees, side-stepping correspondent-bank gating and FX rails captured by sanctions tooling.',
+          'Public blockchains provide cross-border settlement alongside traditional systems. Their open records and issuer, exchange, and sanctions rules mean the rails are visible and subject to changing compliance boundaries.',
         pills: [
           { text: 'jurisdiction-neutral', kind: 'blue' },
           { text: 'minute-scale', kind: '' },
@@ -245,6 +245,42 @@
     ],
 
     sources: [
+      {
+        label: 'IEA · Oil Market Report October 2026 (15 Oct)',
+        url: 'https://www.iea.org/reports/oil-market-report-october-2026',
+      },
+      {
+        label: 'IMF · Fiscal Monitor briefing on rising fiscal risks (14 Oct 2026)',
+        url: 'https://mediacenter.imf.org/news/imf---fiscal-monitor-report-annual-meetings--2026/s/1b05cec6-cde8-4b75-80ec-2b29f9fb5d19',
+      },
+      {
+        label: 'ACLED · New Tigray caretaker administration and Pretoria agreement (16 Oct 2026)',
+        url: 'https://acleddata.com/expert-comment/does-ethiopias-new-caretaker-administration-signal-end-pretoria-peace-agreement',
+      },
+      {
+        label: 'FinCEN · A7 Network alert (1 Oct 2026)',
+        url: 'https://www.fincen.gov/system/files/2026-10/FinCEN-Alert-A7-Network.pdf',
+      },
+      {
+        label: 'Chainalysis · 2026 Global Crypto Adoption Index',
+        url: 'https://www.chainalysis.com/blog/2026-global-crypto-adoption-index/',
+      },
+      {
+        label: 'CFTC · CTX/CAM advance notice of proposed crypto market-structure rules (5 Oct 2026)',
+        url: 'https://www.cftc.gov/PressRoom/PressReleases/9307-26',
+      },
+      {
+        label: 'SEC · Regulation Crypto Assets public comment file (comments posted through 16 Oct 2026)',
+        url: 'https://www.sec.gov/rules-regulations/public-comments/s7-2026-27',
+      },
+      {
+        label: 'U.S. DOE · Genesis Mission integrated AI platform (updated 16 Oct 2026)',
+        url: 'https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission',
+      },
+      {
+        label: 'Stanford HAI · 2026 AI Index research and development',
+        url: 'https://hai.stanford.edu/ai-index/2026-ai-index-report/research-and-development',
+      },
       {
         label: 'U.S. EIA · Short-Term Energy Outlook (6 Oct 2026)',
         url: 'https://www.eia.gov/outlooks/steo/',

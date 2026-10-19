@@ -104,6 +104,7 @@
     D.energyChokepoints.citation14,
     D.energyChokepoints.citation15,
     D.energyChokepoints.citation16,
+    D.energyChokepoints.citation17,
   ].filter(Boolean);
   const energyCite = $('energyCite');
   if (energyCite && energySources.length) {
