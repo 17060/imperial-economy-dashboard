@@ -15,7 +15,7 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 19 October 2026',
+      transmission: 'Counter-briefing · current to 26 October 2026',
       morale: 56,
       moraleTier: 'CAUTIOUS HOLD',
     },
@@ -51,11 +51,11 @@
       {
         id: 'energy',
         name: 'Energy',
-        score: 13,
+        score: 12,
         imperial: 100,
         blurb:
-          'EIA reports partial September recovery through bypass routes and ship-to-ship transfers, while Q4 flows remain constrained and the IEA’s October report describes a historically severe disruption. ' +
-          'The small resilience gain reflects rerouting and partial flow recovery, not normalization.',
+          'EIA still forecasts 4.5 million b/d of Middle East shut-ins in Q4, and ACLED reported renewed Houthi threats to Saudi aviation and energy exports on 23 Oct. ' +
+          'Bypass routes and partial recovery remain real but exposed workarounds.',
         mech: [
           'Rooftop solar + behind-the-meter storage erode single-point dependence',
           'Community microgrids and regional renewables blunt pipeline coercion',
@@ -80,10 +80,10 @@
         id: 'governance',
         name: 'Governance',
         score: 66,
-        imperial: 74,
+        imperial: 75,
         blurb:
-          'ACLED reports a further breakdown of the Pretoria arrangements in Tigray, a former DRC president’s alliance with M23, and election-linked violence in Kenya. ' +
-          'Polycentric institutions, federalism, and civic counter-power retain structural defensive value.',
+          'ACLED’s 23 Oct analysis flags Houthi threats to Saudi infrastructure, Somalia territorial contestation, and rising tribal disputes in Syria amid state inaction. ' +
+          'The Rebel score is held because armed conflict alone is not evidence of broader civic resilience.',
         mech: [
           'Federalism diffuses compliance burdens across thousands of subnational units',
           'Independent judiciaries, free press, civil society maintain legitimacy alternatives',
@@ -94,25 +94,26 @@
       {
         id: 'crypto',
         name: 'Crypto',
-        score: 38,
-        imperial: 97,
+        score: 39,
+        imperial: 99,
         blurb:
-          'FinCEN’s 1 Oct A7 alert strengthens sanctions-linked screening; Chainalysis measures one direct domestic personal-wallet series up 302.9% to $228.7B, while its broader crypto-economy measure and separate all-asset domestic P2P series declined. ' +
-          'CFTC and SEC rulemaking remains in comment-stage, not adopted; the SEC adviser/fund self-custody path is conditional and proposed. Settlement alternatives expand at the margin, while regulated gateways retain substantial leverage.',
+          'DOJ reported an Oct 23 initial appearance after extradition in a crypto-fraud case; the complaint alleges victim funds were converted to USDT and moved to digital-asset wallets. SEC staff’s 20 Oct FAQs clarify limited, temporary, conditional exemptions for certain tokenized-stock DLT venues. ' +
+          'Control leverage rises on targeted enforcement reach; the resistance score inches up only for this narrow, regulated DLT pathway.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
-          'Peer-to-peer settlement remains a measured, growing alternative at the margin, subject to applicable rules and service boundaries',
+          'Conditional DLT-venue relief creates a narrow tokenized-stock pathway; it is not a general crypto exemption',
+          'Peer-to-peer settlement remains a measured alternative subject to applicable rules and service boundaries',
           'Jurisdictional arbitrage (UAE ADGM, Switzerland, Singapore, El Salvador) preserves optionality',
         ],
       },
       {
         id: 'ai',
         name: 'AI / Digital',
-        score: 24,
-        imperial: 91,
+        score: 23,
+        imperial: 92,
         blurb:
-          'DOE’s Genesis Mission is integrating national laboratories, supercomputers, AI systems, and datasets; Stanford reports concentrated frontier model production and compute. ' +
-          'No distinct new surveillance deployment was verified, so the open-weight and on-device resilience counterweight is unchanged.',
+          'Freedom House’s 22 Oct report records a 16th consecutive annual decline in internet freedom, with age-assurance laws in 10 of 38 assessed countries and risks from AI-content controls. ' +
+          'The reporting period ended in May 2026; this is a structural update, not a new deployment during the week.',
         mech: [
           'Open-weight models + permissive licenses enable independent audit and local fine-tuning',
           'Edge and on-device inference reduces dependence on centralized API gatekeepers',
@@ -248,6 +249,26 @@
       {
         label: 'IEA · Oil Market Report October 2026 (15 Oct)',
         url: 'https://www.iea.org/reports/oil-market-report-october-2026',
+      },
+      {
+        label: 'U.S. EIA · October Short-Term Energy Outlook, updated 21 Oct 2026',
+        url: 'https://www.eia.gov/outlooks/steo/report/global_oil.php',
+      },
+      {
+        label: 'ACLED · Saudi Arabia, Somalia, and Syria flashpoints (23 Oct 2026)',
+        url: 'https://acleddata.com/global-analysis',
+      },
+      {
+        label: 'SEC · FAQs on conditional innovation exemption for tokenized NMS-stock venues (20 Oct 2026)',
+        url: 'https://www.sec.gov/featured-topics/crypto-task-force/cryptosec',
+      },
+      {
+        label: 'U.S. DOJ · Crypto-fraud prosecution (23 Oct 2026; allegations only)',
+        url: 'https://www.justice.gov/usao-cdca/pr/chinese-national-extradited-alleged-role-multimillion-dollar-cryptocurrency-scam',
+      },
+      {
+        label: 'Freedom House · Freedom on the Net 2026 (published 22 Oct; coverage Jun 2025–May 2026)',
+        url: 'https://freedomhouse.org/article/new-report-authoritarian-internet-controls-drive-16th-consecutive-year-decline-global',
       },
       {
         label: 'IMF · Fiscal Monitor briefing on rising fiscal risks (14 Oct 2026)',
