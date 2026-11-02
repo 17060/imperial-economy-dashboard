@@ -736,7 +736,7 @@ const DASHBOARD_DATA = {
       id: 'ai',
       name: 'AI',
       score: 23,
-      blurb: 'HRF’s 30 Oct report says Belarus reports 60,000 cameras already feed AI for traffic-violation detection; it warns footage has been used against protesters but does not establish that this AI system is used for political monitoring. Vietnam’s VNeID AI integration remains planned, while Nigeria’s election AI emphasizes human oversight. Installed monitoring capacity supports a one-point readiness increase; Rebel Resistance holds. Imperial Control 93 · Rebel Resistance 23.',
+      blurb: 'HRF’s 30 Oct report says Belarus reports 60,000 cameras already feed AI for traffic-violation detection; it warns footage has been used against protesters but does not establish that this AI system is used for political monitoring. Vietnam’s VNeID AI integration remains planned, while Nigeria’s election AI emphasizes human oversight. Newly documented installed monitoring capacity supports a one-point readiness reweighting, not a claim of a new deployment this week; Rebel Resistance holds. Imperial Control 93 · Rebel Resistance 23.',
       citations: [
         { label: 'U.S. DOE · Genesis Mission integrated AI platform (updated 16 Oct 2026)', url: 'https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission' },
         { label: 'Stanford HAI · 2026 AI Index research and development', url: 'https://hai.stanford.edu/ai-index/2026-ai-index-report/research-and-development' },
