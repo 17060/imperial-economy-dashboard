@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Rebel Counter-Briefing · Imperial Economy Dashboard</title>
-  <meta name="description" content="Rebel Alliance counter-briefing companion to the Imperial Economy Dashboard — decentralization resilience across energy, debt, governance, crypto, and AI / digital control, refreshed against public reporting current to 26 October 2026.">
-  <link rel="stylesheet" href="css/styles.css?v=20261026">
-  <link rel="stylesheet" href="css/rebel.css?v=20261026">
+  <meta name="description" content="Rebel Alliance counter-briefing companion to the Imperial Economy Dashboard — decentralization resilience across energy, debt, governance, crypto, and AI / digital control, refreshed against public reporting current to 2 November 2026.">
+  <link rel="stylesheet" href="css/styles.css?v=20261102">
+  <link rel="stylesheet" href="css/rebel.css?v=20261102">
 </head>
 <body class="rb">
   <header class="top">
@@ -14,7 +14,7 @@
       <div class="sigil" aria-hidden="true">✦</div>
       <div>
         REBEL COMMAND<br>
-        <span class="small" id="opSector">Coordinated Resistance · current to 26 October 2026</span>
+        <span class="small" id="opSector">Coordinated Resistance · current to 2 November 2026</span>
       </div>
     </div>
     <nav class="nav">
@@ -51,7 +51,7 @@
         <div>
           <span class="tag">COUNTER · BRIEFING</span>
           <h1>Decentralized defense holds where <span>centralized control</span> <b>cannot consolidate.</b></h1>
-          <p class="small">A Rebel Alliance counter-briefing to the Imperial Economy Dashboard. Same five-axis lens — energy, debt, governance, crypto, AI/digital control — read for how fragmented, polycentric, and distributed actors retain capacity to resist consolidation. Anchored to public reporting current through 26 October 2026 (EIA, IEA, IMF, ACLED, FinCEN, DOJ, SEC, Freedom House, DOE, and Stanford HAI).</p>
+          <p class="small">A Rebel Alliance counter-briefing to the Imperial Economy Dashboard. Same five-axis lens — energy, debt, governance, crypto, AI/digital control — read for how fragmented, polycentric, and distributed actors retain capacity to resist consolidation. Anchored to public reporting current through 2 November 2026 (EIA, IEA, IMF, UKMTO/JMIC, ACLED, CrisisWatch, SEC, Chainalysis, HRF, and Stanford HAI).</p>
           <div class="cards" id="rebelKPIs"></div>
         </div>
         <div class="orb" aria-hidden="true">
@@ -84,7 +84,7 @@
               <span><i style="background:#ef3d42"></i>Imperial Control</span>
               <span><i style="background:#f3a52a"></i>Rebel Resilience</span>
             </div>
-            <p class="dossier" style="margin-top:14px">Governance remains the closest axis, with polycentric institutions and civic capacity retaining structural value amid renewed conflict. Crypto posted the largest two-sided move: both regulated sanctions screening and measurable P2P activity strengthened. Debt stress increased, energy rerouting partly recovered, and AI control readiness rose without a verified new surveillance deployment.</p>
+            <p class="dossier" style="margin-top:14px">Crypto posted the largest two-sided move: Imperial Control rose 99→100 and Rebel Resistance 39→40, reflecting a new SEC complaint (allegations only) and newly documented, mixed regional wallet/P2P capacity. Governance and AI Control each rose one point; energy, debt, and Rebel Resistance for AI held. HRF reports that Belarus says an AI-linked camera network is used for traffic-violation detection, but does not establish political use of that AI system. This is a readiness reweighting, not a claim of new deployment this week; Vietnam’s VNeID expansion remains a plan, and Nigeria’s election AI emphasizes human oversight.</p>
             <p class="dossier" id="transmission" style="margin-top:14px;font-style:italic"></p>
             <div class="btns">
               <button class="btn" onclick="cycleTransmission()">Cycle Transmission</button>
@@ -95,7 +95,7 @@
 
       <section id="crypto" class="section">
         <h2>Crypto Rails as Rebel Finance</h2>
-        <p class="small">Crypto remains dual-use in the control loop. Since 19 October, DOJ reported the initial appearance after extradition of a defendant accused in an international crypto-investment fraud case; the complaint alleges that more than $36.9 million moved through bank accounts, was converted to USDT, and reached wallets in Cambodia. Those allegations remain unproven. SEC staff’s 20 October FAQs clarify a limited, temporary, conditional five-year Commission order for certain DLT venues and liquidity providers trading tokenized stocks; this is not a blanket crypto rule or a new sanctions designation. Prior-cycle Chainalysis wallet/P2P measures remain mixed. The high-level mechanisms below describe where settlement and custody optionality persist alongside substantial regulatory chokepoints. Imperial Control 99 · Rebel Resistance 39.</p>
+        <p class="small">Crypto remains dual-use in the control loop. The SEC’s 29 October complaint alleges that BG Wealth and DSJ Exchange raised more than $130 million through a crypto-investment fraud; these are allegations, not findings, and no case outcome is reported. Chainalysis’ 29 October Sub-Saharan Africa report says personal wallets represented 32.3% of regional received value and cross-border P2P 70.9%, while Nigerian DEX activity fell 45% year over year and cross-border P2P fell 17% year over year; its data period is July 2025–June 2026, not week-over-week. The OCC’s 21 October final stablecoin rule takes effect in January 2027, and ESMA’s MiCA expectations describe EU service boundaries. Imperial Control 100 · Rebel Resistance 40.</p>
         <div class="rb-filter" id="cryptoFilter" role="tablist" aria-label="Crypto mechanism filters">
           <button data-filter="all" class="active">All</button>
           <button data-filter="custody">Custody</button>
@@ -103,7 +103,7 @@
           <button data-filter="juris">Jurisdictions</button>
         </div>
         <div class="rb-mech-grid" id="cryptoMechGrid"></div>
-        <p class="cite">Current crypto sources: <a href="https://www.sec.gov/featured-topics/crypto-task-force/cryptosec" target="_blank" rel="noopener">SEC staff FAQs on limited conditional DLT-venue exemptions (20 October 2026)</a> · <a href="https://www.justice.gov/usao-cdca/pr/chinese-national-extradited-alleged-role-multimillion-dollar-cryptocurrency-scam" target="_blank" rel="noopener">DOJ crypto-fraud prosecution (23 October; allegations only)</a> · <a href="https://www.fincen.gov/system/files/2026-10/FinCEN-Alert-A7-Network.pdf" target="_blank" rel="noopener">FinCEN A7 Network alert (1 October; prior-cycle baseline)</a> · <a href="https://www.chainalysis.com/blog/2026-global-crypto-adoption-index/" target="_blank" rel="noopener">Chainalysis 2026 adoption index (prior-cycle measurements)</a> · <a href="https://www.cftc.gov/PressRoom/PressReleases/9307-26" target="_blank" rel="noopener">CFTC CTX/CAM advance notice (5 October 2026)</a> · <a href="https://www.sec.gov/rules-regulations/public-comments/s7-2026-27" target="_blank" rel="noopener">SEC Regulation Crypto Assets comment file</a> · <a href="https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised" target="_blank" rel="noopener">ESMA non-MiCA stablecoin supervision (8 October 2026)</a>. Historical perimeter sources: <a href="https://home.treasury.gov/news/press-releases/sb0632" target="_blank" rel="noopener">OFAC BitBank designation (17 September 2026)</a> · <a href="https://home.treasury.gov/news/press-releases/sb0624" target="_blank" rel="noopener">OFAC Xinbi Guarantee designation (9 September 2026)</a> · <a href="https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/targeted-report-decentralised-finance-2026.pdf.coredownload.pdf" target="_blank" rel="noopener">FATF DeFi targeted report (July 2026)</a></p>
+        <p class="cite">Current crypto sources: <a href="https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26679" target="_blank" rel="noopener">SEC complaint against BG Wealth and DSJ Exchange (29 October; allegations only)</a> · <a href="https://www.chainalysis.com/blog/sub-saharan-africa-crypto-adoption-2026/" target="_blank" rel="noopener">Chainalysis Sub-Saharan Africa wallet/P2P findings (29 October; Jul 2025–Jun 2026 data)</a> · <a href="https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-92.html" target="_blank" rel="noopener">OCC permitted stablecoin issuer final rule (21 October; effective 18 January 2027)</a> · <a href="https://www.sec.gov/featured-topics/crypto-task-force/cryptosec" target="_blank" rel="noopener">SEC staff FAQs on limited conditional DLT-venue exemptions (20 October)</a> · <a href="https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised" target="_blank" rel="noopener">ESMA non-MiCA stablecoin supervision (8 October)</a> · <a href="https://www.fincen.gov/system/files/2026-10/FinCEN-Alert-A7-Network.pdf" target="_blank" rel="noopener">FinCEN A7 Network alert (1 October)</a>. Historical perimeter sources: <a href="https://home.treasury.gov/news/press-releases/sb0632" target="_blank" rel="noopener">OFAC BitBank designation (17 September)</a> · <a href="https://home.treasury.gov/news/press-releases/sb0624" target="_blank" rel="noopener">OFAC Xinbi Guarantee designation (9 September)</a> · <a href="https://www.fatf-gafi.org/content/dam/fatf-gafi/reports/targeted-report-decentralised-finance-2026.pdf.coredownload.pdf" target="_blank" rel="noopener">FATF DeFi targeted report (July 2026)</a></p>
       </section>
 
       <section id="governance" class="section">
@@ -124,7 +124,7 @@
 
       <section id="sources" class="section">
         <h2>Source Base</h2>
-        <p class="small">Same public reporting that anchors the main Imperial dashboard, refreshed through 26 October 2026. Each link opens the cited source.</p>
+        <p class="small">Same public reporting that anchors the main Imperial dashboard, refreshed through 2 November 2026. Each link opens the cited source.</p>
         <div class="panel">
           <ul class="rb-sources" id="sourcesList"></ul>
         </div>
@@ -138,7 +138,7 @@
     </main>
   </div>
 
-  <script src="js/data.js?v=20261026"></script>
-  <script src="js/rebel.js?v=20261026"></script>
+  <script src="js/data.js?v=20261102"></script>
+  <script src="js/rebel.js?v=20261102"></script>
 </body>
 </html>

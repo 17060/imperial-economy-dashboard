@@ -15,7 +15,7 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 26 October 2026',
+      transmission: 'Counter-briefing · current to 2 November 2026',
       morale: 56,
       moraleTier: 'CAUTIOUS HOLD',
     },
@@ -23,16 +23,16 @@
     rebelKPIs: [
       { label: 'Cells Reporting',       value: '308',    delta: '▲ 12 since last cycle',   tone: 'up' },
       { label: 'Free Polities',         value: '88',     delta: '▲ holding (FH 2026)',     tone: 'flat' },
-      { label: 'Self-Custody Wallets',  value: '~400M',  delta: '▲ growing (industry est.)', tone: 'up' },
+      { label: 'SSA received value: personal-wallet / cross-border P2P shares', value: '32.3% / 70.9%', delta: 'Chainalysis regional data · Jul 2025–Jun 2026', tone: 'up' },
       { label: 'Open-Weight Models',    value: '63%',    delta: '▲ frontier-adjacent share',  tone: 'up' },
     ],
 
     theatreReadiness: [
-      { label: 'Distributed Liquidity', value: 56 },
+      { label: 'Distributed Liquidity', value: 57 },
       { label: 'Civic Institutions',    value: 58 },
       { label: 'Open Information',      value: 47 },
       { label: 'Demand-Side Energy',    value: 41 },
-      { label: 'Self-Custody Surface',  value: 62 },
+      { label: 'Self-Custody Surface',  value: 63 },
       { label: 'Federated Compute',     value: 44 },
     ],
 
@@ -54,8 +54,8 @@
         score: 12,
         imperial: 100,
         blurb:
-          'EIA still forecasts 4.5 million b/d of Middle East shut-ins in Q4, and ACLED reported renewed Houthi threats to Saudi aviation and energy exports on 23 Oct. ' +
-          'Bypass routes and partial recovery remain real but exposed workarounds.',
+          'UKMTO/JMIC (1 Nov) rates Hormuz threat severe and Bab el-Mandeb substantial; it reports 18 confirmed Hormuz attacks since 6 Oct and reduced traffic, while Bab el-Mandeb remains open at about 35 daily transits with no confirmed attack in the advisory period. ' +
+          'Bypass routes remain useful but exposed; neither strait is treated as fully closed.',
         mech: [
           'Rooftop solar + behind-the-meter storage erode single-point dependence',
           'Community microgrids and regional renewables blunt pipeline coercion',
@@ -80,9 +80,9 @@
         id: 'governance',
         name: 'Governance',
         score: 66,
-        imperial: 75,
+        imperial: 76,
         blurb:
-          'ACLED’s 23 Oct analysis flags Houthi threats to Saudi infrastructure, Somalia territorial contestation, and rising tribal disputes in Syria amid state inaction. ' +
+          'CrisisWatch (30 Oct) lists seven deteriorated situations; ACLED (30 Oct) describes suspected, not confirmed, Russian-linked hybrid activity against European infrastructure. ' +
           'The Rebel score is held because armed conflict alone is not evidence of broader civic resilience.',
         mech: [
           'Federalism diffuses compliance burdens across thousands of subnational units',
@@ -94,11 +94,11 @@
       {
         id: 'crypto',
         name: 'Crypto',
-        score: 39,
-        imperial: 99,
+        score: 40,
+        imperial: 100,
         blurb:
-          'DOJ reported an Oct 23 initial appearance after extradition in a crypto-fraud case; the complaint alleges victim funds were converted to USDT and moved to digital-asset wallets. SEC staff’s 20 Oct FAQs clarify limited, temporary, conditional exemptions for certain tokenized-stock DLT venues. ' +
-          'Control leverage rises on targeted enforcement reach; the resistance score inches up only for this narrow, regulated DLT pathway.',
+          'The SEC’s 29 Oct complaint alleges a $130M crypto-investment fraud; allegations are unproven. Chainalysis’ 29 Oct report documents personal-wallet and cross-border P2P activity, alongside declines in Nigerian DEX/P2P use; data cover Jul 2025–Jun 2026, not a one-week surge. ' +
+          'Control rises on targeted enforcement reach; resistance rises one point for documented, mixed settlement capacity.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
           'Conditional DLT-venue relief creates a narrow tokenized-stock pathway; it is not a general crypto exemption',
@@ -110,10 +110,9 @@
         id: 'ai',
         name: 'AI / Digital',
         score: 23,
-        imperial: 92,
+        imperial: 93,
         blurb:
-          'Freedom House’s 22 Oct report records a 16th consecutive annual decline in internet freedom, with age-assurance laws in 10 of 38 assessed countries and risks from AI-content controls. ' +
-          'The reporting period ended in May 2026; this is a structural update, not a new deployment during the week.',
+          'HRF (30 Oct) reports Belarus says 60,000 cameras already feed AI for traffic-violation detection; the report does not establish that this AI system is used for political monitoring. Vietnam’s VNeID expansion remains planned, and Nigeria’s election AI emphasizes human oversight. Newly documented installed capacity supports a one-point readiness reweighting, not a claim of a new deployment this week; resistance holds.',
         mech: [
           'Open-weight models + permissive licenses enable independent audit and local fine-tuning',
           'Edge and on-device inference reduces dependence on centralized API gatekeepers',
@@ -144,7 +143,7 @@
         category: 'rails',
         body:
           'Dollar-denominated tokens on public ledgers provide around-the-clock settlement and remittance. ' +
-          'Issuer concentration and compliance obligations create a strong control perimeter, while direct wallet-to-wallet activity has grown.',
+          'Issuer concentration and compliance obligations create a strong control perimeter. New regional Chainalysis findings show personal-wallet and P2P activity, but with mixed country trends and no evidence of a one-week surge.',
         pills: [
           { text: 'high pressure', kind: 'warn' },
           { text: 'genius act perimeter', kind: 'warn' },
@@ -156,7 +155,7 @@
         title: 'P2P Liquidity',
         category: 'rails',
         body:
-          'Peer-to-peer settlement and decentralized venues preserve alternative pathways at the margin; measured wallet-to-wallet transfer value expanded in the latest adoption period.',
+          'Peer-to-peer settlement and decentralized venues preserve alternative pathways at the margin. A 29 October regional report records sizable wallet/P2P activity in Sub-Saharan Africa but also declines in Nigerian DEX and cross-border P2P activity; the data are regional and retrospective.',
         pills: [
           { text: 'non-custodial', kind: 'green' },
           { text: 'thin-margin', kind: '' },
@@ -246,6 +245,38 @@
     ],
 
     sources: [
+      {
+        label: 'UKMTO/JMIC · Advisory 110: Hormuz attacks and Red Sea transit conditions (1 Nov 2026)',
+        url: 'https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_110_01-nov-1.pdf?rev=d2be223caff04f09bbf58d94c9aa8e0a',
+      },
+      {
+        label: 'International Crisis Group · CrisisWatch October 2026 global overview (30 Oct)',
+        url: 'https://www.crisisgroup.org/es/crisiswatch',
+      },
+      {
+        label: 'ACLED · Suspected Russian hybrid threats ramp across Europe (30 Oct; attribution caveat)',
+        url: 'https://acleddata.com/report/sabotage-escalation-russias-hybrid-threats-ramp-across-europe',
+      },
+      {
+        label: 'SEC · BG Wealth and DSJ Exchange crypto-investment fraud complaint (29 Oct; allegations only)',
+        url: 'https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26679',
+      },
+      {
+        label: 'Chainalysis · Sub-Saharan Africa crypto adoption and P2P report (29 Oct; Jul 2025–Jun 2026 data)',
+        url: 'https://www.chainalysis.com/blog/sub-saharan-africa-crypto-adoption-2026/',
+      },
+      {
+        label: 'OCC · Final permitted payment stablecoin issuer rule (21 Oct; effective 18 Jan 2027)',
+        url: 'https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-92.html',
+      },
+      {
+        label: 'Human Rights Foundation · AI for Individual Rights newsletter 24: Belarus AI-linked cameras and Vietnam plans (30 Oct 2026)',
+        url: 'https://hrf.org/latest/hrfs-ai-for-individual-rights-newsletter-24/',
+      },
+      {
+        label: 'Voice of Nigeria · INEC AI safeguards and human oversight',
+        url: 'https://von.gov.ng/inec-unveils-ai-safeguards-ahead-of-2027-elections/',
+      },
       {
         label: 'IEA · Oil Market Report October 2026 (15 Oct)',
         url: 'https://www.iea.org/reports/oil-market-report-october-2026',
