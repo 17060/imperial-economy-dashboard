@@ -141,7 +141,14 @@
   $('governanceDossier').textContent = D.governance.dossier;
   const governanceCite = $('governanceCite');
   if (governanceCite && D.governance.citation) {
-    const governanceSources = [D.governance.citation, D.governance.citation2, D.governance.citation3, D.governance.citation4, D.governance.citation5, D.governance.citation6, D.governance.citation7, D.governance.citation8, D.governance.citation9, D.governance.citation10, D.governance.citation11, D.governance.citation12, D.governance.citation13, D.governance.citation14, D.governance.citation15].filter(Boolean);
+    const governanceSources = [
+      D.governance.citation, D.governance.citation2, D.governance.citation3,
+      D.governance.citation4, D.governance.citation5, D.governance.citation6,
+      D.governance.citation7, D.governance.citation8, D.governance.citation9,
+      D.governance.citation10, D.governance.citation11, D.governance.citation12,
+      D.governance.citation13, D.governance.citation14, D.governance.citation15,
+      D.governance.citation16, D.governance.citation17,
+    ].filter(Boolean);
     governanceCite.innerHTML = 'Sources: ' + governanceSources.map(citeLink).join(' · ');
   }
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Imperial Economy Dashboard</title>
-  <meta name="description" content="Imperial economic-control dashboard across five pressure domains and the Rebel Resistance Index, refreshed against public reporting current to 2 November 2026.">
+  <meta name="description" content="Imperial economic-control dashboard across five pressure domains and the Rebel Resistance Index, refreshed against public reporting current to 9 November 2026.">
   <link rel="stylesheet" href="css/styles.css?v=20261102">
 </head>
 <body>
@@ -21,7 +21,7 @@
       <button onclick="go('debt')">Debt</button>
       <button onclick="go('governance')">Governance</button>
       <button onclick="go('ai')">Surveillance</button>
-      <button onclick="go('crypto')">Crypto</button>
+      <button onclick="go('crypto')" title="First-class control and resistance axis; Control 100, Rebel Resistance 40, refreshed 9 November 2026">Crypto · Perimeter</button>
       <button onclick="go('rri')">Resistance Index</button>
       <a href="control-theory-explainer.html" style="color:#61b6bd;text-decoration:none;border-left:1px solid #30384a;padding-left:18px">Control-Theory Annex →</a>
       <a href="rebel-counter-briefing.html" style="color:#d8842b;text-decoration:none">Rebel Counter-Briefing →</a>
@@ -51,7 +51,7 @@
         <div>
           <span class="tag">PRIORITY · OMEGA</span>
           <h1>Subjugation of <span>Sector 001</span> proceeds <b>ahead of schedule.</b></h1>
-        <p class="small">Five Imperial control levers — energy chokepoints, sovereign debt, fragmented governance, crypto settlement, and AI/digital control — plus the Rebel Resistance Index, read against public reporting current to 2 November 2026. Crypto moved most this cycle: Imperial Control rose from 99 to 100 and Rebel Resistance from 39 to 40. The SEC’s 29 October complaint alleges a $130M crypto-investment fraud, while a newly published Chainalysis report documents regional personal-wallet/P2P capacity alongside declines in Nigerian DEX/P2P activity; those data cover July 2025–June 2026, not a one-week surge. Governance and AI Control each rose one point; energy and debt held.</p>
+        <p class="small">Five Imperial control levers — energy chokepoints, sovereign debt, fragmented governance, crypto settlement, and AI/digital control — plus the Rebel Resistance Index, read against public reporting current to 9 November 2026. No composite axis score changed this cycle. Crypto showed the strongest new control-pressure signal but remains capped at Imperial Control 100, with Rebel Resistance held at 40: FinCEN issued an order targeting MEXC Global’s U.S. financial access, and the EU announced a crypto-sanctions coordination task force. FinCEN’s transaction and sanctions findings are agency claims, not court-adjudicated findings; the posted order text says it becomes effective 30 days after Federal Register publication, with publication pending. Neither development alone establishes reduced decentralized self-custody or P2P capacity.</p>
           <div class="cards" id="controlCards"></div>
         </div>
         <div class="orb">
@@ -61,7 +61,7 @@
 
       <section id="energy" class="section">
         <h2>Energy Chokepoints</h2>
-        <p class="small">Constrict the maritime arteries through which roughly three-quarters of seaborne oil moves. UKMTO/JMIC’s 1 November advisory rates Hormuz threat severe and reports 18 confirmed attacks since 6 October, with commercial traffic reduced; Bab el-Mandeb remains open at about 35 daily transits, with substantial threat and no confirmed shipping attack during the advisory period. The dashboard marks both routes pressured, not fully closed. EIA still forecasts constrained Q4 Middle East flows.</p>
+        <p class="small">IEA’s 2026 gas-security review finds laden LNG crossings through Hormuz averaged about 10 per month from April–September versus about 95 per month in 2025, with 27 confirmed laden vessels exiting in September. IEA’s October oil report records a partial September rebound in Hormuz flows and bypass exports but calls recovery fragile; UKMTO/JMIC’s 1 November advisory still rates Hormuz severe and Bab el-Mandeb substantial/open. EIA forecasts Q4 Middle East flows remain constrained. Both routes remain pressured, not fully closed.</p>
         <div class="grid">
           <div class="panel map">
             <div class="k">Threat Map · Hydrocarbon and Power Arteries</div>
@@ -82,17 +82,17 @@
 
       <section id="debt" class="section">
         <h2>Debt Leverage</h2>
-        <p class="small">Credit is obedience written in future tense. The IMF’s October outlook says global public debt is very high and rising, interest rates are higher, and spending pressures persist; its October sovereign-yield analysis reports G7 10-year yields rose more than one percentage point since February to a near-20-year high. The IMF projects global public debt to exceed 100% of GDP by 2030, increasing rollover pressure, particularly for economies with limited fiscal room.</p>
+        <p class="small">Credit is obedience written in future tense. The IMF’s October outlook says global public debt is very high and rising, interest rates are higher, and spending pressures persist; its October sovereign-yield analysis reports G7 10-year yields rose more than one percentage point since February to a near-20-year high. OECD’s March 2026 borrowing outlook describes record refinancing needs and shorter maturities, while noting markets absorbed record issuance. No comparable post-2-November debt stress step-change was verified, so Debt Control 89 and Rebel Resistance 26 are held.</p>
         <div class="gaugegrid" id="debtGauges"></div>
         <p class="cite" id="debtCite"></p>
       </section>
 
       <section id="governance" class="section">
         <h2>Fragmented Governance Weak Spots</h2>
-        <p class="small">Freedom House's <em>Freedom in the World 2026</em> marks a 20th consecutive year of global freedom decline through 2025. CrisisWatch’s 30 October overview lists seven deteriorated situations, including DRC, Eritrea, Ethiopia, Haiti, Saudi Arabia, Ukraine, and Yemen. ACLED’s 30 October report describes suspected Russian-linked hybrid activity against European infrastructure, but cautions that its tag does not establish attribution. Imperial Control rose one point; the resistance score is held because conflict alone does not establish civic resilience.</p>
+        <p class="small">Freedom House's <em>Freedom in the World 2026</em> marks a 20th consecutive year of global freedom decline through 2025. CrisisWatch’s November alerts cover Haiti, Iran, Israel/Palestine, Saudi Arabia, and Yemen; its October review lists seven deteriorations. ACLED’s 4 November Gulf-infrastructure analysis describes a contingent escalation scenario; its 5 November Myanmar–Thailand analysis reports 29 October shelling that wounded three Thai civilians and assesses risk of further spillover. These developments do not establish a comparable broad fragmentation or civic-resilience score change, so Governance Control 76 and Rebel Resistance 66 remain held.</p>
         <div class="grid">
           <div class="panel radar">
-            <svg viewBox="0 0 320 320" role="img" aria-label="Imperial leverage radar across authority, data, energy, credit, crypto, and unity; Crypto Imperial Control 100 and Rebel Resistance 40.">
+            <svg viewBox="0 0 320 320" role="img" aria-label="Imperial leverage radar across authority, data, energy, credit, crypto, and unity; Crypto Control 100 and Rebel Resistance 40 as of 9 November 2026.">
               <g fill="none" stroke="#30384a">
                 <polygon points="160,30 278,91 278,229 160,290 42,229 42,91"/>
                 <polygon points="160,65 248,110 248,210 160,255 72,210 72,110"/>
@@ -105,7 +105,7 @@
                 <text x="260" y="84">Data</text>
                 <text x="266" y="240">Energy</text>
                 <text x="135" y="312">Credit</text>
-                <text x="8" y="240">Crypto</text>
+                <text x="3" y="240">Crypto · 100/40</text>
                 <text x="5" y="84">Unity</text>
               </g>
             </svg>
@@ -121,7 +121,7 @@
 
       <section id="ai" class="section">
         <h2>AI Surveillance Readiness</h2>
-        <p class="small">Stanford HAI’s 2026 AI Index reports industry produced over 90% of notable models and that compute and chip fabrication remain concentrated. DOE’s Genesis Mission links national laboratories, supercomputers, AI systems, and datasets; this is readiness, not by itself evidence of population surveillance. HRF’s 30 October report says Belarus reports 60,000 cameras already feed AI for traffic-violation detection; it warns footage has been used against protesters but does not establish that this AI system is used for political monitoring. Vietnam’s VNeID AI expansion remains planned, while Nigeria’s election AI unit emphasizes human oversight. Newly documented installed monitoring capacity supports a one-point readiness reweighting, not a claim of a new deployment this week; Rebel Resistance holds.</p>
+        <p class="small">Stanford HAI’s 2026 AI Index reports industry produced over 90% of notable models in 2025 and that compute and chip fabrication remain concentrated, while also documenting 5.6 million GitHub AI projects and tripled Hugging Face uploads since 2023. DOE’s Genesis Mission links national laboratories, supercomputers, AI systems, and datasets; this is readiness, not by itself evidence of population surveillance. Freedom House’s 2026 internet-control findings cover June 2025–May 2026. HRF’s 30 October report says Belarus reports 60,000 cameras feed AI for traffic detection but does not establish political use of that AI system; Vietnam’s VNeID integration remains planned. No new coercive deployment or comparable post-2-November change was verified, so AI Control 93 and Rebel Resistance 23 are held.</p>
         <div class="grid">
           <div class="panel terminal" id="terminal"></div>
           <div class="panel">
@@ -138,7 +138,7 @@
 
       <section id="crypto" class="section">
         <h2>Crypto Settlement &amp; Regulatory Perimeter</h2>
-        <p class="small">Dual-use axis. The SEC’s 29 October complaint alleges BG Wealth and DSJ Exchange raised more than $130M through a crypto-investment fraud; allegations are unproven and no outcome is reported. Chainalysis’ 29 October Sub-Saharan Africa report documents personal-wallet and cross-border P2P activity alongside declines in Nigerian DEX/P2P use; the data cover July 2025–June 2026 and are not a one-week surge. The OCC’s final payment-stablecoin rule (effective January 2027) and ESMA’s MiCA expectations illustrate the issuer and service perimeter. Imperial Control 100 · Rebel Resistance Index 40.</p>
+        <p class="small">Dual-use axis. On 6 November, FinCEN issued an order that will bar covered U.S. financial institutions from transmittals of funds from or to MEXC Global 30 days after Federal Register publication; the posted order contains an unfilled effective-date placeholder pending publication. FinCEN’s $16B illicit-transaction and sanctions-evasion statements are agency findings, not court-adjudicated findings. The EU announced a Crypto Sanctions Task Force to coordinate detection and enforcement against sanctions circumvention; this is an institutional coordination step, not a new enforcement action. Chainalysis’ Sub-Saharan Africa wallet/P2P measures remain mixed and retrospective (July 2025–June 2026). Imperial Control remains capped at 100 · Rebel Resistance holds at 40 because these developments do not establish a broad change in decentralized self-custody or P2P capacity.</p>
         <div class="grid">
           <div class="panel">
             <div class="k">Perimeter Dossier</div>
@@ -168,14 +168,18 @@
       <div class="foot">
         IMPERIAL INTELLIGENCE · ECONOMIC SUBJUGATION BUREAU · END OF LINE
         <br>
-        Last refresh: <strong>2 November 2026</strong>. Source roster:
+        Last refresh: <strong>9 November 2026</strong>. No composite axis score changed; Crypto had the strongest new control-pressure signal at its 100-point ceiling. Source roster:
+        <a href="https://www.iea.org/files/42bb838f-d20d-4815-8554-32146033967d/GlobalGasSecurityReview2026.pdf" target="_blank" rel="noopener">IEA Global Gas Security Review 2026</a> ·
         <a href="https://www.iea.org/reports/oil-market-report-october-2026" target="_blank" rel="noopener">IEA October Oil Market Report</a> ·
         <a href="https://www.eia.gov/outlooks/steo/report/global_oil.php" target="_blank" rel="noopener">EIA global oil outlook</a> ·
         <a href="https://mediacenter.imf.org/news/imf---fiscal-monitor-report-annual-meetings--2026/s/1b05cec6-cde8-4b75-80ec-2b29f9fb5d19" target="_blank" rel="noopener">IMF October Fiscal Monitor briefing</a> ·
         <a href="https://www.imf.org/en/blogs/articles/2026/10/13/rising-sovereign-yields-raise-the-fiscal-stakes" target="_blank" rel="noopener">IMF sovereign-yield analysis</a> ·
+        <a href="https://www.oecd.org/en/publications/global-debt-report-2026_e9d80efd-en/full-report/sovereign-borrowing-outlook_4470147b.html" target="_blank" rel="noopener">OECD Global Debt Report 2026 (4 March; structural refinancing context)</a> ·
         <a href="https://acleddata.com/expert-comment/does-ethiopias-new-caretaker-administration-signal-end-pretoria-peace-agreement" target="_blank" rel="noopener">ACLED Tigray analysis (16 October)</a> ·
         <a href="https://acleddata.com/global-analysis" target="_blank" rel="noopener">ACLED global flashpoints</a> ·
-        <a href="https://www.crisisgroup.org/es/crisiswatch" target="_blank" rel="noopener">International Crisis Group CrisisWatch October overview (30 October)</a> ·
+        <a href="https://www.crisisgroup.org/sites/default/files/crisiswatch/crisiswatch-october-2026-global-overview.pdf" target="_blank" rel="noopener">International Crisis Group November alerts / October overview</a> ·
+        <a href="https://acleddata.com/report/threat-infrastructure-war-looms-us-iran-confrontation-enters-critical-phase" target="_blank" rel="noopener">ACLED Gulf infrastructure risk analysis (4 November)</a> ·
+        <a href="https://acleddata.com/expert-comment/will-violent-spillover-myanmar-thailand-escalate" target="_blank" rel="noopener">ACLED Myanmar–Thailand spillover analysis (5 November)</a> ·
         <a href="https://acleddata.com/report/sabotage-escalation-russias-hybrid-threats-ramp-across-europe" target="_blank" rel="noopener">ACLED suspected Russian hybrid threats report (30 October; attribution caveat)</a> ·
         <a href="https://www.ukmto.org/-/media/ukmto/products/jmic_advisory_update_110_01-nov-1.pdf?rev=d2be223caff04f09bbf58d94c9aa8e0a" target="_blank" rel="noopener">UKMTO/JMIC Advisory 110 (1 November)</a> ·
         <a href="https://www.justice.gov/usao-cdca/pr/chinese-national-extradited-alleged-role-multimillion-dollar-cryptocurrency-scam" target="_blank" rel="noopener">DOJ crypto-fraud prosecution (23 October; allegations only)</a> ·
@@ -184,6 +188,9 @@
         <a href="https://www.chainalysis.com/blog/2026-global-crypto-adoption-index/" target="_blank" rel="noopener">Chainalysis 2026 adoption index</a> ·
         <a href="https://www.chainalysis.com/blog/sub-saharan-africa-crypto-adoption-2026/" target="_blank" rel="noopener">Chainalysis Sub-Saharan Africa adoption report (29 October; mixed wallet/P2P trends)</a> ·
         <a href="https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26679" target="_blank" rel="noopener">SEC crypto-fraud complaint (29 October; allegations only)</a> ·
+        <a href="https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system" target="_blank" rel="noopener">FinCEN MEXC order (6 November; agency findings)</a> ·
+        <a href="https://www.fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf" target="_blank" rel="noopener">FinCEN MEXC special-measure order (issued 6 November; Federal Register publication pending; effective-date placeholder)</a> ·
+        <a href="https://finance.ec.europa.eu/news/statement-commissioner-albuquerque-outcomes-tenth-meeting-high-level-meeting-sanctions-2026-11-06_en" target="_blank" rel="noopener">European Commission Crypto Sanctions Task Force (6 November)</a> ·
         <a href="https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-92.html" target="_blank" rel="noopener">OCC permitted stablecoin issuer final rule (21 October)</a> ·
         <a href="https://www.cftc.gov/PressRoom/PressReleases/9307-26" target="_blank" rel="noopener">CFTC CTX/CAM advance notice (5 October)</a> ·
         <a href="https://www.sec.gov/rules-regulations/public-comments/s7-2026-27" target="_blank" rel="noopener">SEC crypto-assets comment file</a> ·
@@ -193,16 +200,17 @@
         <a href="https://freedomhouse.org/country/china/freedom-world/2026" target="_blank" rel="noopener">Freedom House China report</a> ·
         <a href="https://freedomhouse.org/article/new-report-authoritarian-internet-controls-drive-16th-consecutive-year-decline-global" target="_blank" rel="noopener">Freedom House Freedom on the Net 2026</a> ·
         <a href="https://hrf.org/latest/hrfs-ai-for-individual-rights-newsletter-24/" target="_blank" rel="noopener">Human Rights Foundation AI / digital identity briefing (30 October)</a> ·
+        <a href="https://hrf.org/latest-category/ai-for-individual-rights/" target="_blank" rel="noopener">HRF AI-rights newsletter archive (6 November; AI misuse reporting, not a new surveillance deployment)</a> ·
         <a href="https://von.gov.ng/inec-unveils-ai-safeguards-ahead-of-2027-elections/" target="_blank" rel="noopener">Voice of Nigeria on INEC AI safeguards</a>.
         <br>
-        <a href="control-theory-explainer.html" style="color:#61b6bd">Analytical companion: current source base through 2 November 2026 →</a>
+        <a href="control-theory-explainer.html" style="color:#61b6bd">Analytical companion: current source base through 9 November 2026 →</a>
         <br>
         <a href="rebel-counter-briefing.html" style="color:#d8842b">Rebel counter-briefing: same axes, inverted into decentralization resilience →</a>
       </div>
     </main>
   </div>
 
-  <script src="js/data.js?v=20261102"></script>
-  <script src="js/app.js?v=20261102"></script>
+  <script src="js/data.js?v=20261109"></script>
+  <script src="js/app.js?v=20261109"></script>
 </body>
 </html>
