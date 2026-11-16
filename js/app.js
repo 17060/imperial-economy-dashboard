@@ -109,6 +109,9 @@
     D.energyChokepoints.citation19,
     D.energyChokepoints.citation20,
     D.energyChokepoints.citation21,
+    D.energyChokepoints.citation22,
+    D.energyChokepoints.citation23,
+    D.energyChokepoints.citation24,
   ].filter(Boolean);
   const energyCite = $('energyCite');
   if (energyCite && energySources.length) {
@@ -147,7 +150,8 @@
       D.governance.citation7, D.governance.citation8, D.governance.citation9,
       D.governance.citation10, D.governance.citation11, D.governance.citation12,
       D.governance.citation13, D.governance.citation14, D.governance.citation15,
-      D.governance.citation16, D.governance.citation17,
+      D.governance.citation16, D.governance.citation17, D.governance.citation18,
+      D.governance.citation19, D.governance.citation20,
     ].filter(Boolean);
     governanceCite.innerHTML = 'Sources: ' + governanceSources.map(citeLink).join(' · ');
   }
