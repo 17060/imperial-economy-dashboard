@@ -15,7 +15,7 @@
     meta: {
       callsign: 'BURNING SUN',
       cell: 'Coordinated Resistance · Sector 001',
-      transmission: 'Counter-briefing · current to 16 November 2026',
+      transmission: 'Counter-briefing · current to 23 November 2026',
       morale: 56,
       moraleTier: 'CAUTIOUS HOLD',
     },
@@ -54,8 +54,8 @@
         score: 12,
         imperial: 100,
         blurb:
-          'IEA (13 Nov) reports Gulf oil exports reached 18.4 mb/d in October, still 26% below pre-war levels; refined-product and LPG exports remain about half of pre-war levels, while shipping attacks continue. ' +
-          'A 15 Nov territorial shift near Bab el-Mandeb increases route risk but does not establish a closure; scores remain 12 / 100.',
+          'EIA (19 Nov) reports Q3 oil flows through the three main Middle East chokepoints rose 19%, with Bab el-Mandeb down; Reuters (23 Nov) reports Hormuz flows slowed to about 9.5 mb/d over 10 days through 19 Nov from 12.2 mb/d in October as attacks continued. ' +
+          'Routes remain pressured, not closed; scores remain Rebel Resistance 12 / Imperial Control 100.',
         mech: [
           'Rooftop solar + behind-the-meter storage erode single-point dependence',
           'Community microgrids and regional renewables blunt pipeline coercion',
@@ -68,8 +68,8 @@
         score: 26,
         imperial: 89,
         blurb:
-          'The World Bank’s 5 Nov International Debt Report (published before the prior run) reports $9.4T in developing-country external debt and $1.4T in debt service during 2025. ' +
-          'No comparable post-9-November yield repricing or distress step-change was verified; resilience remains 26 / 100.',
+          'The IMF’s 23 Nov U.S. Article IV flags persistent deficits, rising debt, and shorter maturities; S&P (19 Nov) describes elevated sovereign yields and heavy issuance. ' +
+          'No distinct new distress event or broad repricing step-change is established; resilience remains 26 / Imperial Control 89.',
         mech: [
           'G20 Common Framework + IMF/Paris Club preserve sovereign optionality',
           'EM local-currency debt markets push back on dollar-only architecture',
@@ -79,11 +79,11 @@
       {
         id: 'governance',
         name: 'Governance',
-        score: 68,
-        imperial: 78,
+        score: 69,
+        imperial: 79,
         blurb:
-          'Reuters reports Yemeni government forces withdrew from an area overlooking Bab el-Mandeb on 15 Nov, leaving the Houthis in control; this is a local territorial shift, not a closure of the strait. ACLED’s 13 Nov update documents additional regional fractures and distinguishes some claims from independently verified incidents. ' +
-          'Imperial Control rises 76 → 78 and Rebel Resistance 66 → 68, reflecting leverage in contested territory alongside fragmented authority.',
+          'Reuters (18 Nov) reports Ethiopian and Eritrean forces massing near Badme. ACLED reports EDF forces retook the town and moved toward Tigray, plus an unattributed 19 Nov drone strike; its 20 Nov troop-movement update reported no active fighting. This is escalation risk, not confirmed renewed war. Reuters (19–23 Nov) also reports Bangladesh protest violence amid a political-return standoff. ' +
+          'Imperial Control rises 78 → 79 and Rebel Resistance 68 → 69 on a cautious directional reading of fragmented governance.',
         mech: [
           'Federalism diffuses compliance burdens across thousands of subnational units',
           'Independent judiciaries, free press, civil society maintain legitimacy alternatives',
@@ -97,8 +97,8 @@
         score: 40,
         imperial: 100,
         blurb:
-          'FinCEN’s MEXC order was published in the Federal Register on 10 Nov and takes effect 10 Dec. The CFTC’s 13 Nov suits against Louisiana and Arkansas are unresolved federal/state jurisdiction disputes over event-contract venues, not final rulings or crypto enforcement actions. ' +
-          'Imperial Control remains at 100 and Rebel Resistance at 40 because the MEXC restriction is prospective and venue-specific, with no broad change in self-custody/P2P capacity verified.',
+          'FinCEN’s MEXC measure takes effect 10 Dec. The SEC’s 19 Nov complaint alleges eight entities used fake crypto platforms to defraud investors of more than $37M; the allegations are unadjudicated and are not a new sanctions or stablecoin action. ' +
+          'Imperial Control remains at 100 and Rebel Resistance at 40 because no broad weekly change in self-custody/P2P capacity is established.',
         mech: [
           'Hardware self-custody + multisig reduce custodial seizure surface',
           'Conditional DLT-venue relief creates a narrow tokenized-stock pathway; it is not a general crypto exemption',
@@ -110,10 +110,10 @@
         id: 'ai',
         name: 'AI / Digital',
         score: 23,
-        imperial: 93,
+        imperial: 94,
         blurb:
-          'Stanford HAI’s 11 Nov brief reports 3,611 government AI use cases across 56 federal agencies in 2025, up 69%, but this is adoption evidence rather than a new surveillance deployment. Freedom House’s 12 Nov brief describes satellite internet as a potential resilience channel and Iran’s efforts to restrict it. ' +
-          'Neither finding establishes a comparable new coercive deployment or a newly scaled resilience system, so scores remain 93 / 23.',
+          'Reuters (16 Nov) reports tighter U.S. restrictions aimed at limiting Chinese firms’ access to advanced AI chips through overseas data centers, adding a compute-supply control signal but not a surveillance deployment. Freedom House documents internet controls while satellite connectivity remains a resilience channel. ' +
+          'Imperial Control rises 93 → 94; Rebel Resistance stays 23 because no newly scaled resilience system is verified.',
         mech: [
           'Open-weight models + permissive licenses enable independent audit and local fine-tuning',
           'Edge and on-device inference reduces dependence on centralized API gatekeepers',
@@ -581,6 +581,50 @@
       {
         label: 'Reuters · Lawsuit over alleged AI facial-recognition-only arrest proceeds (10 Nov 2026; historic arrest)',
         url: 'https://www.reuters.com/legal/government/man-wrongly-jailed-after-ai-mismatch-can-pursue-lawsuit-now-2026-11-10/',
+      },
+      {
+        label: 'U.S. EIA · Middle East oil chokepoint flows rose 19% in Q3; Bab el-Mandeb flows fell (19 Nov 2026)',
+        url: 'https://www.eia.gov/todayinenergy/detail.php?id=68485',
+      },
+      {
+        label: 'Reuters · Hormuz flows slip as tanker attacks persist (23 Nov 2026)',
+        url: 'https://www.reuters.com/commentary/reuters-open-interest/oils-iran-war-recovery-masks-stubborn-diesel-shortage-2026-11-23/',
+      },
+      {
+        label: 'IMF · U.S. 2026 Article IV consultation (23 Nov 2026; fiscal risks and debt maturity)',
+        url: 'https://www.imf.org/-/media/files/publications/cr/2026/english/1usaea2026001.pdf',
+      },
+      {
+        label: 'IMF · Rising sovereign yields raise the fiscal stakes (15 Oct 2026 baseline)',
+        url: 'https://blog-pfm.imf.org/en/pfmblog/2026/10/sovereign-yields',
+      },
+      {
+        label: 'S&P Global · Sovereign yield squeeze (19 Nov 2026)',
+        url: 'https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/11/picture-this-sovereign-yield-squeeze',
+      },
+      {
+        label: 'Reuters · Ethiopia–Eritrea forces mass near Badme (18 Nov 2026; attributed reporting)',
+        url: 'https://www.reuters.com/world/africa/ethiopia-eritrea-amass-forces-along-border-heightening-war-fears-sources-say-2026-11-18/',
+      },
+      {
+        label: 'ACLED · Ethiopia conflict profile: Badme and Tigray updates through 20 Nov 2026',
+        url: 'https://acleddata.com/country/conflict-ethiopia',
+      },
+      {
+        label: 'Reuters · Bangladesh political-return standoff (23 Nov 2026)',
+        url: 'https://www.reuters.com/world/asia-pacific/bangladesh-vows-arrest-hasina-if-she-returns-india-2026-11-23/',
+      },
+      {
+        label: 'Reuters · Bangladesh shutdown attempt and protest violence (19 Nov 2026)',
+        url: 'https://www.reuters.com/world/asia-pacific/parts-bangladesh-shut-down-protests-by-hasinas-party-yunus-home-set-ablaze-2026-11-19/',
+      },
+      {
+        label: 'SEC · Complaint alleges fake crypto platforms stole more than $37M (19 Nov 2026; not adjudicated)',
+        url: 'https://www.sec.gov/newsroom/press-releases/2026-115-sec-eight-entities-used-fake-crypto-asset-trading-platforms-steal-more-37-million-us-investors',
+      },
+      {
+        label: 'Reuters · U.S. rule restricts access to advanced AI chips through overseas data centers (16 Nov 2026; compute-control signal)',
+        url: 'https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/',
       },
     ],
 

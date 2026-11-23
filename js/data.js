@@ -61,7 +61,7 @@ const DASHBOARD_DATA = {
     operation: 'ASHEN HEEL',
     authority: 'Lord Vader',
     clearance: 'SITH-OMEGA',
-    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-11-16',
+    sector: 'Sector 001 · Earth Annex Protocol · reading current to 2026-11-23',
     subjugationIndex: 98,
     subjugationTier: 'CRITICAL',
   },
@@ -76,28 +76,28 @@ const DASHBOARD_DATA = {
   theatreReadiness: [
     { label: 'Fleet Posture',         value: 100 },
     { label: 'Economic Grip',         value: 97 },
-    { label: 'Surveillance Mesh',     value: 85 },
+    { label: 'Surveillance Mesh',     value: 86 },
     { label: 'Compliance Engines',    value: 61 },
     { label: 'Crypto Perimeter',      value: 100 },
     { label: 'Insurgent Liquidity',   value: 23 },
   ],
 
   directives: [
-    'IEA (13 Nov): Gulf exports recovered to 18.4 mb/d in October but remained 26% below pre-war levels; attacks on shipping continue, and refined-product/LPG exports remain about half of pre-war levels.',
+    'IEA (13 Nov) and EIA (19 Nov): Gulf exports and Q3 chokepoint flows recovered, but Reuters (23 Nov) reports Hormuz flows slowed again and tanker attacks continue.',
     'Prepare countermeasures for rerouting and black-flagged shipping around the Strait.',
-    'Press sovereign debt advantage: IMF’s 14 Oct Fiscal Monitor says debt is very high and rising, with higher interest rates and persistent spending pressures increasing fiscal risk.',
-    'Exploit governance fractures: Reuters reports Yemeni government forces withdrew from an area overlooking Bab el-Mandeb on 15 Nov, leaving the Houthis in control; ACLED’s dated updates distinguish reported claims from independently verified incidents.',
-    'Balance the crypto perimeter: the FinCEN MEXC order was published in the Federal Register on 10 Nov and is effective 10 Dec; CFTC suits against Louisiana and Arkansas make federal/state jurisdiction contested, not settled.',
+    'Press sovereign debt advantage: IMF (23 Nov) flags persistent U.S. deficits, rising debt, and shorter maturities; S&P (19 Nov) describes high sovereign yields and heavy issuance. No distinct new distress event is assumed.',
+    'Exploit governance fractures: ACLED and Reuters report renewed Ethiopia–Eritrea border tensions and Bangladesh political violence; claims and escalation risk remain attributed.',
+    'Balance the crypto perimeter: FinCEN’s MEXC measure takes effect 10 Dec; SEC’s 19 Nov complaint alleges a fake crypto-platform fraud and remains unadjudicated.',
     'Trace rebel digital reserves through stablecoin issuers and regulated gateways.',
     'Track AI-assisted monitoring carefully: Stanford HAI documents concentrated model and compute supply; the report also records growth in open-source AI. Distinguish readiness from a verified coercive deployment.',
   ],
 
   energyChokepoints: {
     nodes: [
-      { name: 'Strait of Hormuz',     role: 'IEA (13 Nov): Gulf exports recovered to 18.4 mb/d in Oct, still 26% below pre-war; attacks continue and refined-product/LPG exports remain roughly half of pre-war levels. Impaired, not closed.', status: 'pressured' },
+      { name: 'Strait of Hormuz',     role: 'EIA (19 Nov): Q3 chokepoint flows rebounded 19%; Reuters (23 Nov) reports Hormuz fell to 9.5 mb/d over 10 days through 19 Nov vs 12.2 mb/d in October. Attacks continue; impaired, not closed.', status: 'pressured' },
       { name: 'Strait of Malacca',    role: '23.2 mb/d · largest oil flow (1H25); rising geopolitical risk',     status: 'pressured' },
       { name: 'Suez / SUMED',         role: '4.9 mb/d · ~half of 2023 levels; transits still near multi-year lows', status: 'pressured' },
-      { name: 'Bab el-Mandeb',        role: 'Reuters (15 Nov): Yemeni government forces withdrew from an area overlooking the strait; Houthis now control it. A territorial shift raises route risk but does not establish a closure.', status: 'pressured'   },
+      { name: 'Bab el-Mandeb',        role: 'EIA (19 Nov): Q3 oil shipments through Bab el-Mandeb fell even as Hormuz and Suez increased; route pressure persists, but no closure is inferred.', status: 'pressured'   },
       { name: 'Cape of Good Hope',    role: 'Rerouting remains established; EIA says bypass routes help but do not remove Q4 supply constraints', status: 'held'  },
     ],
     mapNodes: [
@@ -203,13 +203,21 @@ const DASHBOARD_DATA = {
       label: 'Reuters · Yemeni government forces withdraw from area overlooking Bab el-Mandeb (15 Nov 2026)',
       url: 'https://www.reuters.com/world/middle-east/yemen-government-forces-withdraw-area-near-bab-el-mandeb-strait-houthis-control-2026-11-15/',
     },
+    citation25: {
+      label: 'U.S. EIA · Q3 oil shipments through Middle East chokepoints rose 19%; Bab el-Mandeb flows fell (19 Nov 2026)',
+      url: 'https://www.eia.gov/todayinenergy/detail.php?id=68485',
+    },
+    citation26: {
+      label: 'Reuters · Hormuz flows slip as tanker attacks persist; diesel shortages linger (23 Nov 2026)',
+      url: 'https://www.reuters.com/commentary/reuters-open-interest/oils-iran-war-recovery-masks-stubborn-diesel-shortage-2026-11-23/',
+    },
   },
 
   debt: [
-    { label: 'Sovereign Rollovers',   value: 100, sub: 'IMF (14 Oct): G7 10-year yields rose by more than one percentage point since February, reaching a near-20-year high' },
+    { label: 'Sovereign Rollovers',   value: 100, sub: 'IMF (23 Nov): persistent deficits, rising debt, and shorter maturities; S&P (19 Nov) flags high yields and issuance, without a new global distress event this week' },
     { label: 'Projected Debt 2030',   value: 100, sub: 'IMF (Oct 2026): global public debt is expected to exceed 100% of GDP by 2030' },
     { label: 'LIC Debt Distress',     value: 78, sub: 'World Bank (5 Nov): developing-country external debt reached $9.4T in 2025; IDA-eligible countries paid a record-high 9.4% rate on new bonds' },
-    { label: 'Reserve Hierarchy',     value: 100, sub: 'IMF (14 Oct): rising benchmark yields and high debt increase funding pressure across advanced and developing economies; no comparable post-9-Nov repricing verified' },
+    { label: 'Reserve Hierarchy',     value: 100, sub: 'IMF/S&P (19–23 Nov): fiscal pressure and higher core yields leave weaker borrowers exposed to repricing; no comparable post-16-Nov stress step-change verified' },
   ],
 
   debtCitations: [
@@ -301,6 +309,18 @@ const DASHBOARD_DATA = {
       label: 'IMF · Divide and Indebt: geoeconomic fragmentation and public debt (6 Nov 2026; pre-prior-run baseline)',
       url: 'https://elibrary.imf.org/view/journals/001/2026/239/001.2026.issue-239-en.xml',
     },
+    {
+      label: 'IMF · Rising sovereign yields raise the fiscal stakes (15 Oct 2026 baseline)',
+      url: 'https://blog-pfm.imf.org/en/pfmblog/2026/10/sovereign-yields',
+    },
+    {
+      label: 'IMF · U.S. 2026 Article IV consultation (23 Nov 2026; fiscal deficits, debt, and maturity profile)',
+      url: 'https://www.imf.org/-/media/files/publications/cr/2026/english/1usaea2026001.pdf',
+    },
+    {
+      label: 'S&P Global · Picture This: A Sovereign Yield Squeeze (19 Nov 2026)',
+      url: 'https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/11/picture-this-sovereign-yield-squeeze',
+    },
   ],
 
   governance: {
@@ -316,13 +336,15 @@ const DASHBOARD_DATA = {
       { label: 'Myanmar–Thailand: 29 Oct shelling wounded three Thai civilians; ACLED assesses further spillover risk (5 Nov)', status: 'OPEN' },
       { label: 'Albania: ACLED analyzes protest pressure; leadership change is not established (5 Nov)', status: 'OPEN' },
       { label: 'Ethiopia–Eritrea: border and diplomatic tensions worsen (CrisisWatch, Oct)', status: 'OPEN' },
+      { label: 'Ethiopia–Eritrea: forces mass near Badme; renewed-war risk remains unconfirmed (ACLED / Reuters, 16–18 Nov)', status: 'OPEN' },
+      { label: 'Bangladesh: political-return standoff and protest violence reported (Reuters, 19–23 Nov)', status: 'AMPLIFY' },
       { label: 'Eastern DRC: former president forms alliance with M23, raising escalation risk (ACLED, 16 Oct)', status: 'OPEN' },
       { label: 'Kenya: goon violence and retaliatory mob justice rise ahead of 2027 elections (ACLED, 13 Oct)', status: 'AMPLIFY' },
       { label: 'Guinea / Senegal: militant spillover approaches mining and trade corridors (ACLED, 8 Oct)', status: 'OPEN' },
       { label: 'Türkiye: rights groups report 1,270 X-account blocking orders in September (12 Oct)', status: 'AMPLIFY' },
       { label: '88 Free · 48 Partly Free · 59 Not Free',      status: 'ABSORB'  },
     ],
-    dossier: 'Since the prior refresh, Reuters reported on 15 November that Yemeni government forces withdrew from an area overlooking Bab el-Mandeb, leaving the Houthis in control; this is a territorial shift, not evidence the strait is closed. ACLED’s 13 November update documents continuing regional security fractures, while explicitly distinguishing belligerents’ claims from independently verified events; it also reports a Baluch armed-group merger announcement into the PFF. The combined evidence modestly raises both coercive leverage in contested areas and fragmented resistance capacity: Governance Control 78 and Rebel Resistance 68, up from 76/66.',
+    dossier: 'Since the 16 November baseline, Reuters (18 Nov) reported Ethiopian and Eritrean forces massing near their border. ACLED reports EDF forces retook Badme and advanced toward Tigray; its profile also reports an unattributed 19 Nov drone strike on Badme and says its 20 Nov troop-movement update had no reports of active fighting. Treat this as escalation risk, not confirmed renewed war. Reuters (19–23 Nov) reported Bangladesh protest violence and a politically charged return standoff; these reports do not establish a resolved national outcome. Together the developments modestly raise both coercive leverage in contested areas and fragmented resistance capacity: Governance Control 79 and Rebel Resistance 69, up one point each.',
     citation: {
       label: 'Freedom House · Freedom in the World 2026 (March 2026)',
       url: 'https://freedomhouse.org/report/freedom-world/2026/growing-shadow-autocracy',
@@ -403,6 +425,22 @@ const DASHBOARD_DATA = {
       label: 'ACLED · Global analysis: Amhara, Bangsamoro, Colombia and other current flashpoints (10–12 Nov 2026)',
       url: 'https://acleddata.com/global-analysis',
     },
+    citation21: {
+      label: 'Reuters · Ethiopia and Eritrea amass forces along border, heightening war fears (18 Nov 2026; attributed reporting)',
+      url: 'https://www.reuters.com/world/africa/ethiopia-eritrea-amass-forces-along-border-heightening-war-fears-sources-say-2026-11-18/',
+    },
+    citation22: {
+      label: 'ACLED · Ethiopia conflict profile: Badme and Tigray updates through 20 Nov 2026',
+      url: 'https://acleddata.com/country/conflict-ethiopia',
+    },
+    citation23: {
+      label: 'Reuters · Bangladesh unrest and Hasina-return standoff (23 Nov 2026)',
+      url: 'https://www.reuters.com/world/asia-pacific/bangladesh-vows-arrest-hasina-if-she-returns-india-2026-11-23/',
+    },
+    citation24: {
+      label: 'Reuters · Bangladesh shutdown attempt and protest violence (19 Nov 2026)',
+      url: 'https://www.reuters.com/world/asia-pacific/parts-bangladesh-shut-down-protests-by-hasinas-party-yunus-home-set-ablaze-2026-11-19/',
+    },
   },
 
   aiSurveillance: {
@@ -434,6 +472,7 @@ const DASHBOARD_DATA = {
       '[MODEL-CONCENTRATION] Stanford HAI 2026 AI Index: industry produced >90% of notable models; Nvidia supplies >60% of compute and TSMC fabricates almost every leading AI chip',
       '[AI-IDENTITY-PLAN] HRF (30 Oct): Vietnam plans broader AI integration of VNeID and public/private data sources; planned integration is not a completed deployment',
       '[AI-CAMERA-NET] HRF (30 Oct): Belarus reports 60,000 cameras feed AI for traffic-violation detection; political use of this AI system is not established',
+      '[CHIP-EXPORT] Reuters (16 Nov): U.S. tightens restrictions aimed at limiting Chinese firms’ access to advanced U.S. AI chips through overseas data centers; a compute-access control, not a surveillance deployment',
       '[ELECTION-AI] Nigeria INEC formed an AI unit for election safeguards; human oversight is emphasized, so this is not scored as coercive surveillance',
       '[OPEN-SOURCE] Stanford HAI 2026 AI Index: 5.6M GitHub AI projects; Hugging Face uploads tripled since 2023, a counterweight to provider concentration',
     ],
@@ -561,25 +600,29 @@ const DASHBOARD_DATA = {
         label: 'Reuters · U.S. judge allows suit over alleged AI facial-recognition-only arrest to proceed (10 Nov 2026; historic arrest)',
         url: 'https://www.reuters.com/legal/government/man-wrongly-jailed-after-ai-mismatch-can-pursue-lawsuit-now-2026-11-10/',
       },
+      {
+        label: 'Reuters · U.S. rule restricts access to advanced AI chips through overseas data centers (16 Nov 2026; compute-control signal, not a surveillance deployment)',
+        url: 'https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/',
+      },
     ],
   },
 
   crypto: {
-    dossier: 'Crypto remains dual-use. FinCEN’s MEXC order was published in the Federal Register on 10 November and is effective 10 December 2026, prohibiting covered financial institutions from transmittals of funds to or from MEXC Global; the order has no stated cessation date and contains exceptions and limitations. FinCEN’s $16 billion transaction statements are agency findings, not court-adjudicated findings. On 13 November, the CFTC sued Louisiana and Arkansas over state actions targeting federally regulated event-contract venues; these are unresolved federal-state jurisdiction disputes, not final rulings or new crypto enforcement actions. The Imperial Control composite remains capped at 100; Rebel Resistance stays 40 because the MEXC rule is prospective and venue-specific and this week’s evidence does not establish broad loss or growth in self-custody/P2P capacity.',
+    dossier: 'Crypto remains dual-use. FinCEN’s MEXC order was published in the Federal Register on 10 November and is effective 10 December 2026, prohibiting covered financial institutions from transmittals of funds to or from MEXC Global; its findings are agency findings, not court-adjudicated findings. On 19 November, the SEC filed a civil complaint alleging eight entities used fake crypto trading platforms to defraud investors of more than $37 million; the claims remain unadjudicated. Chainalysis’ 2026 adoption report describes wallet/P2P activity over July 2025–June 2026, not a new one-week change. Imperial Control remains capped at 100 and Rebel Resistance stays 40: the SEC case is targeted fraud enforcement, while no broad change in self-custody/P2P capacity or settlement-perimeter scope is established.',
     nodes: [
       { name: 'Stablecoin perimeter',     role: 'OCC final payment-stablecoin rule (21 Oct; effective 18 Jan 2027) and ESMA (8 Oct) clarify issuer, custody, and service boundaries', status: 'severed' },
       { name: 'Exchange / sanctions perimeter', role: 'FinCEN’s MEXC order was published 10 Nov and takes effect 10 Dec, prohibiting covered institutions from transmittals to/from MEXC; its stated transaction findings remain agency findings, not court-adjudicated findings.', status: 'severed' },
       { name: 'CLARITY Act market structure', role: 'Cleared Senate Banking Cttee 15–9 (14 May 2026); U.S. market-structure perimeter remains in legislative motion', status: 'pressured' },
       { name: 'CFTC / SEC rulemaking',     role: 'SEC staff FAQ (20 Oct) explains limited, conditional five-year exemptions for certain DLT venues and liquidity providers trading tokenized NMS stocks; other proposals remain proposals', status: 'pressured' },
       { name: 'Federal / state jurisdiction', role: 'CFTC sued Louisiana and Arkansas on 13 Nov after state actions targeted CFTC-regulated event-contract venues; federal preemption claims are disputed and unresolved', status: 'pressured' },
-      { name: 'Enforcement / analytics',    role: 'SEC filed a civil complaint on 29 Oct alleging a $130M crypto-investment fraud; allegations are unproven and no case outcome is reported', status: 'severed' },
+      { name: 'Enforcement / analytics',    role: 'SEC filed a civil complaint on 19 Nov alleging eight entities used fake crypto platforms to defraud investors of more than $37M; no court outcome is reported', status: 'severed' },
       { name: 'U.S. custody perimeter', role: 'SEC (1 Oct): proposed adviser/fund rules would allow crypto self-custody in specified circumstances and state trust companies as custodians', status: 'pressured' },
       { name: 'Self-custody / P2P',       role: 'Chainalysis (29 Oct; Jul 2025–Jun 2026) reports regional personal-wallet/P2P activity alongside declines in Nigerian DEX and P2P use; evidence is mixed and not universal', status: 'open' },
       { name: 'EU third-country perimeter', role: 'EU 21st Russia-sanctions package: transaction bans on 14 crypto platforms and a first-use full third-country crypto-service ban', status: 'severed' },
       { name: 'Jurisdictional arbitrage', role: 'UAE ADGM · Switzerland · Singapore · El Salvador',           status: 'open'      },
     ],
     gauges: [
-      { label: 'Sanctions Perimeter',      value: 100, sub: 'Control remains at the composite ceiling. FinCEN’s Federal Register order prohibits covered institutions from transmittals to/from MEXC beginning 10 Dec; this is a scoped prospective restriction, and agency transaction findings are not court-adjudicated.' },
+      { label: 'Sanctions Perimeter',      value: 100, sub: 'Control remains at the composite ceiling. FinCEN’s Federal Register order prohibits covered institutions from transmittals to/from MEXC beginning 10 Dec; the SEC’s 19 Nov complaint concerns alleged fraud, not a new sanctions designation.' },
       { label: 'Stablecoin Concentration', value: 99, sub: 'ESMA’s MiCA controls and FinCEN’s A7 alert underscore issuer, redemption, and regulated-service chokepoints around stablecoin settlement' },
       { label: 'Regulatory Clarity',       value: 90, sub: 'SEC relief remains limited and conditional; CFTC suits against Louisiana and Arkansas expose unresolved federal/state jurisdiction over regulated event-contract venues, not a settled national framework' },
       { label: 'Self-Custody Surface',     value: 61, sub: 'New Chainalysis regional data document personal-wallet and cross-border P2P activity, with declines in Nigerian DEX/P2P use; measured capacity is mixed, geographically bounded, and not a one-week surge' },
@@ -754,6 +797,10 @@ const DASHBOARD_DATA = {
         label: 'CFTC · Lawsuit against Arkansas over state action against federally regulated prediction markets (13 Nov 2026; jurisdiction dispute)',
         url: 'https://www.cftc.gov/PressRoom/PressReleases/9325-26',
       },
+      {
+        label: 'SEC · Eight entities allegedly used fake crypto platforms to defraud investors of more than $37M (19 Nov 2026; complaint, no adjudication)',
+        url: 'https://www.sec.gov/newsroom/press-releases/2026-115-sec-eight-entities-used-fake-crypto-asset-trading-platforms-steal-more-37-million-us-investors',
+      },
     ],
   },
 
@@ -762,9 +809,11 @@ const DASHBOARD_DATA = {
       id: 'energy',
       name: 'Energy',
       score: 12,
-      blurb: 'IEA (13 Nov) reports Gulf oil exports reached 18.4 mb/d in October, still 26% below pre-war levels; refined-product and LPG exports remain roughly half of pre-war levels and attacks on shipping continue. The IEA describes a material but incomplete recovery, not a closed route. Scores hold at Imperial Control 100 · Rebel Resistance 12.',
+      blurb: 'EIA (19 Nov) reports combined oil shipments through Hormuz, Bab el-Mandeb, and Suez rose 19% in Q3 as operators used ship-to-ship transfers and bypass routes. Reuters (23 Nov) reports Hormuz flows fell to about 9.5 mb/d in the 10 days through 19 Nov from 12.2 mb/d in October amid attacks; IEA says refined-product/LPG exports remain about half of pre-war levels. Recovery is partial, not a closure. Scores hold at Imperial Control 100 · Rebel Resistance 12.',
       citations: [
         { label: 'IEA · Oil Market Report November 2026 (13 Nov)', url: 'https://www.iea.org/reports/oil-market-report-november-2026' },
+        { label: 'U.S. EIA · Middle East chokepoint flows rose 19% in Q3; Bab el-Mandeb shipments fell (19 Nov)', url: 'https://www.eia.gov/todayinenergy/detail.php?id=68485' },
+        { label: 'Reuters · Hormuz flows slip as attacks persist; diesel shortage remains (23 Nov)', url: 'https://www.reuters.com/commentary/reuters-open-interest/oils-iran-war-recovery-masks-stubborn-diesel-shortage-2026-11-23/' },
         { label: 'Reuters · Hormuz traffic rises as shipping attacks continue (11 Nov)', url: 'https://www.reuters.com/world/middle-east/hormuz-traffic-is-up-so-are-attacks-2026-11-11/' },
         { label: 'Reuters · Bab el-Mandeb territorial shift (15 Nov)', url: 'https://www.reuters.com/world/middle-east/yemen-government-forces-withdraw-area-near-bab-el-mandeb-strait-houthis-control-2026-11-15/' },
         { label: 'EIA · October Short-Term Energy Outlook, updated 21 Oct', url: 'https://www.eia.gov/outlooks/steo/report/global_oil.php' },
@@ -782,9 +831,12 @@ const DASHBOARD_DATA = {
       id: 'debt',
       name: 'Debt',
       score: 26,
-      blurb: 'The latest scale evidence is the World Bank’s 5 Nov International Debt Report, which predates the prior refresh: developing-country external debt reached $9.4T in 2025 and low- and middle-income countries paid $1.4T in debt service. IMF’s October yield baseline remains current; no comparable post-9-Nov repricing or distress step-change was verified. Imperial Control 89 · Rebel Resistance 26.',
+      blurb: 'The IMF’s 23 Nov U.S. Article IV flags persistent deficits, rising debt, and a growing share of short-maturity debt; S&P (19 Nov) describes elevated sovereign yields and heavy issuance. These reinforce fiscal and refinancing pressure but do not document a distinct new sovereign distress event. Imperial Control 89 · Rebel Resistance 26, held.',
       citations: [
         { label: 'World Bank · International Debt Report 2026 (5 Nov; pre-prior-run baseline)', url: 'https://www.worldbank.org/en/news/press-release/2026/11/05/developing-countries-external-debt-surges-to-record-9-4-trillion' },
+        { label: 'IMF · U.S. 2026 Article IV consultation (23 Nov 2026; fiscal risks and debt maturity)', url: 'https://www.imf.org/-/media/files/publications/cr/2026/english/1usaea2026001.pdf' },
+        { label: 'IMF · Rising sovereign yields raise the fiscal stakes (15 Oct 2026 baseline)', url: 'https://blog-pfm.imf.org/en/pfmblog/2026/10/sovereign-yields' },
+        { label: 'S&P Global · Sovereign Yield Squeeze: heavy issuance and higher borrowing costs (19 Nov 2026)', url: 'https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/11/picture-this-sovereign-yield-squeeze' },
         { label: 'IMF · Fiscal Monitor briefing on rising fiscal risks (14 Oct 2026)', url: 'https://mediacenter.imf.org/news/imf---fiscal-monitor-report-annual-meetings--2026/s/1b05cec6-cde8-4b75-80ec-2b29f9fb5d19' },
         { label: 'IMF · Rising sovereign yields raise the fiscal stakes (13 Oct 2026)', url: 'https://www.imf.org/en/blogs/articles/2026/10/13/rising-sovereign-yields-raise-the-fiscal-stakes' },
         { label: 'IMF · Divide and Indebt (6 Nov; pre-prior-run paper on geoeconomic fragmentation and public debt)', url: 'https://elibrary.imf.org/view/journals/001/2026/239/001.2026.issue-239-en.xml' },
@@ -798,9 +850,13 @@ const DASHBOARD_DATA = {
     {
       id: 'governance',
       name: 'Governance',
-      score: 68,
-      blurb: 'Since the 9 Nov baseline, Reuters reported Yemeni government forces withdrew from an area overlooking Bab el-Mandeb on 15 Nov, leaving the Houthis in control; the strait is not described as closed. ACLED’s 13 Nov update reports additional regional fractures and distinguishes claimed incidents from independently verified events. These developments raise both coercive leverage in contested territory and fragmented resistance capacity. Imperial Control 78 · Rebel Resistance 68 (up from 76/66).',
+      score: 69,
+      blurb: 'Since 16 Nov, Reuters reported Ethiopia–Eritrea forces massing near Badme. ACLED reports EDF forces retook the town and moved toward Tigray, plus an unattributed 19 Nov drone strike; its 20 Nov troop-movement update reported no active fighting. Treat this as escalation risk, not confirmed renewed war. Reuters also reported Bangladesh violence amid the Hasina-return standoff. Wider fragmentation supports a cautious one-point paired increase: Imperial Control 79 and Rebel Resistance 69, up from 78/68.',
       citations: [
+        { label: 'Reuters · Ethiopia–Eritrea forces mass near Badme (18 Nov 2026; attributed reporting)', url: 'https://www.reuters.com/world/africa/ethiopia-eritrea-amass-forces-along-border-heightening-war-fears-sources-say-2026-11-18/' },
+        { label: 'ACLED · Ethiopia conflict profile: Badme and Tigray updates through 20 Nov 2026', url: 'https://acleddata.com/country/conflict-ethiopia' },
+        { label: 'Reuters · Bangladesh unrest and Hasina-return standoff (23 Nov 2026)', url: 'https://www.reuters.com/world/asia-pacific/bangladesh-vows-arrest-hasina-if-she-returns-india-2026-11-23/' },
+        { label: 'Reuters · Bangladesh shutdown attempt and protest violence (19 Nov 2026)', url: 'https://www.reuters.com/world/asia-pacific/parts-bangladesh-shut-down-protests-by-hasinas-party-yunus-home-set-ablaze-2026-11-19/' },
         { label: 'ACLED · Tigray caretaker administration and Pretoria agreement (16 Oct 2026)', url: 'https://acleddata.com/expert-comment/does-ethiopias-new-caretaker-administration-signal-end-pretoria-peace-agreement' },
         { label: 'ACLED · Global analysis: Saudi Arabia, Somalia, and Syria flashpoints (23 Oct 2026)', url: 'https://acleddata.com/global-analysis' },
         { label: 'International Crisis Group · November alerts / October 2026 deteriorations', url: 'https://www.crisisgroup.org/sites/default/files/crisiswatch/crisiswatch-october-2026-global-overview.pdf' },
@@ -820,7 +876,7 @@ const DASHBOARD_DATA = {
       id: 'crypto',
       name: 'Crypto',
       score: 40,
-      blurb: 'FinCEN’s MEXC order was published in the Federal Register on 10 Nov and takes effect 10 Dec. On 13 Nov the CFTC sued Louisiana and Arkansas over state actions against federally regulated event-contract venues; the federal/state jurisdiction disputes are unresolved. Imperial Control remains at its 100 ceiling; Rebel Resistance holds at 40 because the MEXC rule is prospective and venue-specific and no broad change in self-custody/P2P capacity is shown.',
+      blurb: 'FinCEN’s MEXC measure takes effect 10 Dec. On 19 Nov the SEC filed a complaint alleging eight entities used fake crypto platforms to defraud investors of more than $37M; the allegations are unadjudicated and do not amount to a new sanctions or stablecoin action. Imperial Control remains at 100; the evidence does not support a broad one-week change in self-custody/P2P capacity, so Rebel Resistance holds at 40.',
       citations: [
         { label: 'SEC · FAQs on limited conditional innovation exemption for tokenized NMS-stock venues (20 Oct 2026)', url: 'https://www.sec.gov/featured-topics/crypto-task-force/cryptosec' },
         { label: 'U.S. DOJ · Crypto-investment fraud prosecution (23 Oct 2026; allegations only)', url: 'https://www.justice.gov/usao-cdca/pr/chinese-national-extradited-alleged-role-multimillion-dollar-cryptocurrency-scam' },
@@ -834,6 +890,7 @@ const DASHBOARD_DATA = {
         { label: 'European Commission · EU Crypto Sanctions Task Force (6 Nov 2026)', url: 'https://finance.ec.europa.eu/news/statement-commissioner-albuquerque-outcomes-tenth-meeting-high-level-meeting-sanctions-2026-11-06_en' },
         { label: 'CFTC · Louisiana event-contract jurisdiction lawsuit (13 Nov 2026)', url: 'https://www.cftc.gov/PressRoom/PressReleases/9326-26' },
         { label: 'CFTC · Arkansas prediction-market jurisdiction lawsuit (13 Nov 2026)', url: 'https://www.cftc.gov/PressRoom/PressReleases/9325-26' },
+        { label: 'SEC · Eight entities allegedly used fake crypto platforms to defraud investors of more than $37M (19 Nov; complaint, not adjudication)', url: 'https://www.sec.gov/newsroom/press-releases/2026-115-sec-eight-entities-used-fake-crypto-asset-trading-platforms-steal-more-37-million-us-investors' },
       ],
       mech: [
         'Hardware self-custody and multisig reduce custodial seizure surface',
@@ -845,8 +902,10 @@ const DASHBOARD_DATA = {
       id: 'ai',
       name: 'AI',
       score: 23,
-      blurb: 'Stanford HAI’s 11 Nov public-administration brief says 56 federal agencies reported 3,611 AI use cases in 2025, up 69%; this indicates broad public-sector adoption, not a new surveillance deployment. Freedom House’s 12 Nov brief describes satellite connectivity as a counter to shutdowns and Iran’s efforts to restrict it, but reports no newly deployed broad resilience system. Scores hold pending evidence of a comparable shift. Imperial Control 93 · Rebel Resistance 23.',
+      blurb: 'Reuters (16 Nov) reports tighter U.S. restrictions aimed at limiting Chinese firms’ access to advanced U.S. AI chips through overseas data centers, adding a compute-supply control signal. This is not a surveillance deployment; Freedom House’s 2026 report documents internet isolation and age-assurance expansion, while satellite connectivity remains a resilience channel. Raise AI Control 93 → 94; hold Rebel Resistance at 23 absent evidence of scaled new resilience.',
       citations: [
+        { label: 'Reuters · U.S. rule restricts access to advanced AI chips through overseas data centers (16 Nov 2026; compute-control signal)', url: 'https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/' },
+        { label: 'Freedom House · Freedom on the Net 2026 full report (published 22 Oct; coverage Jun 2025–May 2026)', url: 'https://freedomhouse.org/report/freedom-net/2026/seismic-shifts-global-internet' },
         { label: 'U.S. DOE · Genesis Mission integrated AI platform (updated 16 Oct 2026)', url: 'https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission' },
         { label: 'Stanford HAI · 2026 AI Index research and development', url: 'https://hai.stanford.edu/ai-index/2026-ai-index-report/research-and-development' },
         { label: 'Freedom House · Freedom on the Net 2026 findings (published 22 Oct; report covers Jun 2025–May 2026)', url: 'https://freedomhouse.org/article/new-report-authoritarian-internet-controls-drive-16th-consecutive-year-decline-global' },
@@ -869,6 +928,14 @@ const DASHBOARD_DATA = {
   /* Free-text scratchpad for the weekly updater. Not rendered.
      Append a dated entry per cycle with rationale / citations. */
   sources: [
+    '2026-11-23 — Weekly metric refresh (current to 2026-11-23):',
+    '  Biggest score movement: Governance (Imperial Control 78 → 79 / Rebel Resistance 68 → 69; two paired points). Reuters (18 Nov) reported Ethiopia and Eritrea amassing forces near Badme; ACLED’s profile through 20 Nov reports EDF movements near Tigray, an unattributed 19 Nov drone strike at Badme, and no active fighting reported in its 20 Nov troop-movement update. This is escalation risk, not a confirmed renewed war. Reuters (19–23 Nov) reported Bangladesh protest violence and a politically charged return standoff; incidents remain attributed. The evidence supports a cautious one-point paired increase. Sources: https://www.reuters.com/world/africa/ethiopia-eritrea-amass-forces-along-border-heightening-war-fears-sources-say-2026-11-18/ ; https://acleddata.com/country/conflict-ethiopia ; https://www.reuters.com/world/asia-pacific/parts-bangladesh-shut-down-protests-by-hasinas-party-yunus-home-set-ablaze-2026-11-19/ ; https://www.reuters.com/world/asia-pacific/bangladesh-vows-arrest-hasina-if-she-returns-india-2026-11-23/',
+    '  Energy (Imperial Control 100 / Rebel Resistance 12 — held): EIA (19 Nov) reports combined Middle East chokepoint oil shipments rose 19% in Q3, with Hormuz and Suez up while Bab el-Mandeb fell; October flows were close to Q3 levels. Reuters (23 Nov) reports Hormuz flows slid to about 9.5 mb/d in the 10 days through 19 Nov from 12.2 mb/d in October as attacks continued. IEA (13 Nov) says Gulf exports recovered in October but remained 26% below pre-war levels, with refined-product/LPG flows around half. Scores hold at the ceiling/constrained baseline. Sources: https://www.eia.gov/todayinenergy/detail.php?id=68485 ; https://www.reuters.com/commentary/reuters-open-interest/oils-iran-war-recovery-masks-stubborn-diesel-shortage-2026-11-23/ ; https://www.iea.org/reports/oil-market-report-november-2026',
+    '  Debt (Imperial Control 89 / Rebel Resistance 26 — held): IMF’s 23 Nov U.S. Article IV flags persistent deficits, rising debt, and a larger share of short-maturity debt; S&P (19 Nov) describes elevated yields and heavy issuance. The evidence reinforces pressure but does not establish a distinct new sovereign distress or broad repricing event in the 16–23 Nov window. Sources: https://www.imf.org/-/media/files/publications/cr/2026/english/1usaea2026001.pdf ; https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/11/picture-this-sovereign-yield-squeeze ; https://www.worldbank.org/en/news/press-release/2026/11/05/developing-countries-external-debt-surges-to-record-9-4-trillion ; https://blog-pfm.imf.org/en/pfmblog/2026/10/sovereign-yields',
+    '  Governance (Imperial Control 78 → 79 / Rebel Resistance 68 → 69): Reuters (18 Nov) reports Ethiopia–Eritrea forces massing near Badme; ACLED reports an EDF return to Badme and Tigray movements, an unattributed 19 Nov drone strike, and no active fighting in its 20 Nov troop-movement update. Reuters (19 Nov) reports protest violence and a shutdown attempt in Bangladesh; the 23 Nov standoff story gives added context. The score increase is modest and directional; renewed war and political violence are not treated as resolved outcomes. Sources: https://www.reuters.com/world/africa/ethiopia-eritrea-amass-forces-along-border-heightening-war-fears-sources-say-2026-11-18/ ; https://acleddata.com/country/conflict-ethiopia ; https://www.reuters.com/world/asia-pacific/parts-bangladesh-shut-down-protests-by-hasinas-party-yunus-home-set-ablaze-2026-11-19/ ; https://www.reuters.com/world/asia-pacific/bangladesh-vows-arrest-hasina-if-she-returns-india-2026-11-23/',
+    '  Crypto (Imperial Control 100 / Rebel Resistance 40 — held): SEC (19 Nov) filed a complaint alleging eight entities used fake crypto platforms to defraud investors of more than $37M; no court outcome is reported, and this is not a new sanctions or stablecoin designation. FinCEN’s MEXC order remains a scoped prospective restriction effective 10 Dec. Chainalysis’ 2026 period data end 30 Jun and are retrospective, so they do not establish a 16–23 Nov change in P2P capacity. Sources: https://www.sec.gov/newsroom/press-releases/2026-115-sec-eight-entities-used-fake-crypto-asset-trading-platforms-steal-more-37-million-us-investors ; https://www.federalregister.gov/documents/2026/11/10/2026-22962/imposition-of-special-measure-prohibiting-the-transmittal-of-funds-involving-mexc-global ; https://www.chainalysis.com/blog/2026-global-crypto-adoption-index/',
+    '  AI / digital control (Imperial Control 93 → 94 / Rebel Resistance 23 — held): Reuters (16 Nov) reports the U.S. tightened restrictions aimed at preventing Chinese firms from accessing advanced U.S. AI chips through overseas data centers; this raises compute-supply leverage but is not a surveillance deployment. Freedom House’s 2026 report documents Iran’s roughly 88-day shutdown and state efforts to isolate networks, while satellite access remains a potential resilience channel; no new scalable resilience deployment was verified. Sources: https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/ ; https://freedomhouse.org/report/freedom-net/2026/seismic-shifts-global-internet ; https://freedomhouse.org/article/defeating-authoritarian-digital-blackouts-countering-internet-shutdowns-through-satellite',
+    '',
     '2026-11-16 — Weekly metric refresh (current to 2026-11-16):',
     '  Biggest movement: Governance (Imperial Control 76 → 78 / Rebel Resistance 66 → 68; four paired points). Reuters reports Yemeni government forces withdrew from an area overlooking Bab el-Mandeb on 15 Nov, leaving the Houthis in control; this is a local territorial shift, not a closure of the strait. ACLED’s 13 Nov update documents additional regional fragmentation while distinguishing belligerent claims from independently verified events. Sources: https://www.reuters.com/world/middle-east/yemen-government-forces-withdraw-area-near-bab-el-mandeb-strait-houthis-control-2026-11-15/ ; https://acleddata.com/current-crises/daily-data-strikes-across-middle-east',
     '  Energy (Imperial Control 100 / Rebel Resistance 12 — held): IEA (13 Nov) reports Gulf oil exports at 18.4 mb/d in October, still 26% below pre-war levels; refined-product/LPG exports remained around half. Shipping attacks continue, but the incomplete recovery and adaptive flows do not support a score change. Sources: https://www.iea.org/reports/oil-market-report-november-2026 ; https://www.reuters.com/world/middle-east/hormuz-traffic-is-up-so-are-attacks-2026-11-11/',
